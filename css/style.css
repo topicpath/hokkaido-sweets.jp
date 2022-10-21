@@ -119,17 +119,18 @@ body {
   }
 }
 
-.wrapper {
+.preparation-wrapper {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 50px auto;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 959px) {
-  .wrapper {
+  .preparation-wrapper {
     padding: 0 4rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .wrapper {
+  .preparation-wrapper {
     padding: 0 2rem;
   }
 }
@@ -166,13 +167,15 @@ body {
   }
 }
 
-.preparation__text {
+.preparation-box {
   font-weight: 300;
   margin-top: 3rem;
+  line-height: 2.5;
 }
 @media screen and (max-width: 767px) {
-  .preparation__text {
+  .preparation-box__text {
     margin-top: 3rem;
+    line-height: 1.8;
   }
 }
 
