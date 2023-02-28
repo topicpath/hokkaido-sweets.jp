@@ -1,0 +1,21 @@
+.page-officelab-logos__desc {
+	font-size: 1rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin: 20px 0;
+
+	@include pc {
+		font-size: 1.2rem;
+		text-align: center;
+		margin: 20px 0;
+	}
+}
+
+.page-officelab-logos__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@include pc {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}

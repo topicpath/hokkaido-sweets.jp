@@ -1,0 +1,13 @@
+.l-section {
+	& + & {
+		@include pc {
+			margin: 104px auto 0;
+		}
+	}
+}
+
+.l-section--bnr {
+	@include pc {
+		margin: 104px auto 0;
+	}
+}

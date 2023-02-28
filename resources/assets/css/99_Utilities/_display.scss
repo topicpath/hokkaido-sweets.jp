@@ -1,0 +1,5 @@
+.uhd-display-block {
+	@include mq-max-min(hd, break) {
+		display: block;
+	}
+}

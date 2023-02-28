@@ -1,0 +1,79 @@
+.page-officelab-case-intro {
+	border: 0.1563rem solid $black;
+	border-radius: 0.9375rem;
+	margin: 0 0 2.25rem;
+	padding: 2rem 1.8125rem 1.6875rem;
+
+	@include pc {
+		display: flex;
+		flex-flow: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 1.875rem;
+		margin: 0 0 4.5rem;
+		border-width: 0.1875rem;
+		padding: 2.5rem 3.125rem 2.5rem 2.8125rem;
+	}
+}
+
+.page-officelab-case-intro__list {
+	@include pc {
+		width: 28.25rem;
+	}
+}
+
+.page-officelab-case-intro__item {
+	font-size: 0.75rem;
+	letter-spacing: 0.02em;
+	line-height: 2;
+	font-feature-settings: "palt" 0;
+	padding: 0 0 0 1em;
+	text-indent: -1em;
+
+	@include pc {
+		font-size: 1rem;
+		letter-spacing: 0;
+		line-height: 2;
+	}
+}
+
+.page-officelab-case-intro__picture {
+	&,
+	&--one,
+	&--two {
+		position: relative;
+	}
+
+	&--one {
+		width: 11.4063rem;
+		margin: 0 3.438rem 1.625rem 2.3438rem;
+		aspect-ratio: 260 / 121;
+
+		@include pc {
+			width: 16.5625rem;
+			margin: 0;
+		}
+	}
+
+	&--two {
+		width: 12.3438rem;
+		margin: 0 3.5rem 1.625rem 1.4063rem;
+		aspect-ratio: 230 / 107;
+
+		@include pc {
+			width: 16.4375rem;
+			margin: 0;
+		}
+	}
+
+	&--three {
+		width: 12.3438rem;
+		margin: 0 3.5rem 1.625rem 1.4063rem;
+		aspect-ratio: 230 / 107;
+
+		@include pc {
+			width: 16.4375rem;
+			margin: 0;
+		}
+	}
+}

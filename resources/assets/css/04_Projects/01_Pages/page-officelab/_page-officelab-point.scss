@@ -1,0 +1,158 @@
+.page-officelab-point {
+	background-color: $main;
+}
+
+.page-officelab-point__contents {
+	padding-top: 2.1875rem;
+	padding-bottom: 3.125rem;
+
+	@include pc {
+		padding-top: 5rem;
+		padding-bottom: 12.5rem;
+	}
+}
+
+.page-officelab-point__heading {
+	@include font-noto-sans-jp(black);
+
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin: 0 0 2.125rem;
+	line-height: 2;
+
+	@include pc {
+		font-size: 2.25rem;
+		margin: 0 0 7.6875rem;
+		line-height: 0.6;
+	}
+
+	&--bold {
+		font-weight: inherit;
+		font-size: 1.875rem;
+		line-height: 1;
+
+		@include pc {
+			font-size: 3rem;
+		}
+	}
+
+	&--italic {
+		position: relative;
+		display: inline-block;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 12px;
+			height: 12px;
+			background: $white;
+			border-radius: 50%;
+			position: absolute;
+			top: -14px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@include pc {
+				top: -24px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.page-officelab-point__block {
+	background: $white;
+	border-radius: 1rem;
+	padding: 1.5625rem 1.875rem 1.875rem;
+
+	@include pc {
+		border-radius: 2rem;
+		padding: 3.75rem 5rem 4.625rem;
+	}
+
+	& + & {
+		margin-top: 2.5rem;
+	}
+}
+
+.page-officelab-point__block-head {
+	margin: 0 0 1.25rem;
+	text-align: center;
+
+	@include pc {
+		margin: 0 0 3.75rem;
+	}
+}
+
+.page-officelab-point__sub-text {
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 700;
+	margin: 0 0 1.25rem;
+	font-size: 1rem;
+	letter-spacing: 0.08em;
+	line-height: 1.1875;
+	padding: 0 0.0938rem;
+	border-bottom: 0.25rem solid #fce800;
+	display: inline-block;
+
+	@include pc {
+		margin: 0 0 1.875rem;
+		font-size: 1.5rem;
+		border-width: 0 0 0.5rem;
+	}
+
+	&--num {
+		font-size: 1.25em;
+
+		@include pc {
+			font-size: 1.3333em;
+		}
+	}
+}
+
+.page-officelab-point__main-text {
+	font-weight: 900;
+	font-size: 1.125rem;
+	letter-spacing: 0.02em;
+	line-height: 1.6667;
+
+	@include pc {
+		font-size: 2rem;
+	}
+}
+
+.page-officelab-point__block-main {
+	font-size: 0.8125rem;
+	letter-spacing: 0;
+	line-height: 1.8462;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+
+	@include pc {
+		font-size: 1rem;
+		line-height: 2;
+		grid-template-columns: calc(100% - 410px) 360px;
+		justify-content: center;
+		gap: 50px;
+	}
+}
+
+.page-officelab-point__block-img {
+	border: 1px solid $main;
+}
+
+.page-officelab-point__caption-list {
+	font-size: 0.5rem;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+	margin: 1.25rem 0 0;
+
+	@include pc {
+		font-size: 0.75rem;
+		line-height: 2;
+		margin: 1.25rem 0 0;
+	}
+}

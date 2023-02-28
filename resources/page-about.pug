@@ -1,0 +1,47 @@
+:php
+	get_header();
+	$url = get_permalink();
+	$text = wp_get_document_title();
+	$share_url = urlencode($url);
+	$share_text = urlencode($text);
+
+article.page-about
+	.__head
+		.page-title
+			.__body
+				h1.o-heading--xl
+					:php the_title();
+
+	.__body
+		section.__section.l-section
+			.__contents.l-contents
+				h2.__intro 広島県知事からのメッセージ
+
+				.page-about-message
+					picture.__picture
+						img.__picture-body.o-fit__body(src!="<?= URL_IMAGES ?>about/page-about-img.jpg")
+					.__text
+						p.__desc 広島県には、世界屈指の独自技術を持つオンリーワン企業や、全国的・世界的に高いシェアを持つナンバーワン企業が数多く存在しています。そして、チャレンジ精神やフロンティア精神にあふれた県民性があります。多彩な自然環境や文化、世界で活躍する出身者ネットワークを生かして、各分野でイノベーションが創出され、西日本有数の産業拠点としての現在に至ります。
+
+						p.__desc 本県では、国内外の多様な人材や企業が広島に集い、つながることによって、今後も絶え間なくイノベーションが創出され、持続的な発展を繰り返す「イノベーション立県」の実現を目指し、ものづくり産業のさらなる進化、ゲノム編集等の健康・医療関連分野の育成、カーボンリサイクルを含む環境・エネルギー分野の産業集積、スタートアップやカーブアウトによる新事業創出・育成の環境整備、産業DX・イノベーション人材の育成・集積などに取り組んでいます。こうした取組を通じて、ユニコーンと呼ばれるような短期間で急成長を遂げる企業を輩出する未来を描いています。
+
+						p.__desc 本県の事業環境と潜在力、また、日々の暮らしを充実させる都市と自然の近接性が、国内外の企業の皆様の未来を支えるホームタウンとなるよう、チャレンジを続けてまいりますとともに、産官学で協力して、皆様の企業活動を応援します。
+
+						p.__desc ぜひ本県をパートナーとしてお選びいただき、共にイノベーションエコシステムを形成する仲間として、本県に拠点を築かれますよう、心よりお待ちしております。
+
+						.__sign
+							p.__sign-text 広島県知事
+							img.__sign-body(src!="<?= URL_IMAGES ?>about/page-about-sign.svg", alt="湯崎英彦")
+
+		section.__section.l-section
+			.__contents.l-contents
+				h2.__intro クルクル.広島について
+
+				.page-about-main
+					picture.__picture
+						img(src!="<?= URL_IMAGES ?>about/page-about-logo.svg")
+					.__text
+						p.__desc クルクル.広島は、広島県が企業の皆さまへ情報発信するメディアです。 広島県は、デジタル系企業をはじめとするオフィス進出や、製造業を中心とした工場の設備投資に対して、積極的に支援をしています。<br>チャレンジする企業の姿や、ビジネスが加速する産官学の連携、自然を感じながら過ごすワークスタイルなど広島県の魅力を多くの方に知っていただき、さらに多彩なプレイヤーが広島県へ引き寄せられ、イノベーションが次々とわき起きることを期待しています
+
+:php
+	get_footer();

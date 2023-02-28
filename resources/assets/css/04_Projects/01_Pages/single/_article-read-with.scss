@@ -1,0 +1,27 @@
+.article-read-with {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: 1fr;
+	padding: 0 0 100px;
+	border-bottom: 1px solid #d9d9d9;
+
+	@include sp {
+		gap: 16px;
+		padding: 0 0 80px;
+	}
+}
+
+.article-read-with__link {
+	padding: 40px 4.762%;
+	border: 1px solid $black;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: 42% 52%;
+	gap: 4%;
+
+	@include sp {
+		padding: 20px 5.97%;
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+}

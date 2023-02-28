@@ -1,0 +1,28 @@
+.l-two-columns {
+	@include pc {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4%;
+		position: relative;
+	}
+}
+
+.l-two-columns__sidebar {
+	@include pc {
+		flex-basis: 18%;
+	}
+
+	&--sticky {
+		@include pc {
+			position: sticky;
+			top: 0;
+			align-self: flex-start;
+		}
+	}
+}
+
+.l-two-columns__main {
+	@include pc {
+		flex-basis: 78%;
+	}
+}

@@ -1,0 +1,11 @@
+.is-pc {
+	@include sp {
+		display: none;
+	}
+}
+
+.is-sp {
+	@include pc {
+		display: none;
+	}
+}

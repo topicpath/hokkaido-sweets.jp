@@ -1,0 +1,81 @@
+/public/build
+# Node artifact files
+node_modules/
+
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+# Package files
+*.jar
+
+# Maven
+target/
+
+# JetBrains IDE
+.idea/
+
+# Unit test reports
+TEST*.xml
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Applications
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# Custom
+.env
+npm-debug.log
+/archive/
+!.gitignore
+/conf/
+/logs/
+/app/sql
+/.vscode/
+.prettierrc
+.stylelintrc
+gulpfile.js
+package.json
+
+
+# Wordpress
+/app/public/cms/*.php
+!/app/public/cms/wp-config.php
+/app/public/cms/.htaccess
+/app/public/cms/license.txt
+/app/public/cms/readme.html
+/app/public/cms/wp-admin
+/app/public/cms/wp-includes
+/app/public/cms/wp-content/ai1wm-backups
+/app/public/cms/wp-content/backup-db
+/app/public/cms/wp-content/cache
+/app/public/cms/wp-content/ewww
+/app/public/cms/wp-content/languages
+/app/public/cms/wp-content/plugins
+/app/public/cms/wp-content/upgrade
+/app/public/cms/wp-content/uploads
+/app/public/cms/wp-content/index.php
+/app/public/cms/wp-content/wp-cache-config.php
+/app/public/cms/wp-content/themes/index.php

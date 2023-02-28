@@ -1,0 +1,37 @@
+.article-info {
+	display: grid;
+	grid-template-columns: 17% calc(83% - 2px);
+	gap: 2px;
+
+	@include sp {
+		grid-template-columns: 35.5% calc(64.5% - 2px);
+	}
+}
+
+.article-info__main-text,
+.article-info__sub-text {
+	padding: 20px 24px;
+
+	@include sp {
+		padding: 16px 18px;
+	}
+}
+
+.article-info__main-text {
+	background-color: #fee780;
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+	@include sp {
+		letter-spacing: 0;
+	}
+
+	&:first-of-type {
+		border-radius: 10px 0 0;
+	}
+
+	&:last-of-type {
+		border-radius: 0 0 0 10px;
+	}
+}

@@ -1,0 +1,25 @@
+@use "sass:color";
+
+// Design System
+// white
+$white: #fffffc;
+
+// project color
+$main: #ffc600;
+$main-light: #fede4d;
+$black: #231815;
+$black-light: #666;
+$border: $main;
+$button: $white;
+$bg: #f9f9f9;
+$bg-secondary: #fffae5;
+$bg-dark: $main;
+$tag: #767676;
+
+// main
+$main-light: color.adjust($main, $lightness: 10%);
+$main-lighter: color.adjust($main, $lightness: 20%);
+$main-lightest: color.adjust($main, $lightness: 30%);
+$main-dark: color.adjust($main, $lightness: -10%);
+$main-darker: color.adjust($main, $lightness: -20%);
+$main-darkest: color.adjust($main, $lightness: -30%);

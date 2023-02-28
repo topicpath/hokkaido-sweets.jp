@@ -1,0 +1,57 @@
+.article-tags {
+	padding: 0 20px;
+	position: relative;
+
+	@include sp {
+		padding: 0;
+	}
+}
+
+.article-tags__main {
+	border: 1px solid $black;
+	border-radius: 10px;
+	background-color: $bg-secondary;
+	padding: 32px 40px;
+	position: relative;
+	overflow: hidden;
+
+	@include sp {
+		padding: 30px 24px;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: $bg-secondary;
+		width: 40px;
+		height: 90%;
+		z-index: 2;
+
+		@include sp {
+			width: 24px;
+		}
+	}
+
+	&::before {
+		left: 0;
+	}
+
+	&::after {
+		right: 0;
+	}
+}
+
+.article-tags__link {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 16px;
+	letter-spacing: 0.06em;
+	color: $black;
+
+	&::before {
+		content: "＃";
+	}
+}

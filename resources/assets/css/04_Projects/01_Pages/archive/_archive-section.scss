@@ -1,0 +1,26 @@
+.archive-section {
+	& + & {
+		@extend %section;
+	}
+}
+
+.archive-section__block {
+	@extend %block;
+}
+
+.archive-section__card-list {
+	$v: vw(40, pc);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 64px $v;
+
+	@include sp {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+}
+
+.archive-section__map {
+	margin: 0 0 8px;
+}

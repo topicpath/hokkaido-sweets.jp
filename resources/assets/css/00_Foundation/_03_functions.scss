@@ -1,0 +1,70 @@
+@use "sass:map";
+@use "sass:math";
+
+@function bp($mode: break) {
+	$bp: map.get($break-point, $mode);
+
+	@return $bp;
+}
+
+@function vw($size, $mode: hd) {
+	@return math.div($size, bp($mode)) * 100vw;
+}
+
+@function vh($size, $height: $pc-best-view-height) {
+	@return $size / $height * 100vh;
+}
+
+@function vw-sp($size, $mode: sp) {
+	@return $size / bp(sp) * 100vw;
+}
+
+@function vh-sp($size, $height: $sp-best-view-height) {
+	@return $size / $height * 100vh * 553 / 667;
+}
+
+@function ap($type: square) {
+	$ap: map.get($aspect-ratio, $type);
+
+	@return $ap;
+}
+
+// pxをremに変換
+@function rem($px) {
+	@return math.div($px, $base-font-size) * 1rem;
+}
+
+@function px($rem) {
+	@return ($rem * $base-font-size) + px;
+}
+
+// font weight
+@function noto-sans-weight($weight: bold) {
+	$w: map.get($noto-sans-weight, $weight);
+
+	@return $w;
+}
+
+@function noto-sans-jp-weight($weight: bold) {
+	$w: map.get($noto-sans-jp-weight, $weight);
+
+	@return $w;
+}
+
+@function neue-hass-grotesk-dp-weight($weight: bold) {
+	$w: map.get($neue-hass-grotesk-dp-weight, $weight);
+
+	@return $w;
+}
+
+@function neue-haas-unica-weight($weight: bold) {
+	$w: map.get($neue-haas-unica-weight, $weight);
+
+	@return $w;
+}
+
+@function ryo-gothic-plusn-weight($weight: m) {
+	$w: map.get($ryo-gothic-plusn-weight, $weight);
+
+	@return $w;
+}

@@ -1,0 +1,107 @@
+@use "sass:math";
+
+// break points
+$break-point: (
+	break: 768,
+	max: 3840,
+	fhd: 1920,
+	large: 1536,
+	pc: 1440,
+	hd: 1280,
+	tab: 1024,
+	tab-min: 768,
+	sp-large: 414,
+	sp: 375,
+	sp-min: 320
+);
+
+// PCディスプレイサイズ
+// 1920 * 1080
+// 1536 * 864
+// 1440 * 900
+// 1366 * 768
+// 1280 * 720
+$pc-best-view-height: 900;
+
+// SPディスプレイサイズ
+// 414 * 896
+// 374 * 667
+$sp-best-view-height: 667;
+
+// アスペクト比
+$aspect-ratio: (
+	square: math.div(1, 1),
+	golden: math.div(1, 1.618),
+	movie: math.div(1, 2),
+	picture: math.div(2, 3),
+	display: math.div(3, 4),
+	video: math.div(9, 16)
+);
+
+// 主要なフォントウェイト
+// Noto Sans(google font)
+$noto-sans-weight: (
+	thin: 100,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	bold: 700,
+	black: 900
+);
+
+// Noto Sans Japanese(google font)
+$noto-sans-jp-weight: (
+	thin: 100,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	bold: 700,
+	black: 900
+);
+
+// Neue Haas Grotesk Display(Adobe font)
+$neue-hass-grotesk-dp-weight: (
+	ultra-thin: 100,
+	thin: 200,
+	extra-light: 300,
+	light: 400,
+	roman: 500,
+	medium: 600,
+	bold: 700,
+	black: 900
+);
+
+// Neue Haas Unica(Adobe font)
+$neue-haas-unica-weight: (
+	ultra-thin: 100,
+	thin: 200,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	bold: 600,
+	heavy: 700,
+	black: 800,
+	extra-black: 900
+);
+
+// りょうゴシック PlusN(Adobe font)
+$ryo-gothic-plusn-weight: (
+	el: 200,
+	l: 300,
+	r: 400,
+	m: 500,
+	b: 700,
+	h: 800,
+	uh: 900
+);
+
+// スペーシング
+$spacing-unit: (
+	space-sm: 4,
+	space: 8,
+	space-lg: 16,
+	space-xl: 24,
+	space-2xl: 40,
+	space-3xl: 64,
+	space-4xl: 104
+);

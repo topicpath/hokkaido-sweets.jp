@@ -1,0 +1,9 @@
+.u-hide--tab {
+	@include mq-min(tab) {
+		display: none;
+	}
+
+	@include mq-max(tab) {
+		display: inline;
+	}
+}

@@ -1,0 +1,225 @@
+.page-officelab {
+	@include font-noto-sans-jp(bold);
+
+	font-size: 16px;
+	letter-spacing: 0.06em;
+	line-height: 2;
+	color: $black;
+	font-feature-settings: "palt" 1;
+	-webkit-text-size-adjust: 100%;
+
+	@include sp {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+}
+
+.page-officelab__heading {
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	text-align: center;
+
+	@include pc {
+		font-size: 2.25rem;
+		line-height: 2.3056;
+	}
+
+	&--bold {
+		font-weight: inherit;
+		font-size: 1.875rem;
+		line-height: 1;
+
+		@include pc {
+			font-size: 3rem;
+		}
+	}
+
+	&--italic {
+		font-style: normal;
+		display: inline-flex;
+		flex-flow: column-reverse;
+		align-items: center;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 0.625rem;
+			height: 0.625rem;
+			margin: 0 auto 0.125rem;
+			background: $main;
+			border-radius: 50%;
+
+			@include pc {
+				width: 1.25rem;
+				height: 1.25rem;
+				margin: 0 0 0.375rem;
+			}
+		}
+	}
+}
+
+.page-officelab__contact {
+	margin: 43px 0 0;
+}
+
+.page-officelab__contact-btn {
+	width: 17.8125rem;
+	margin: 0 auto;
+
+	@include pc {
+		width: 21.25rem;
+	}
+
+	&:nth-of-type(n+2) {
+		margin: 10px auto 0;
+	}
+}
+
+.page-officelab__contact-btn--lg {
+	margin: 70px auto 0;
+
+	&:nth-of-type(n+2) {
+		margin: 30px auto 0;
+
+		@include pc {
+			margin: 20px auto 0;
+		}
+	}
+}
+
+.page-officelab__btn {
+	&--blank {
+		background: $black;
+		color: $white;
+		letter-spacing: 0.08em;
+		line-height: 1.75;
+		text-decoration: none;
+		border: 0.1875rem solid $black;
+		transition-property: background-color, border-color, color;
+		transition-duration: 0.4s;
+		width: 100%;
+		height: 3rem;
+		border-radius: 1.5rem;
+		font-size: 0.6875rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		white-space: nowrap;
+
+		@include pc {
+			border-width: 3px;
+			font-size: 0.75rem;
+			height: 3.75rem;
+			border-radius: 1.875rem;
+		}
+
+		@include hover {
+			color: $black;
+			background-color: $white;
+			border-color: $main;
+		}
+
+		&::after {
+			content: "";
+			background: url("../images/officelab/icon-blank.svg") 0 0 / contain no-repeat;
+			width: 1.1197rem;
+			height: 0.9472rem;
+			margin: 0 0 0 0.6875rem;
+
+			@include pc {
+				width: 1.625rem;
+				height: 1.375rem;
+				margin: 0 0 0 0.9688rem;
+			}
+		}
+	}
+
+	&--contact {
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 0.08em;
+		line-height: 1.75;
+		text-decoration: none;
+		border: 0.1875rem solid $black;
+		transition-property: background-color, border-color, color;
+		transition-duration: 0.4s;
+		width: 100%;
+		height: 3.75rem;
+		border-radius: 1.875rem;
+		font-size: 0.75rem;
+		padding: 0 0 0.125rem 1.25rem;
+		margin: 0 auto;
+		background: url("../images/officelab/icon-contact.svg") top 50% left 1.5625rem / 1.4375rem no-repeat $black;
+		white-space: nowrap;
+
+		@include pc {
+			border-width: 3px;
+			font-size: 2rem;
+			width: 37.5rem;
+			height: 7.5rem;
+			border-radius: 3.75rem;
+			background-position: top 50% left 3.75rem;
+			background-size: 2.875rem;
+			padding: 0 0 0.25rem 2.5rem;
+		}
+
+		@include hover {
+			color: $black;
+			background-color: $white;
+			border-color: $main;
+		}
+	}
+
+	&--pdf {
+		background: $black;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 0.08em;
+		line-height: 1.75;
+		text-decoration: none;
+		border: 0.1875rem solid $black;
+		transition-property: background-color, border-color, color;
+		transition-duration: 0.4s;
+		width: 100%;
+		height: 3.75rem;
+		border-radius: 1.875rem;
+		font-size: 0.75rem;
+		padding: 0 0 0.125rem 1.25rem;
+		margin: 0 auto;
+		white-space: nowrap;
+
+		@include pc {
+			border-width: 3px;
+			font-size: 2rem;
+			width: 37.5rem;
+			height: 7.5rem;
+			border-radius: 3.75rem;
+			padding: 0 0 0.25rem 2.5rem;
+		}
+
+		@include hover {
+			color: $black;
+			background-color: $white;
+			border-color: $main;
+		}
+
+		&::after {
+			content: "";
+			background: url("../images/officelab/icon-blank.svg") 0 0 / contain no-repeat;
+			width: 1.1197rem;
+			height: 0.9472rem;
+			margin: 0 0 0 0.6875rem;
+
+			@include pc {
+				width: 1.625rem;
+				height: 1.375rem;
+				margin: 0 0 0 0.9688rem;
+			}
+		}
+	}
+}

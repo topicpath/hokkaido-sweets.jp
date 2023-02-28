@@ -1,0 +1,33 @@
+.fp-pickup {
+	margin: 80px auto 0;
+
+	@include sp {
+		margin: 70px auto 0;
+	}
+}
+
+.fp-pickup__contents {
+	position: relative;
+	padding: 0;
+}
+
+.fp-pickup__title {
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+
+	@include sp {
+		width: 45px;
+		top: -25px;
+	}
+}
+
+.fp-pickup__body {
+	overflow: hidden;
+}
+
+.fp-pickup__category {
+	margin: 32px 0 24px;
+}

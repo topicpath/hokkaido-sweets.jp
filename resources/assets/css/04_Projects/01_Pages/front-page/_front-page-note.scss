@@ -1,0 +1,120 @@
+.fp-note {
+	background-color: $bg;
+	padding: 104px 0;
+	margin: 104px auto 0;
+	position: relative;
+
+	@include sp {
+		padding: 80px 0;
+		margin: 88px auto 0;
+	}
+
+	&::after {
+		@include pc {
+			content: "";
+			background-color: $bg;
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -50%;
+			z-index: -1;
+		}
+	}
+}
+
+.fp-note__btn {
+	margin: 80px auto 0;
+	transition: $hover;
+
+	@include hover {
+		background-color: $main;
+		border-color: $main;
+
+		.icon-external {
+			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.68378 3.75H1C0.447715 3.75 0 4.19772 0 4.75V12.5001C0 13.0524 0.447714 13.5001 0.999999 13.5001H11.8003C12.3526 13.5001 12.8003 13.0524 12.8003 12.5001V11.8752H1.68378V3.75Z" fill="%23231815"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.88347 2.12502V8.62511H14.3153V2.12502H4.88347ZM4.04134 0.5C3.57625 0.5 3.19922 0.863773 3.19922 1.31251V9.43762C3.19922 9.88636 3.57625 10.2501 4.04134 10.2501H15.1574C15.6225 10.2501 15.9995 9.88636 15.9995 9.43762V1.31251C15.9995 0.863774 15.6225 0.5 15.1574 0.5H4.04134Z" fill="%23231815"/></svg>');
+		}
+	}
+
+	@include sp {
+		margin: 32px auto 0;
+	}
+}
+
+.fp-note-card__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px 40px;
+
+	@include sp {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+.fp-note-card__item {
+	background-color: $white;
+}
+
+.fp-note-card__link {
+	display: grid;
+	grid-template-columns: 45.4% 54.6%;
+	align-items: center;
+	clip-path: inset(0 round 20px);
+	transition: $hover;
+
+	@include hover {
+		opacity: 0.8;
+	}
+
+	@include sp {
+		grid-template-columns: 35.8% 64.2%;
+		clip-path: inset(0 round 10px);
+	}
+}
+
+.fp-note-card__picture {
+	position: relative;
+	aspect-ratio: 227 / 120;
+
+	@include sp {
+		aspect-ratio: 120 / 120;
+	}
+}
+
+.fp-note-card__main {
+	padding: 0 22% 0 11%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	@include sp {
+		padding: 0 5.97% 0 7.463%;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background: url("../images/svg/icon-external.svg") 50% 50% no-repeat;
+			background-size: contain;
+			position: absolute;
+			bottom: 6px;
+			right: 6px;
+		}
+	}
+}
+
+.fp-note-card__heading {
+	@include font-noto-sans-jp(regular);
+	@include line-height(24, 14);
+
+	font-size: 14px;
+	letter-spacing: 0.06em;
+	color: $black;
+
+	@include sp {
+		line-height: 1.5;
+	}
+}

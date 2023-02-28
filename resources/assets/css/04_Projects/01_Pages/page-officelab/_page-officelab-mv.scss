@@ -1,0 +1,81 @@
+.page-officelab-mv {
+	background-color: $main;
+
+	@include font-noto-sans-jp(black);
+}
+
+.page-officelab-mv__contents {
+	padding-top: 45px;
+	padding-bottom: 90px;
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+
+	@include pc {
+		padding-top: 100px;
+		padding-bottom: 118px;
+		grid-template-columns: 575px calc(100% - 625px);
+	}
+}
+
+.page-officelab-mv__heading {
+	font-size: 34px;
+	letter-spacing: 0.2em;
+	line-height: 1.6;
+	margin: 0 0 20px;
+	white-space: nowrap;
+
+	@include pc {
+		font-size: 60px;
+		line-height: 1.5;
+		margin: 0 0 40px;
+	}
+}
+
+.page-officelab-mv__desc {
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	line-height: 2.1;
+
+	@include pc {
+		font-size: 20px;
+		line-height: 2;
+	}
+}
+
+.page-officelab-mv__tags {
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+	margin: 32px -8px -8px;
+
+	@include sp {
+		position: absolute;
+		bottom: 30px;
+		left: 5.333vw;
+	}
+}
+
+.page-officelab-mv__tag {
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: 1.458;
+	background: $white;
+	border-radius: 5px;
+	padding: 3px 6px;
+	margin: 4px;
+
+	@include pc {
+		font-size: 16px;
+		line-height: 1.5;
+		border-radius: 10px;
+		padding: 8px 16px;
+		margin: 8px;
+	}
+}
+
+.page-officelab-mv__picture {
+	@include pc {
+		margin: 60px 0 0;
+	}
+}

@@ -1,0 +1,72 @@
+@use "sass:math";
+
+.l-flex {
+	display: flex;
+}
+
+.l-flex__one-column {
+	flex-basis: math.div(100%, 1);
+}
+
+.l-flex__two-column {
+	flex-basis: math.div(100%, 2);
+}
+
+.l-flex__three-column {
+	flex-basis: math.div(100%, 3);
+}
+
+.l-flex__four-column {
+	flex-basis: math.div(100%, 4);
+}
+
+.l-flex__five-column {
+	flex-basis: math.div(100%, 5);
+}
+
+.l-flex__six-column {
+	flex-basis: math.div(100%, 6);
+}
+
+.l-flex__seven-column {
+	flex-basis: math.div(100%, 7);
+}
+
+.l-flex__eight-column {
+	flex-basis: math.div(100%, 8);
+}
+
+.l-flex__nine-column {
+	flex-basis: math.div(100%, 9);
+}
+
+.l-flex__ten-column {
+	flex-basis: math.div(100%, 10);
+}
+
+.l-flex__eleven-column {
+	flex-basis: math.div(100%, 11);
+}
+
+.l-flex__twelve-column {
+	flex-basis: math.div(100%, 12);
+}
+
+@mixin l-flex($num) {
+	.l-flex__#{$num} {
+		flex-basis: math.div(100%, $num);
+	}
+}
+
+@mixin lf($num) {
+	.lf-#{$num} {
+		flex-basis: math.div(100%, $num);
+	}
+}
+$l-flex-num: 1;
+@while $l-flex-num < 13 {
+	@include l-flex($l-flex-num);
+	@include lf($l-flex-num);
+
+	$l-flex-num: $l-flex-num + 1;
+}

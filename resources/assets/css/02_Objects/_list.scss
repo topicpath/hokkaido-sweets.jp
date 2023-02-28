@@ -1,0 +1,79 @@
+.o-list {
+	text-indent: -1.25em;
+	padding-left: 1.25em;
+
+	&__item {
+		&::before {
+			content: "";
+			width: 0.25em;
+			height: 0.25em;
+			background-color: $black;
+			display: inline-block;
+			border-radius: 50%;
+			position: relative;
+			top: -3px;
+			margin: 0 0.75em 0 0.25em;
+		}
+	}
+
+	&__item--square {
+		&::before {
+			content: "";
+			width: 0.75em;
+			height: 0.75em;
+			background-color: $black;
+			display: inline-block;
+			position: relative;
+			top: 1px;
+			margin: 0 0.625em 0 0.125em;
+		}
+	}
+
+	&__item--circle {
+		&::before {
+			content: "";
+			width: 0.75em;
+			height: 0.75em;
+			background-color: $black;
+			display: inline-block;
+			position: relative;
+			top: 1px;
+			margin: 0 0.625em 0 0.125em;
+			border-radius: 50%;
+		}
+	}
+}
+
+.o-list-square {
+	text-indent: -1.25em;
+	padding-left: 1.25em;
+
+	&__item {
+		&::before {
+			content: "";
+			width: 0.75em;
+			height: 0.75em;
+			background-color: $black;
+			display: inline-block;
+			position: relative;
+			top: 1px;
+			margin: 0 0.375em 0 0.125em;
+		}
+	}
+}
+
+.o-list-num {
+	text-indent: -0.54em;
+	padding-left: 1.25em;
+	counter-reset: number 0;
+
+	&__item {
+		counter-increment: number 1;
+
+		&::before {
+			content: counter(number) ".";
+			display: inline-block;
+			margin: 0 0.25em 0 0;
+		}
+	}
+}

@@ -1,0 +1,310 @@
+.page-officelab-case-support__block {
+	position: relative;
+
+	& + & {
+		margin: 3.125rem 0 0;
+
+		@include pc {
+			margin: 4.375rem 0 0;
+		}
+	}
+}
+
+.page-officelab-case-support__heading {
+	color: $white;
+	background: $black;
+	font-size: 0.875rem;
+	letter-spacing: 0.02em;
+	line-height: 1.1429;
+	border-radius: 0.3125rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include pc {
+		font-size: 1.5rem;
+		border-radius: 0.625rem;
+		height: 3.75rem;
+	}
+}
+
+.page-officelab-case-support__list {
+	padding: 1.875rem 0.9375rem 0;
+
+	@include pc {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		padding: 3.125rem 0 0;
+	}
+}
+
+.page-officelab-case-support__item {
+	position: relative;
+	width: 19.0625rem;
+	height: 12.8125rem;
+	background: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include pc {
+		width: 25rem;
+		height: 15.625rem;
+	}
+
+	&:nth-of-type(2n) {
+		@include pc {
+			margin-left: 2.5rem;
+		}
+	}
+
+	&:nth-of-type(n+2) {
+		@include sp {
+			margin-top: 1.875rem;
+		}
+	}
+
+	&:nth-of-type(n+3) {
+		@include pc {
+			margin-top: 3.125rem;
+		}
+	}
+}
+
+.page-officelab-case-support__picture {
+	&--01 {
+		width: 11.4688rem;
+		margin: 0 1.5rem 0 0;
+
+		@include pc {
+			width: 13.8125rem;
+			margin: 0 1.9375rem 0 0;
+		}
+	}
+
+	&--02 {
+		width: 11.5313rem;
+
+		@include pc {
+			width: 14rem;
+		}
+	}
+
+	&--03 {
+		width: 12.5625rem;
+
+		@include pc {
+			width: 15.8125rem;
+		}
+	}
+
+	&--04 {
+		width: 10.2813rem;
+
+		@include pc {
+			width: 12.4375rem;
+		}
+	}
+
+	&--05 {
+		width: 4.25rem;
+
+		@include pc {
+			width: 5.25rem;
+		}
+	}
+
+	&--06 {
+		width: 9.375rem;
+
+		@include pc {
+			width: 11.375rem;
+		}
+	}
+
+	&--07 {
+		width: 6.75rem;
+
+		@include pc {
+			width: 9rem;
+		}
+	}
+
+	&--08 {
+		width: 8.4375rem;
+		padding: 0 0 60px;
+
+		@include pc {
+			width: 12.125rem;
+			padding: 0 0 70px;
+		}
+	}
+
+	&--09 {
+		width: 8.1875rem;
+
+		@include pc {
+			width: 10.8125rem;
+		}
+	}
+
+	&--10 {
+		width: 10.5rem;
+
+		@include pc {
+			width: 14.25rem;
+		}
+	}
+
+	&--09,
+	&--10 {
+		padding: 0 0 1.0938rem;
+
+		@include pc {
+			padding: 0 0 1.125rem;
+		}
+	}
+}
+
+.page-officelab-case-support__desc {
+	text-align: center;
+	font-size: 1.125rem;
+	letter-spacing: 0;
+	line-height: 0.7778;
+	font-weight: 700;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+
+	@include pc {
+		font-size: 1.5rem;
+		line-height: 1.3333;
+	}
+}
+
+.page-officelab-case-support__note {
+	font-size: 0.75rem;
+	letter-spacing: 0;
+	line-height: 1.4583;
+	margin: 0.2813rem 0 0;
+	display: block;
+
+	@include pc {
+		margin: 0.25rem 0 0;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+}
+
+.page-officelab-case-support__icon {
+	display: block;
+	position: absolute;
+	top: -0.9375rem;
+	right: -0.9375rem;
+	width: 6.25rem;
+	z-index: 1;
+
+	@include pc {
+		width: 7.5rem;
+		top: -1.875rem;
+		right: -1.25rem;
+	}
+}
+
+.page-officelab-case-support__arrow {
+	height: 3.75rem;
+	background: url("../images/officelab/icon-arrow.svg") 50% 50% / 1.0231rem no-repeat;
+
+	@include pc {
+		height: 6.5rem;
+		background-size: 2.0463rem;
+	}
+}
+
+.page-officelab-case-support__result {
+	background: $white;
+	border: 10px solid #e11313;
+	border-radius: 0.9375rem;
+	padding: 1.5625rem 0 2.0313rem;
+	text-align: center;
+	width: 19.6875rem;
+	margin: 0 auto;
+
+	@include pc {
+		border-radius: 1.875rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 100%;
+		padding: 35px 50px 45px;
+	}
+}
+
+.page-officelab-case-support__result-sub {
+	font-size: 0.875rem;
+	letter-spacing: 0;
+	line-height: 1.2143;
+	margin: 0 0 1.0625rem;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 500;
+
+	@include pc {
+		font-size: 1.5rem;
+		line-height: 1.2083;
+		margin: 0;
+	}
+
+	&--bold {
+		font-size: 1.2857em;
+		font-weight: 500;
+
+		@include pc {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.page-officelab-case-support__result-main {
+	@include font-noto-sans-jp(black);
+
+	font-size: 1.25rem;
+	letter-spacing: 0;
+	line-height: 1.5;
+
+	@include pc {
+		font-size: 2.25rem;
+		line-height: 1.111;
+	}
+
+	&--num {
+		font-family: "Barlow Condensed", sans-serif;
+		font-weight: 700;
+		font-size: 1.5em;
+		margin: 0 0.1528em 0 0;
+		vertical-align: -0.0278em;
+
+		@include pc {
+			font-size: 2em;
+			margin: 0 0.2083em;
+			vertical-align: -0.0694em;
+		}
+	}
+}
+
+.page-officelab-case-support__caption {
+	margin: 0.7813rem 0 0;
+	text-align: center;
+	font-size: 0.5rem;
+	letter-spacing: 0;
+	line-height: 2;
+
+	@include pc {
+		margin: 1.125rem 0 0;
+		font-size: 0.75rem;
+		line-height: 1.6667;
+	}
+}

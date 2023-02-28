@@ -1,0 +1,193 @@
+@use "sass:map";
+@use "sass:math";
+
+// three point leader
+@mixin line-clamp($num, $num-sp: null) {
+	display: "-webkit-box";
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $num;
+	overflow: hidden;
+
+	@if $num-sp {
+		@include mq {
+			-webkit-line-clamp: $num-sp;
+		}
+	}
+}
+
+// hover可能な端末に絞ったhover
+@mixin hover {
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+@mixin is-hove-decrement-alpha {
+	transition: opacity $base-duration $and-opacity-easing;
+
+	@include hover {
+		opacity: 0.5;
+	}
+}
+
+// media query
+@mixin mq($mode: break, $type: max) {
+	$width: bp($mode);
+
+	@if $type == max {
+		$width: $width - 1;
+	}
+
+	@media (#{$type}-width: #{$width}px) {
+		@content;
+	}
+}
+
+@mixin mq-min($mode: break) {
+	@include mq($mode, min) {
+		@content;
+	}
+}
+
+@mixin mq-max($mode: break) {
+	@include mq($mode, max) {
+		@content;
+	}
+}
+
+@mixin mq-max-min($max: pc, $min: break) {
+	$max-width: bp($max);
+	$max-width: $max-width - 1;
+	$min-width: bp($min);
+
+	@media (max-width: #{$max-width}px) and (min-width: #{$min-width}px) {
+		@content;
+	}
+}
+
+@mixin pc($mode: break) {
+	@include mq_min($mode) {
+		@content;
+	}
+}
+
+@mixin sp($mode: break) {
+	@include mq_max($mode) {
+		@content;
+	}
+}
+
+@mixin font($device) {
+	$size: map.get($device, size);
+	$w: map.get($device, weight);
+	$weight: noto-sans-jp-weight($w);
+	$weight: map.get($device, weight);
+	$height: map.get($device, height);
+	$spacing: map.get($device, spacing);
+
+	font-size: $size + rem;
+	font-weight: $weight;
+	line-height: $height;
+	letter-spacing: $spacing + em;
+}
+
+@mixin font-weight($font: $noto-sans-jp, $weight: bold) {
+	@if $font == $noto-sans-jp {
+		font-family: $font, sans-serif;
+
+		$w: noto-sans-jp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $neue-hass-grotesk-dp {
+		font-family: $font, sans-serif;
+
+		$w: neue-hass-grotesk-dp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $neue-haas-unica {
+		$w: neue-haas-unica-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $ryo-gothic-plusn {
+		font-family: $font, sans-serif;
+
+		$w: ryo-gothic-plusn-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "n" {
+		font-family: $font, sans-serif;
+
+		$w: noto-sans-jp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "g" {
+		font-family: $font, sans-serif;
+
+		$w: neue-hass-grotesk-dp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "u" {
+		$w: neue-haas-unica-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "r" {
+		font-family: $font, sans-serif;
+
+		$w: ryo-gothic-plusn-weight($weight);
+
+		font-weight: $w;
+	} @else {
+		font-family: $font, sans-serif;
+		font-weight: $weight;
+	}
+}
+
+@mixin font-noto-jp($w: bold) {
+	$w: noto-sans-jp-weight($w);
+
+	font-family: $noto-sans-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-noto-sans-jp($w: bold) {
+	$w: noto-sans-jp-weight($w);
+
+	font-family: $noto-sans-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-neue-hass-grotesk($w: bold) {
+	$w: neue-hass-grotesk-dp-weight($w);
+
+	font-family: $neue-hass-grotesk-dp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-neue-haas-unica($w: bold) {
+	$w: neue-haas-unica-weight($w);
+
+	font-family: $neue-haas-unica, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-ryo-gothic($w: m) {
+	$w: ryo-gothic-plusn-weight($w);
+
+	font-family: $ryo-gothic-plusn, sans-serif;
+	font-weight: $w;
+}
+
+@mixin line-height($fs, $lh) {
+	line-height: math.div($fs, $lh);
+}
+
+@mixin icon-svg($p, $w, $h) {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}">#{$p}</svg>');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: $w + px;
+	height: $h + px;
+}

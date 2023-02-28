@@ -1,0 +1,43 @@
+.l-contents {
+	padding: 0 5.172%;
+
+	@include sp {
+		padding: 0 5.333vw;
+	}
+
+	& + & {
+		margin: 80px auto 0;
+	}
+
+	&--sm {
+		padding: 0 7.759%;
+
+		@include sp {
+			padding: 0 9.867vw;
+		}
+	}
+
+	&--xs {
+		max-width: 840px;
+		width: 100%;
+		margin: 0 auto;
+
+		@include mq-max-min(hd, break) {
+			padding: 0 5.172%;
+		}
+
+		@include sp {
+			$v: vw(20, sp);
+
+			padding: 0 $v;
+		}
+	}
+}
+
+.l-contents__head {
+	margin: 0 auto 56px;
+
+	@include sp {
+		margin: 0 auto 40px;
+	}
+}

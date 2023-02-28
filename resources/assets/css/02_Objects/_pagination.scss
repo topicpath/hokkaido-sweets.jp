@@ -1,0 +1,121 @@
+.o-pagination {
+	background-color: $bg;
+	border-radius: 10px;
+	padding: 50px 56px;
+
+	@include font-noto-sans-jp(medium);
+
+	font-size: 16px;
+	line-height: 1;
+	color: $black;
+
+	@include sp {
+		padding: 40px 20px;
+	}
+}
+
+.o-pagination__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+
+.o-pagination__link {
+	@include font-noto-sans-jp(bold);
+
+	padding: 0 12px;
+	position: relative;
+	transition: $hover;
+
+	@include hover {
+		color: $main;
+	}
+
+	&.is-current {
+		pointer-events: none;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% - 24px);
+			height: 2px;
+			background-color: $main;
+		}
+	}
+}
+
+.o-pagination__prev,
+.o-pagination__next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.o-pagination__prev {
+	left: 0;
+
+	a {
+		cursor: pointer;
+		transition: $hover;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 10px 5px 0;
+			border-color: transparent $black transparent transparent;
+			margin: 0 8px 0 0;
+			transition: $hover;
+		}
+
+		@include hover {
+			color: $main;
+
+			&::before {
+				border-right-color: $main;
+			}
+		}
+	}
+}
+
+.o-pagination__next {
+	right: 0;
+
+	a {
+		cursor: pointer;
+		transition: $hover;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 0 5px 10px;
+			border-color: transparent transparent transparent $black;
+			margin: 0 0 0 8px;
+			transition: $hover;
+		}
+
+		@include hover {
+			color: $main;
+
+			&::after {
+				border-left-color: $main;
+			}
+		}
+	}
+}
+
+.o-pagination__text {
+	@include sp {
+		display: none;
+	}
+}

@@ -1,0 +1,173 @@
+.page-advantages {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 16px;
+	letter-spacing: 0.06em;
+	line-height: 2;
+	color: $black;
+
+	@include sp {
+		font-size: 15px;
+	}
+}
+
+.page-advantages__main {
+	position: relative;
+}
+
+.page-advantages__wrapper {
+	background-color: $bg-secondary;
+	position: relative;
+	padding: 104px 0 80px;
+
+	@include sp {
+		padding: 48px 0 40px;
+	}
+
+	&::after {
+		@include pc {
+			content: "";
+			background-color: $bg-secondary;
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -50%;
+			z-index: -2;
+		}
+	}
+}
+
+.page-advantages__heading {
+	@include font-noto-sans-jp(bold);
+	@include line-height(39, 24);
+
+	font-size: 24px;
+	letter-spacing: 0.06em;
+	color: $black;
+
+	@include sp {
+		font-size: 18px;
+	}
+}
+
+.page-advantages__list {
+	margin: 80px 0 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+.page-advantages__link {
+	display: block;
+	background-color: $white;
+	border-radius: 20px;
+	transition: $hover;
+
+	@include hover {
+		background-color: $main;
+
+		.page-advantages__icon-fill {
+			fill: $white;
+		}
+
+		.page-advantages__arrow-circle {
+			stroke: $white;
+		}
+
+		.page-advantages__arrow-body {
+			fill: $white;
+		}
+	}
+}
+
+.page-advantages__inner {
+	position: relative;
+
+	@include pc {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 44px 7% 44px 4%;
+	}
+
+	@include sp {
+		padding: 32px 7% 32px 4%;
+	}
+}
+
+.page-advantages__subject {
+	@include font-noto-sans-jp(bold);
+
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	color: $black;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+
+	@include pc {
+		width: 280px;
+		min-width: 280px;
+	}
+
+	@include sp {
+		font-size: 18px;
+	}
+}
+
+.page-advantages__icon {
+	display: flex;
+	justify-content: center;
+	width: 44px;
+	margin: 0 8% 0 0;
+
+	@include sp {
+		margin: 0 4% 0 0;
+	}
+}
+
+.page-advantages__icon-fill {
+	fill: $main;
+	transition: 0.2s;
+
+	&--black {
+		fill: $black;
+		transition: 0.2s;
+	}
+}
+
+.page-advantages__desc {
+	@include font-noto-sans-jp(bold);
+
+	display: block;
+
+	@include pc {
+		width: 69%;
+		flex-shrink: 1;
+		margin-left: 6%;
+	}
+
+	@include sp {
+		margin: 14px 0 0;
+		width: 93%;
+	}
+}
+
+.page-advantages__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 3.8%;
+}
+
+.page-advantages__arrow-circle {
+	stroke: $black;
+	transition: 0.2s;
+}
+
+.page-advantages__arrow-body {
+	fill: $black;
+	transition: 0.2s;
+}

@@ -1,0 +1,81 @@
+@use "sass:map";
+
+$color-map: (
+	main: $main,
+	main-light: $main-light,
+	main-lighter: $main-lighter,
+	main-lightest: $main-lightest,
+	main-dark: $main-dark,
+	main-darker: $main-darker,
+	main-darkest: $main-darkest,
+);
+$color-level: (50 100 200 300 400 500 600 700 800 900);
+
+@mixin color($key, $value) {
+	.color-#{$key} {
+		color: $value;
+	}
+
+	.c-#{$key} {
+		color: $value;
+	}
+}
+
+@mixin background-color($key, $value) {
+	.bg-color-#{$key} {
+		background-color: $value;
+	}
+
+	.bgc-#{$key} {
+		background-color: $value;
+	}
+}
+
+@each $key, $value in $color-map {
+	@include color($key, $value);
+	@include background-color($key, $value);
+}
+
+.bg-color {
+	background-color: $bg;
+}
+
+.bgc {
+	background-color: $bg;
+}
+
+.bgc-dark {
+	background-color: $bg-dark;
+}
+
+.color-black {
+	color: $black;
+}
+
+.c-black {
+	color: $black;
+}
+
+.bg-color-black {
+	background-color: $black;
+}
+
+.bgc-black {
+	background-color: $black;
+}
+
+.color-white {
+	color: $white;
+}
+
+.c-white {
+	color: $white;
+}
+
+.bg-color-white {
+	background-color: $white;
+}
+
+.bgc-white {
+	background-color: $white;
+}

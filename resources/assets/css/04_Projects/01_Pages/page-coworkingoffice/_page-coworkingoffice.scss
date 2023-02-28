@@ -1,0 +1,219 @@
+.page-coworkingoffice {
+	margin: 40px auto 0;
+
+	@include font-noto-sans-jp(regular);
+
+	font-size: 14px;
+	letter-spacing: 0.06em;
+	color: $black;
+
+	@include line-height(24, 14);
+
+	@include pc {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	@include sp {
+		margin: 32px auto 0;
+	}
+}
+
+.page-coworkingoffice__item {
+	background-color: $bg;
+
+	$v: vw(80, pc);
+
+	padding: 60px $v;
+	border-radius: 20px;
+
+	@include sp {
+		padding: 48px 0;
+
+		&:nth-of-type(n+2) {
+			margin: 32px 0 0;
+		}
+	}
+}
+
+.page-coworkingoffice__inner {
+	@include pc {
+		display: grid;
+		grid-template-columns: 44.2% 51.5%;
+		gap: 32px 4.3%;
+	}
+}
+
+$side: vw(20, sp);
+
+.page-coworkingoffice__about,
+.page-coworkingoffice__picture-slider,
+.page-coworkingoffice__facility {
+	@include sp {
+		padding: 0 $side;
+	}
+}
+
+.page-coworkingoffice__heading {
+	@include line-height(36, 24);
+}
+
+.page-coworkingoffice__desc {
+	margin: 24px 0 0;
+
+	@include sp {
+		margin: 16px 0 0;
+	}
+}
+
+.page-coworkingoffice__picture-slider {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	@include pc {
+		align-self: flex-start;
+		padding: 0 19px;
+	}
+
+	@include sp {
+		margin: 27px 0 0;
+	}
+}
+
+.page-coworkingoffice__picture {
+	width: 100%;
+	position: relative;
+	clip-path: inset(0 round 10px);
+
+	@include pc {
+		aspect-ratio: 400 / 209;
+	}
+
+	@include sp {
+		aspect-ratio: 295 / 153;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+		width: 100%;
+		height: 100%;
+		border: 1px solid $black;
+		border-radius: 10px;
+		z-index: 1;
+	}
+}
+
+.page-coworkingoffice__facility {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 22px 5.263%;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+
+	@include sp {
+		margin: 32px 0 0;
+
+		@include line-height(16, 12);
+
+		gap: 12px 4%;
+	}
+}
+
+.page-coworkingoffice__figure {
+	background-color: $white;
+	border-radius: 10px;
+
+	$v: vw(80, pc);
+
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 8px;
+}
+
+.page-coworkingoffice__info {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 24px;
+
+	@include pc {
+		margin: 0 20px;
+	}
+
+	@include sp {
+		$v: vw(30, sp);
+
+		padding: 30px $v 48px;
+		margin: 32px $side 0;
+	}
+}
+
+.page-coworkingoffice__time {
+	@include pc {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 8px 16px;
+		align-items: flex-start;
+		margin: 0 0 32px;
+	}
+}
+
+.page-coworkingoffice__time-icon {
+	border-radius: 2em;
+	background-color: #e5e5e5;
+	color: #aaa;
+
+	@include font-noto-sans-jp(bold);
+
+	text-align: center;
+	font-size: 12px;
+	padding: 5px 1em;
+
+	@include sp {
+		padding: 4px 10px;
+		display: inline-block;
+		margin: 0 0 8px;
+	}
+
+	&:nth-of-type(n+2) {
+		@include sp {
+			margin: 16px 0 8px;
+		}
+	}
+
+	&--open {
+		background-color: $main;
+		color: $white;
+	}
+}
+
+.page-coworkingoffice__local {
+	margin: 32px 0 0;
+}
+
+.page-coworkingoffice__btn {
+	margin: 32px 20px 0 0;
+
+	@include sp {
+		font-size: 16px;
+		margin: 32px auto 0;
+
+		$v: vw(40, sp);
+
+		width: calc(100% - $v);
+	}
+}
+
+.page-coworkingoffice__icon {
+	display: inline-block;
+	margin: 0 0 0 8px;
+}

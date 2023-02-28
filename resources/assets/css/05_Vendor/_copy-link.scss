@@ -1,0 +1,48 @@
+.js-copy-link {
+	position: relative;
+
+	&.is-success {
+		background-color: $main;
+		border-color: $main;
+	}
+}
+
+.js-copy-link__tooltip {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: $black;
+	color: $white;
+
+	@include font-noto-sans-jp(medium);
+
+	font-size: 12px;
+	letter-spacing: 0.06em;
+	line-height: 1.2;
+	text-align: center;
+	padding: 0.3em 0.6em 0.4em;
+	border-radius: 5px;
+	opacity: 0;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 5px 0;
+		border-color: $black transparent transparent transparent;
+	}
+
+	&.is-success {
+		opacity: 1;
+
+		&::after {
+			opacity: 1;
+		}
+	}
+}

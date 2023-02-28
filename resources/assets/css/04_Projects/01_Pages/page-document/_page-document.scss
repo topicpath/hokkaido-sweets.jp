@@ -1,0 +1,201 @@
+.page-document-body {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 64px;
+
+	@include sp {
+		gap: 40px;
+	}
+}
+
+.page-document__item {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 14px;
+
+	@include line-height(21, 14);
+
+	letter-spacing: 0.06em;
+	color: #4d4d4d;
+	background-color: $bg-secondary;
+	border-radius: 20px;
+	padding: 60px 60px 0;
+
+	@include sp {
+		$v: vw(30, sp);
+
+		padding: 40px $v 0;
+	}
+}
+
+.page-document__item-head {
+	@include pc {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.page-document__item-body {
+	margin: 40px 0 0;
+	width: 70%;
+
+	@include sp {
+		margin: 24px 0 0;
+		width: 100%;
+	}
+}
+
+.page-document__icon {
+	display: inline-block;
+	pointer-events: none;
+	margin: 0;
+
+	@include pc {
+		order: 1;
+	}
+}
+
+.page-document__time-wrapper {
+	@include pc {
+		order: 2;
+	}
+
+	@include sp {
+		margin: 0 0 32px;
+		text-align: right;
+	}
+}
+
+.page-document__time {
+	border-bottom: 1px dashed #666;
+	font-size: 14px;
+	line-height: 1;
+	padding: 0 0 8px;
+
+	@include sp {
+		display: inline-block;
+	}
+}
+
+.page-document__time-icon {
+	display: inline-block;
+	margin: 0 6px 0 0;
+}
+
+.page-document__desc {
+	margin: 24px 0 32px;
+
+	@include sp {
+		margin: 16px 0 24px;
+	}
+
+	strong {
+		@include font-noto-sans-jp(bold);
+	}
+}
+
+.page-document__item-lower {
+	margin: 52px 0 0;
+	padding: 0 0 60px;
+
+	@include pc {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@include sp {
+		margin: 32px 0 0;
+		padding: 0 0 40px;
+	}
+}
+
+.page-document__keywords {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -4px;
+}
+
+.page-document__keyword-item {
+	margin: 4px;
+}
+
+.page-document__more-btn {
+	@include font-noto-sans-jp(medium);
+
+	font-size: 16px;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+
+	@include sp {
+		text-align: right;
+		margin: 52px 0 0;
+	}
+}
+
+.page-document__more-body {
+	display: flex;
+	align-items: center;
+
+	@include sp {
+		justify-content: flex-end;
+	}
+}
+
+.page-document__more-icon {
+	display: inline-block;
+	margin: 0 0 0 8px;
+}
+
+.page-document__more-list {
+	font-size: 20px;
+	line-height: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+
+	@include sp {
+		@include line-height(30,20);
+	}
+}
+
+.page-document__more-item {
+	padding: 0 0 1em;
+	border-bottom: 1px solid #666;
+}
+
+.page-document__more-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: $hover;
+
+	@include hover {
+		opacity: 0.7;
+	}
+}
+
+.page-document__more-file {
+	@include pc {
+		display: none;
+	}
+
+	@include sp {
+		line-height: 1;
+	}
+}
+
+.page-document__more-type {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+
+.page-document__more-text {
+	@include sp {
+		padding: 0 34px 0 0;
+	}
+}

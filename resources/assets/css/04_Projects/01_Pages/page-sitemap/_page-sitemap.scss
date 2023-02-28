@@ -1,0 +1,85 @@
+.page-sitemap {
+	display: grid;
+
+	@include pc {
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		align-items: flex-start;
+	}
+
+	@include sp {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+.page-sitemap__list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+.page-sitemap__item {
+	border-radius: 12px;
+	border: 1px solid $black;
+}
+
+.page-sitemap__anchor {
+	line-height: 104px;
+	border-radius: 12px;
+	background-color: $white;
+	transition: $hover;
+	padding: 0 40px;
+	position: relative;
+	display: block;
+	font-size: 18px;
+
+	@include sp {
+		line-height: 80px;
+		padding: 0 24px;
+	}
+
+	@include hover {
+		background-color: $main;
+	}
+
+	&--main {
+		border-radius: 12px 12px 0 0;
+	}
+}
+
+.page-sitemap__icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 32px;
+
+	@include sp {
+		right: 24px;
+	}
+}
+
+.page-sitemap__sub {
+	padding: 23px 40px 56px;
+
+	@include sp {
+		padding: 15px 24px 24px;
+	}
+}
+
+.page-sitemap__sub-list {
+	list-style-type: disc;
+	list-style-position: inside;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+
+	@include sp {
+		gap: 16px;
+	}
+}
+
+.page-sitemap__sub-anchor {
+	text-decoration: underline;
+	line-height: 1;
+}

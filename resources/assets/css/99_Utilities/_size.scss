@@ -1,0 +1,15 @@
+.u-size-full {
+	max-width: 100%;
+	width: 100%;
+}
+
+.upc-size-full {
+	@include pc {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.u-size-mw-auto {
+	min-width: auto;
+}

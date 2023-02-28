@@ -1,0 +1,181 @@
+@use "sass:math";
+
+@mixin spacing-margin($pos: null) {
+	@for $i from 0 through 200 {
+		@if $pos == top {
+			&-#{$pos}.px-#{$i} {
+				margin: #{$i}px 0 0 0;
+
+				@include mq {
+					margin: math.div($i, 2) + px 0 0 0;
+				}
+			}
+		} @else if $pos == right {
+			&-#{$pos}.px-#{$i} {
+				margin: 0 #{$i}px 0 0;
+
+				@include mq {
+					margin: 0 math.div($i, 2) + px 0 0;
+				}
+			}
+		} @else if $pos == bottom {
+			&-#{$pos}.px-#{$i} {
+				margin: 0 0 #{$i}px 0;
+
+				@include mq {
+					margin: 0 0 math.div($i, 2) + px 0;
+				}
+			}
+		} @else if $pos == left {
+			&-#{$pos}.px-#{$i} {
+				margin: 0 0 0 #{$i}px;
+
+				@include mq {
+					margin: 0 0 0 math.div($i, 2) + px;
+				}
+			}
+		} @else if $pos == x {
+			&-#{$pos}.px-#{$i} {
+				margin: 0 #{$i}px 0 #{$i}px;
+
+				@include mq {
+					margin: 0 math.div($i, 2) + px 0 math.div($i, 2) + px;
+				}
+			}
+		} @else if $pos == y {
+			&-#{$pos}.px-#{$i} {
+				margin: 0 #{$i}px 0 #{$i}px;
+
+				@include mq {
+					margin: math.div($i, 2) + px 0 math.div($i, 2) + px 0;
+				}
+			}
+		} @else {
+			&.px-#{$i} {
+				margin: #{$i}px;
+
+				@include mq {
+					margin: math.div($i, 2) + px;
+				}
+			}
+		}
+	}
+}
+
+@mixin spacing-padding($pos: null) {
+	@for $i from 0 through 200 {
+		@if $pos == top {
+			&-#{$pos}.px-#{$i} {
+				padding: #{$i}px 0 0 0;
+
+				@include mq {
+					padding: math.div($i, 2) + px 0 0 0;
+				}
+			}
+		} @else if $pos == right {
+			&-#{$pos}.px-#{$i} {
+				padding: 0 #{$i}px 0 0;
+
+				@include mq {
+					padding: 0 math.div($i, 2) + px 0 0;
+				}
+			}
+		} @else if $pos == bottom {
+			&-#{$pos}.px-#{$i} {
+				padding: 0 0 #{$i}px 0;
+
+				@include mq {
+					padding: 0 0 math.div($i, 2) + px 0;
+				}
+			}
+		} @else if $pos == left {
+			&-#{$pos}.px-#{$i} {
+				padding: 0 0 0 #{$i}px;
+
+				@include mq {
+					padding: 0 0 0 math.div($i, 2) + px;
+				}
+			}
+		} @else if $pos == x {
+			&-#{$pos}.px-#{$i} {
+				padding: 0 #{$i}px 0 #{$i}px;
+
+				@include mq {
+					padding: 0 math.div($i, 2) + px 0 math.div($i, 2) + px;
+				}
+			}
+		} @else if $pos == y {
+			&-#{$pos}.px-#{$i} {
+				padding: 0 #{$i}px 0 #{$i}px;
+
+				@include mq {
+					padding: math.div($i, 2) + px 0 math.div($i, 2) + px 0;
+				}
+			}
+		} @else {
+			&.px-#{$i} {
+				padding: #{$i}px;
+
+				@include mq {
+					padding: math.div($i, 2) + px;
+				}
+			}
+		}
+	}
+}
+
+@mixin spacing-gap($pos: null) {
+	@for $i from 0 through 200 {
+		@if $pos == x {
+			&-#{$pos}-#{$i} {
+				column-gap: #{$i} + px;
+			}
+		} @else if $pos == y {
+			&-#{$pos}-#{$i} {
+				row-gap: #{$i} + px;
+			}
+		} @else {
+			&-#{$i} {
+				gap: #{$i} + px;
+			}
+		}
+	}
+}
+
+.margin {
+	@include spacing-margin;
+	@include spacing-margin(top);
+	@include spacing-margin(right);
+	@include spacing-margin(bottom);
+	@include spacing-margin(left);
+	@include spacing-margin(x);
+	@include spacing-margin(y);
+}
+
+.padding {
+	@include spacing-padding;
+	@include spacing-padding(top);
+	@include spacing-padding(right);
+	@include spacing-padding(bottom);
+	@include spacing-padding(left);
+	@include spacing-padding(x);
+	@include spacing-padding(y);
+}
+
+.gap {
+	@include spacing-gap;
+	@include spacing-gap(x);
+	@include spacing-gap(y);
+}
+
+.usp-pb-30 {
+	@include sp {
+		padding-bottom: 30px;
+	}
+}
+
+.usp-pb-70 {
+	@include sp {
+		padding-bottom: 70px;
+	}
+}

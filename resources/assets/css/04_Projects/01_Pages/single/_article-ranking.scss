@@ -1,0 +1,13 @@
+.article-ranking__body {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 52px;
+
+	@include sp {
+		gap: 40px;
+
+		.m-card__tag-list--sm {
+			display: none;
+		}
+	}
+}

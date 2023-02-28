@@ -1,0 +1,14 @@
+.m-btn-back {
+	@extend %button-back;
+
+	margin: 48px 0 0;
+
+	@include sp {
+		margin: 32px 0 0;
+	}
+
+	&__icon {
+		margin: 0 16px 0 0;
+		display: inline-block;
+	}
+}

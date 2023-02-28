@@ -1,0 +1,51 @@
+.page-factory-point {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px 20px;
+
+	@include sp {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+.page-factory-point__item {
+	border: 2px solid #ffc600;
+	border-radius: 20px;
+	background-color: $white;
+	color: $black;
+	padding: 32px;
+
+	@include sp {
+		padding: 24px;
+		border-radius: 10px;
+	}
+}
+
+.page-factory-point__heading {
+	@include font-noto-sans-jp(medium);
+
+	font-size: 20px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	text-align: center;
+
+	@include sp {
+		font-size: 16px;
+	}
+
+	&--lg {
+		@include font-noto-sans-jp(bold);
+
+		font-size: 36px;
+		line-height: 1.5;
+
+		@include sp {
+			font-size: 26px;
+		}
+	}
+
+	&--bold {
+		@include font-noto-sans-jp(bold);
+	}
+}

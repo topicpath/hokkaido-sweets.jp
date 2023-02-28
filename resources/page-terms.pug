@@ -1,0 +1,75 @@
+:php
+	get_header();
+	$url = get_permalink();
+	$text = wp_get_document_title();
+	$share_url = urlencode($url);
+	$share_text = urlencode($text);
+
+article.page-other
+	.page-other__head
+		.page-title
+			.__body
+				h1.o-heading--xl
+					:php the_title();
+
+	.page-other__main
+		section.l-section
+			.l-contents
+				p.m-lead-intro この利用規約（以下、「本規約」といいます。）は、広島県が企業誘致オウンドメディア「クルクル.広島」（以下、「本サイト」といいます。）の利用条件を定めるものです。ユーザーの皆さま（以下、「ユーザー」といいます。）には、本規約に従って、本サイトをご利用いただきます。
+
+				dl.l-block
+					dt.m-heading-square 第1条　適用
+					dd.o-desc 本規約は、ユーザーと広島県との間の本サイトの利用に関わる一切の関係に適用されるものとします。
+
+				dl.l-block
+					dt.m-heading-square 第2条　個人情報の取り扱い
+					dd.o-desc 本サイトは別に定める<a class="o-anchor" href!="<?= URL_PRIVACYPOLICY ?>">プライバシーポリシー</a>に従って、収集した個人情報の漏えい、滅失又はき損の防止、収集した情報の管理のために必要な措置を講じることとします。
+
+				dl.l-block
+					dt.m-heading-square 第3条　禁止事項
+					dd.o-desc ユーザーは、本サイトの利用にあたり、以下の行為をしてはなりません。
+					dd.o-desc.l-block__inner
+						ul.o-list-num
+							li.__item 法令または公序良俗に違反する行為
+							li.__item 犯罪行為に関連する行為
+							li.__item 本サイトのサーバーまたはネットワークの機能を破壊したり、妨害したりする行為
+							li.__item 本サイトの運営を妨害するおそれのある行為
+							li.__item 本サイトに関連して、反社会的勢力に対して直接または間接に利益を供与する行為
+							li.__item その他、広島県が不適切と判断する行為
+
+				dl.l-block
+					dt.m-heading-square 第4条　本サイトの提供の停止等
+					dd.o-desc 広島県は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サイトの全部または一部の提供を停止または中断することができるものとします。
+					dd.o-desc.__inner
+						ul.o-list-num
+							li.__item 本サイトにかかるコンピュータシステムの保守点検または更新を行う場合
+							li.__item 自然災害などの不可抗力により、本サイトの提供が困難となった場合
+							li.__item コンピュータまたは通信回線等が事故により停止した場合
+							li.__item その他、広島県が本サイトの提供が困難と判断した場合
+					dd.o-desc 広島県は、本サイトの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害について、理由を問わず一切の責任を負わないものとします。
+
+				dl.l-block
+					dt.m-heading-square 第5条　免責事項
+					dd.o-desc 広島県は、本サイトに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。
+					dd.o-desc また、本サイトの回答及びメッセージ等のコンテンツは、いかなる保証を行うものでもありません。これによってユーザーが下した判断および行動によりいかなる結果が発生した場合においても、広島県は、理由を問わず一切の責任を負わないものとします。
+
+				dl.l-block
+					dt.m-heading-square 第6条　サイト内容の変更等
+					dd.o-desc 広島県は、ユーザーに通知することなく、本サイトの内容を変更し、または本サイトの提供を中止することができるものとし、これによって、ユーザーに生じた損害について一切の責任を負いないものとします。
+
+				dl.l-block
+					dt.m-heading-square 第7条　利用規約の変更
+					dd.o-desc 広島県は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。
+
+				dl.l-block
+					dt.m-heading-square 第8条　連絡
+					dd.o-desc ユーザーと広島県との間の連絡は、以下の広島県へのお問合せフォームを利用して行うものとします。<br>担当課：広島県　商工労働局 県内投資促進課<br>お問い合わせフォームは<a class="o-anchor" href!="<?= URL_CONTACT ?>">こちら</a>
+
+				dl.l-block
+					dt.m-heading-square 第11条　準拠法・裁判管轄
+					dd.o-desc 本規約の解釈にあたっては、日本法を準拠法とします。
+					dd.o-desc 本サイトに関して紛争が生じた場合には、広島地方裁判所を専属的合意管轄裁判所とします。
+
+
+:php
+	get_footer();

@@ -1,0 +1,44 @@
+html {
+	height: -webkit-fill-available;
+}
+
+body {
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+	height: 100dvh;
+	font-size: 1rem;
+	font-family: $font-family;
+	position: relative;
+	background-color: $white;
+	-webkit-text-size-adjust: 100%;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+a:not([href]):hover {
+	@include pc {
+		pointer-events: none;
+	}
+}
+
+a[href*="tel:"] {
+	@include pc {
+		pointer-events: none;
+		cursor: default;
+		text-decoration: none;
+	}
+}
+
+picture {
+	display: block;
+}

@@ -1,0 +1,31 @@
+.article-voice__item {
+	& + & {
+		margin: 56px 0 0;
+
+		@include sp {
+			margin: 40px 0 0;
+		}
+	}
+}
+
+.article-voice__people {
+	@include font-noto-sans-jp(medium);
+
+	margin: 0 0 40px;
+
+	@include sp {
+		margin: 0 0 17px;
+		padding-left: 1.6em;
+		text-indent: -1.6em;
+	}
+
+	&::before {
+		content: "";
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background-color: $main;
+		border-radius: 50%;
+		margin: 0 12px 0 0;
+	}
+}

@@ -1,0 +1,16 @@
+.js-document-more {
+	opacity: 0;
+	transition: 0.3s $color-and-opacity-easing;
+	height: 0;
+	padding: 0;
+
+	&.is-show {
+		opacity: 1;
+		height: auto;
+		padding: 0 0 80px;
+
+		@include sp {
+			padding: 0 0 64px;
+		}
+	}
+}

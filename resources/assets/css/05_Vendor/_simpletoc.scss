@@ -1,0 +1,67 @@
+.simpletoc {
+	background-color: $bg;
+	border-radius: 10px;
+	padding: 60px 7.143%;
+
+	@include sp {
+		$v: vw(30, sp);
+
+		padding: 48px $v;
+	}
+
+	a {
+		color: #666;
+		border-bottom: 1px solid #aaa;
+		padding: 20px 2em 20px 0;
+		display: block;
+		transition: $hover;
+		position: relative;
+		text-decoration: none;
+		line-height: 1.5;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			transition: $hover;
+			opacity: 0;
+			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12"><path fill="%23231815" d="M10.9281 0.238643L15.7768 5.42386C16.0744 5.74205 16.0744 6.25794 15.7768 6.57614L10.9281 11.7614C10.6306 12.0795 10.1482 12.0795 9.85062 11.7614C9.55307 11.4432 9.55307 10.9273 9.85062 10.6091L13.3987 6.81478L0 6.81478L0 5.18522L13.3987 5.18522L9.85062 1.39091C9.55307 1.07272 9.55307 0.556834 9.85062 0.238643C10.1482 -0.0795478 10.6306 -0.0795478 10.9281 0.238643Z" /></svg>');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 16px;
+			height: 12px;
+			line-height: 1;
+		}
+
+		@include hover {
+			color: $black;
+			border-bottom-color: $black;
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.simpletoc-title {
+	@include font-noto-sans-jp(medium);
+
+	font-size: 18px;
+	line-height: 1;
+	margin: 0 0 20px;
+	color: $black;
+}
+
+.wp-block-group {
+	.simpletoc-list {
+		ul {
+			li::before {
+				display: none;
+			}
+		}
+	}
+}

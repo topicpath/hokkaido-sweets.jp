@@ -1,0 +1,55 @@
+.aspect-ratio {
+	aspect-ratio: auto;
+
+	&--square {
+		aspect-ratio: 1 / 1;
+	}
+
+	&--golden {
+		aspect-ratio: 1 / 1.618;
+	}
+
+	&--movie {
+		aspect-ratio: 1 / 2;
+	}
+
+	&--picture {
+		aspect-ratio: 2 / 3;
+	}
+
+	&--display {
+		aspect-ratio: 3 / 4;
+	}
+
+	&--video {
+		aspect-ratio: 9 / 16;
+	}
+}
+
+.aspect-ratio-pt {
+	padding-top: auto;
+
+	&--square {
+		padding-top: 100%;
+	}
+
+	&--golden {
+		padding-top: 85.62%;
+	}
+
+	&--movie {
+		padding-top: 50%;
+	}
+
+	&--picture {
+		padding-top: 66.67%;
+	}
+
+	&--display {
+		padding-top: 75%;
+	}
+
+	&--video {
+		padding-top: 56.25%;
+	}
+}
