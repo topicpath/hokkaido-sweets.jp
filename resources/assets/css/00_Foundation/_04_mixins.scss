@@ -144,10 +144,10 @@
 	}
 }
 
-@mixin font-noto-jp($w: bold) {
-	$w: noto-sans-jp-weight($w);
+@mixin font-noto-sans($w: bold) {
+	$w: noto-sans-weight($w);
 
-	font-family: $noto-sans-jp, sans-serif;
+	font-family: $noto-sans, sans-serif;
 	font-weight: $w;
 }
 
@@ -155,6 +155,20 @@
 	$w: noto-sans-jp-weight($w);
 
 	font-family: $noto-sans-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-noto-serif-jp($w: bold) {
+	$w: noto-serif-jp-weight($w);
+
+	font-family: $noto-serif-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-zen-kaku-gothic-new($w: bold) {
+	$w: zen-kaku-gothic-new-weight($w);
+
+	font-family: $zen-kaku-gothic-new, sans-serif;
 	font-weight: $w;
 }
 

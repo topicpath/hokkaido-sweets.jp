@@ -1,43 +1,28 @@
 .l-contents {
-	padding: 0 5.172%;
-
-	@include sp {
-		padding: 0 5.333vw;
-	}
-
-	& + & {
-		margin: 80px auto 0;
-	}
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 
 	&--sm {
-		padding: 0 7.759%;
+		$v: rem(100);
 
-		@include sp {
-			padding: 0 9.867vw;
-		}
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $v;
+		padding-right: $v;
 	}
 
-	&--xs {
-		max-width: 840px;
-		width: 100%;
-		margin: 0 auto;
-
-		@include mq-max-min(hd, break) {
-			padding: 0 5.172%;
-		}
-
-		@include sp {
-			$v: vw(20, sp);
-
-			padding: 0 $v;
-		}
+	&--c {
+		padding-left: 13.4%;
+		padding-right: 13.4%;
 	}
-}
 
-.l-contents__head {
-	margin: 0 auto 56px;
+	&--r {
+		padding-right: 13.4%;
+	}
 
-	@include sp {
-		margin: 0 auto 40px;
+	&--l {
+		padding-left: 13.4%;
 	}
 }

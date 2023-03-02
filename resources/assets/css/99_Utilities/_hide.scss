@@ -1,9 +1,33 @@
+.u-hide {
+	display: none;
+}
+
+.u-hide--pc {
+	@include mq-min(pc) {
+		display: none;
+	}
+
+	@include mq-max(pc) {
+		display: inline;
+	}
+}
+
 .u-hide--tab {
 	@include mq-min(tab) {
 		display: none;
 	}
 
 	@include mq-max(tab) {
+		display: inline;
+	}
+}
+
+.u-hide--sp {
+	@include mq-min(sp) {
+		display: none;
+	}
+
+	@include mq-max(sp) {
 		display: inline;
 	}
 }

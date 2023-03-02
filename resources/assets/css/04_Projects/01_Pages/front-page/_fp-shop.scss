@@ -1,0 +1,66 @@
+.fp-shop-detail {
+	display: grid;
+	grid-template-columns: 60% 32%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.fp-shop-detail__logo {
+	$w: rem(220);
+
+	width: $w;
+}
+
+.fp-shop-detail__desc {
+	@extend %desc;
+
+	$m: rem(40);
+
+	margin-top: $m;
+}
+
+.fp-shop-access {
+	$mt: rem(70);
+
+	margin: $mt 0 0;
+	text-align: center;
+}
+
+.fp-shop-access__desc {
+	@extend %desc;
+	@include line-height(40, 16);
+}
+
+.fp-shop-access__block {
+	$m: rem(40);
+
+	margin-top: $m;
+}
+
+.fp-shop-access__subject {
+	@include font-noto-sans-jp(medium);
+
+	font-size: 1rem;
+	color: $black;
+	line-height: 1;
+	letter-spacing: 0.03rem;
+}
+
+.fp-shop-access__note {
+	@include font-noto-sans-jp(regular);
+
+	$f: rem(13);
+
+	font-size: $f;
+	color: $black;
+	line-height: 1;
+	margin-top: 1.4rem;
+}
+
+.fp-shop-map {
+	aspect-ratio: 1000 / 400;
+
+	$mt: rem(70);
+
+	margin: $mt 0 0;
+}

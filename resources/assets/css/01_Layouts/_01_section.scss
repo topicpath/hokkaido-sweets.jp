@@ -1,13 +1,6 @@
 .l-section {
-	& + & {
-		@include pc {
-			margin: 104px auto 0;
-		}
-	}
-}
+	$s: rem(120);
 
-.l-section--bnr {
-	@include pc {
-		margin: 104px auto 0;
-	}
+	padding-top: $s;
+	padding-bottom: $s;
 }

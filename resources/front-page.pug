@@ -1,0 +1,715 @@
+:php
+	get_header();
+	$url = get_permalink();
+	$text = wp_get_document_title();
+	$share_url = urlencode($url);
+	$share_text = urlencode($text);
+	$images = URL_FRONT_PAGE_IMAGES;
+
+article.fp-mv
+	.__contents
+		h1.__logo
+			img(src!="<?= URL_SVG ?>logo.svg", alt="sweets garden Prateria" loading="lazy")
+	//- video.__video(muted playsinline preload loop autoplay)
+		source(src!="<?= URL_ASSETS ?>movie/mv.mp4" type="video/mp4")
+
+article.fp-pickup.js-fp-pickup-slider.swiper
+	.__wrapper.swiper-wrapper
+		.__item.swiper-slide
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>ソフトクリーム
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-01.jpg", alt="")
+		.__item.swiper-slide
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>シュークリーム
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-02.jpg", alt="")
+		.__item.swiper-slide
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>プリン
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-03.jpg", alt="")
+		.__item.swiper-slide
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>クッキー
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-04.jpg", alt="")
+		.__item.swiper-slide
+			.__inner
+				.__text
+					p.__main-text 摩訶不思議スイーツ<br>パリネル
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-05.jpg", alt="")
+
+article.fp-feature
+	section.__section.l-section
+		.__contents.l-contents
+			.__head.js-inview
+				p.__sub-text
+					span.__sub-text-body 浜中プレミアムシリーズ
+				h1.__main-text 浜中町指定牧場<br>北海道牛乳使用
+			.__body.js-inview
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+				h2.__subject 北海道、浜中町で生まれました。
+				p.__desc 北海道浜中町農協と指定牧場の生産者の協力を得て、<br>特選規格・乳脂肪分4.0%以上の生乳だけを選んでつくった<br>成分無調整牛乳を使用した浜中プレミアムシリーズ。
+				.__map
+					img(src!="<?= $images ?>feature-map.png", alt="" loading="lazy")
+
+article.fp-about
+	section.__section.l-section
+		.__head.js-inview
+			h1.o-heading 最高の環境で、しあわせに育った<br>牛の牛乳は北海道からの贈り物。
+		.__contents.--l.js-inview
+			.__inner.--l
+				h2.__subject.--l どこまでも、<br>のびのび育つ牛たち。
+				.__body
+					p.__desc 根釧エリアの夏の平均気温は約18℃。<br>暑さが苦手な牛たちにとって、<br>海辺の牧場はまさに楽園。<br>さらに一部の牛舎では、<br>牛にストレスをかけないよう<br>繋がない「フリーストール」で<br>飼育されています。
+				picture.__picture.o-fit
+					img(src!="<?= $images ?>about-img-01.jpg", alt="" loading="lazy")
+
+		.__contents.--r.js-inview
+			.__inner.--r
+				h2.__subject.--r 浜中町ならではの<br>飼料が美味しさの秘訣。
+				picture.__picture.o-fit
+					img(src!="<?= $images ?>about-img-02.jpg", alt="" loading="lazy")
+				.__body
+					p.__desc 北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な肥料で育った<br>牛から生まれた特撰規格の牛乳です。
+
+article.fp-product
+	section.__section.l-section.fp-product-soft
+		.__contents.l-contents
+			.__head.js-inview
+				h1.o-heading 牛乳本来のおいしさを<br>そのまま閉じ込めました。
+			.__body.js-inview
+				.fp-product-item.cl-yfe
+					.__text
+						.__group
+							.__name
+								p.__farm 浜中町指定牧場
+								h2.__name-text 北海道牛乳<br>ソフトクリーム
+							.__sticker
+								img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+						h3.__catch さわやかな香りとコク深い牛乳の味わい<br>本物の牛乳ソフトクリーム
+						p.__desc 牛乳の美味しさをそのまま感じられる味わいを目指して、試行錯誤を積み重ねた当店のオリジナルブレンド。4.0%の乳脂肪分のコク深い味わいと、さっぱりとした口溶けが特徴のソフトクリームです。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+					picture.__picture
+						img(src!="<?= $images ?>product-item-01.png", alt="" loading="lazy" width="347")
+
+	section.__section.l-section.fp-product-middle
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__image.fp-product-item-image-02
+						picture.__picture--abs.fp-product-item-picture-02
+							img(src!="<?= $images ?>product-item-02.png", alt="" loading="lazy")
+					.__text--half
+						.__group
+							.__name
+								p.__farm 浜中町指定牧場
+								h2.__name-text 北海道牛乳クッキー
+								ol.__tags
+									li.__tag.--online オンラインOK
+									li.__tag 常温
+							.__sticker
+								img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+						h3.__catch 牛乳の香り豊かなクッキー<br>可愛いパッケージがおみやげにもオススメ
+						p.__desc ミルク風味がしっかりと感じられる、どこか懐かしく、やさしい味わいです。
+						p.__caption ※9枚セットパッケージ
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__text
+						.__group
+							.__name
+								p.__farm 浜中町指定牧場
+								h2.__name-text 北海道牛乳<br>シュークリーム
+								ol.__tags
+									li.__tag お持ち帰り限定
+									li.__tag 要冷蔵
+							.__sticker
+								img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+						h3.__catch 浜中町の特選牛乳を使用した<br>カスタードクリームと北海道産小麦の<br>芳醇な香りが特徴のシュークリーム
+						p.__desc 牛乳をたっぷりと使用したカスタードに北海道産生クリームを合わせた風味豊かなクリームを北海道産小麦を100%使用したシュー生地にたっぷり詰め込みました。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+					.__image.fp-product-item-image-03
+						picture.__picture--abs.fp-product-item-picture-03
+							img(src!="<?= $images ?>product-item-03.png", alt="" loading="lazy")
+
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__image.fp-product-item-image-04
+						picture.__picture--abs.fp-product-item-picture-04
+							img(src!="<?= $images ?>product-item-04.png", alt="" loading="lazy")
+					.__text
+						.__group
+							.__name
+								p.__farm 浜中町指定牧場
+								h2.__name-text 北海道牛乳プリン
+								ol.__tags
+									li.__tag お持ち帰り限定
+									li.__tag 要冷蔵
+							.__sticker
+								img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+						h3.__catch さっぱりとした口溶けが特徴の<br>クセになる味わい
+						p.__desc さっぱりとした食感とコク深い牛乳の香りが特徴の、一度食べるとまた食べたくなるプリンです。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+
+	section.__section.l-section.fp-product-parineru.js-inview
+		.__contents.l-contents
+			.fp-product-item
+				.__text.fp-product-parineru-text
+					p.fp-product-parineru-logo-sub
+						img(src!="<?= $images ?>product-logo-parineru-sub.svg", alt="摩訶不思議スイーツ")
+					h1.__visual-logo
+						img(src!="<?= $images ?>product-logo-parineru.svg", alt="パリネル")
+					p.__visual-desc.c-white 究極のパリパリ食感と<br>世にも不思議なトンカ豆クリームの<br>マリアージュ
+
+	section.__section.l-section.fp-product-parineru-detail-section
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__text
+						.__group
+							.__name
+								h2.__name-text 摩訶不思議スイーツ<br>パリネル
+								ol.__tags
+									li.__tag お持ち帰り限定
+									li.__tag 冷蔵／冷凍
+						p.__desc パリパリ食感を長く維持するパイ生地に、4種のクリームをブレンドした世にも珍しいトンカ豆クリームを詰めました。<br>通常のパイ生地とは異なるエアリーな食感と、エキゾチックな風味の最高級トンカ豆クリームの相性が絶妙です。<br>食べた人にしか分からない、当店自慢の摩訶不思議スイーツをご堪能ください。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+					.__images.fp-product-parineru-detail-images
+						picture.__picture--full
+							source(media="(max-width: 767px)" srcset!="<?= $images ?>product-item-05-sp.png" loading="lazy")
+							img(src!="<?= $images ?>product-item-05.png", alt="エキゾチックな風味の最高級トンカ豆クリーム" loading="lazy")
+						dl.__detail
+							dt.__detail-subject トンカ豆
+							dd.__detail-desc 中南米原産のマメ科植物の種子で、芳香性の高い香り成分のクマリンを含み、桜の葉や桃の花のような上品な香りを持っています。
+							dd.__detail-image
+								img(src!="<?= $images ?>product-item-05-b.png", alt="" loading="lazy")
+
+	section.__section.l-section.fp-product-rusk
+		.__contents.l-contents
+			.fp-product-item.js-inview
+				.__text.fp-product-rusk-text
+					p.__visual-catch 北海道の新感覚スイーツ
+					h1.__visual-logo
+						img(src!="<?= $images ?>product-logo-rusk.svg", alt="北海道シュガーラスク")
+					p.__visual-desc カリッサクッ!の軽い口当たりと<br>北海道産小麦とバターの<br>クセになる美味しさ<br>おみやげ人気No.1商品
+				.__image.fp-product-item-image-rusk
+					picture.__picture--abs.fp-product-item-picture-rusk
+						img(src!="<?= $images ?>product-item-rusk.png", alt="" loading="lazy")
+
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__text
+						.__group
+							.__name
+								h2.__name-text 北海道シューラスク
+									br
+									small.__name-text--sm （プレーン／ショコラ）
+								ol.__tags
+									li.__tag オンラインOK
+									li.__tag 常温
+						p.__desc シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br>発売開始から10年以上が経過した当店の看板商品です。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+					picture.__picture
+						img(src!="<?= $images ?>product-item-06.png", alt="" loading="lazy")
+
+	section.__section.fp-product-lower
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__image--sm.fp-product-item-image-square
+						picture.__picture--abs.fp-product-item-picture-square
+							img(src!="<?= $images ?>product-item-07.png", alt="" loading="lazy")
+					.__text
+						.__group
+							.__name
+								h2.__name-text 北海道バターガレット
+								ol.__tags
+									li.__tag オンラインOK
+									li.__tag 常温
+						h3.__catch バターをたっぷりと使用して焼き上げた伝統的な厚焼きクッキー
+						p.__desc 柔らかで豊かなバターの風味をラム酒がやさしく引き立てます。シンプルなお菓子こそ職人の腕が光るパティシエ自慢の重厚な味わいをお愉しみください。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__text
+						.__group
+							.__name
+								h2.__name-text 北海道<br>スノーボールクッキー
+									br
+									small.__name-text--sm 〜魅惑のホロホロ食感〜
+								ol.__tags
+									li.__tag オンラインOK
+									li.__tag 常温
+						h3.__catch 芳醇なバターの風味とナッツの香ばしさ<br>魅惑のホロホロ食感
+						p.__desc 長い年月をかけてたどり着いた独自の配合で生み出される魅惑のホロホロ食感。芳醇なバターの風味とナッツの香ばしさが織りなすクセになる味わい。純白の雪が舞い散る北海道ならではのクッキーです。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+					.__image--sm.fp-product-item-image-square
+						picture.__picture--abs.fp-product-item-picture-square--r
+							img(src!="<?= $images ?>product-item-08.png", alt="" loading="lazy")
+
+		.__contents.l-contents
+			.__body.js-inview
+				.fp-product-item
+					.__image--sm.fp-product-item-image-square
+						picture.__picture--abs.fp-product-item-picture-square
+							img(src!="<?= $images ?>product-item-09.png", alt="" loading="lazy")
+					.__text
+						.__group
+							.__name
+								h2.__name-text かすてらロール
+								ol.__tags
+									li.__tag お持ち帰り限定
+									li.__tag 要冷蔵
+						h3.__catch やさしい甘さのかすてら生地と<br>北海道産生クリームのマリアージュ
+						p.__desc 上白糖を使用して焼き上げたやさしい甘さのかすてら生地で乳脂肪分45%の濃厚な北海道産生クリームを巻き上げました。<br>和と洋の絶妙なバランスが感じられるロールケーキです。
+						p.m-btn.fp-product-item__btn
+							a.__link
+								span 商品情報を見る
+
+article.fp-shop
+	section.__section.l-section
+		.__contents.l-contents
+			.__head.m-head.js-inview
+				p.m-head__sub-text − 店舗情報 ／ アクセス −
+				h1.m-head__main-text Store 
+					small.m-head__main-text--sm &
+					|  access
+			.__body
+				.fp-shop-detail.js-inview
+					picture.__picture.o-fit
+						img.o-fit__body(src!="<?= $images ?>shop-img.jpg" loading="lazy")
+					.__text
+						h2.__logo
+							img.__logo-body(src!="<?= URL_SVG ?>logo.svg", alt="sweets garden Prateria" loading="lazy")
+						p.__desc 小樽市堺町5番29号<br>（おみやげの店 こぶしや 小樽店内併設）<br>TEL.0134-64-6122<br>営業時間　10時〜18時<br>定休日　　不定休<br>（※現在は月曜日が定休日です）
+				.fp-shop-access.js-inview
+					p.__desc 小樽の人気観光スポット「堺町通り」の中心にある石造り倉庫のお土産店内に併設。<br>北一硝子駐車場からも信号を渡るとすぐの好立地。<br>入り口は、北一硝子駐車場向かい側、堺町通り側の2カ所。
+					dl.__block
+						dt.__subject  お車でお越しの方へ
+						dd.__note 申し訳ございませんが、駐車場はご用意しておりません。近辺の駐車場をご利用ください。
+				.fp-shop-map.o-fit.js-inview
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1798.8403330725782!2d141.0055113965011!3d43.19372610287246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae050241cae79%3A0x69b08ac60bc49586!2z44GK44G_44KE44GS44Gu5bqX44GT44G244GX44KE5bCP5qi95bqX!5e0!3m2!1sja!2sjp!4v1677645983503!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="o-fit__body"></iframe>
+			.__foot
+				p.m-btn
+					a.__link(href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1798.8403330725782!2d141.0055113965011!3d43.19372610287246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae050241cae79%3A0x69b08ac60bc49586!2z44GK44G_44KE44GS44Gu5bqX44GT44G244GX44KE5bCP5qi95bqX!5e0!3m2!1sja!2sjp!4v1677645983503!5m2!1sja!2sjp" target="_blank")
+						span Google Mapで地図をみる
+
+article.fp-news
+	section.__section.l-section
+		.__contents.l-contents--sm
+			.__head.m-head.js-inview
+				p.m-head__sub-text − お知らせ −
+				h1.m-head__main-text News
+			.__body.js-inview
+				ul.__list
+					li.__item
+						a.__link
+							p.__date 2023.00.00
+							p.__desc ここにタイトルが入ります。ここにタイトルが入ります。
+			.__foot
+				p.m-btn
+					a.__link
+						span もっと見る
+
+.fp-modal
+	.__main
+		article.__contents#modal-1
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-a-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-a-02.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-a-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-a-02.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-2
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-04.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-b-04.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-3
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-c-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-c-02.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-c-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-c-02.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-4
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-d-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-d-02.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-d-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-d-02.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-5
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-e-01.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-e-01.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-6
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-04.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-05.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-04.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-f-05.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-7
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-04.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-g-04.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-8
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-04.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-01.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-02.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-03.jpg", alt="")
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-h-04.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		article.__contents#modal-9
+			.__slider.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-i-01.jpg", alt="")
+				.__arrow.--prev
+				.__arrow.--next
+			.__thumbnails.swiper
+				.swiper-wrapper
+					.swiper-slide
+						img(src!="<?= $images ?>product-large-i-01.jpg", alt="")
+			.__detail
+				h1.__name
+				p.__desc
+				dl.__price
+					dt.__count
+					dd.__price-body
+						span.__price-num 
+						span 
+				table.__table
+					caption.__table-caption 商品詳細
+					tbody
+						tr
+							th.__table-subject アレルギー
+							td.__table-desc 
+						tr
+							th.__table-subject 消費期限
+							td.__table-desc 
+						tr
+							th.__table-subject 取り扱い店舗
+							td.__table-desc 
+
+		button.__close
+	.__bg
+
+
+:php get_footer();

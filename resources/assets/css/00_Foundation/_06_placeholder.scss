@@ -1,238 +1,34 @@
-%heading {
-	@include font-noto-sans-jp(medium);
+%head-heading {
+	@include font-noto-serif-jp(medium);
 
-	font-size: 20px;
-	letter-spacing: 0.06em;
+	$r: rem(44);
 
-	@include line-height(30, 20);
-
+	font-size: $r;
 	color: $black;
-}
-
-%heading-lg {
-	font-size: 24px;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.1em;
 	line-height: 1;
-	color: $black;
 }
 
-%heading-sm {
-	@include font-noto-sans-jp(bold);
+%head-heading-sm {
+	$r: rem(35);
 
-	font-size: 18px;
-	letter-spacing: 0.06em;
-
-	@include line-height(27, 18);
-
-	color: $black;
+	font-size: $r;
 }
 
-%heading-xs {
-	@include font-noto-sans-jp(medium);
+%head-sub-text {
+	@include font-noto-sans-jp(regular);
 
-	font-size: 16px;
-	letter-spacing: 0.06em;
-	line-height: 1.5;
-	color: $black;
-}
-
-%heading-border-left {
-	padding: 0 0 0 22px;
-	position: relative;
-
-	@include sp {
-		font-size: 18px;
-		padding: 0 0 0 20px;
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 6px;
-		border-radius: 3px;
-		background-color: $main;
-	}
-}
-
-%heading-border-bottom {
-	padding: 0 0 8px;
-	position: relative;
-	border-bottom: 2px solid $main;
-	display: inline-block;
-}
-
-%heading-line {
-	@include font-noto-sans-jp(bold);
-
-	font-size: 20px;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.05rem;
 	line-height: 1;
-	color: $black;
-	border-bottom: 1px solid #aaa;
-	padding: 0 0 8px;
-	display: flex;
-	align-items: center;
+	color: $border;
+	font-size: 1rem;
 }
 
-%heading-bg {
-	@include font-noto-sans-jp(medium);
+%desc {
+	@include font-noto-sans-jp(regular);
 
-	font-size: 24px;
-	letter-spacing: 0.06em;
-
-	@include line-height(36, 24);
-
-	color: $black;
-	padding: 24px 30px;
-	background-color: $main-light;
-	border-radius: 20px;
-
-	@include sp {
-		font-size: 20px;
-		line-height: 1.5;
-		letter-spacing: 0.04em;
-		padding: 20px;
-		border-radius: 10px;
-	}
-}
-
-%icon-num-circle {
-	@include font-noto-sans-jp(black);
-
-	background-color: $black;
-	color: $white;
-	font-size: 16px;
-	line-height: 1;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 0 2px;
-}
-
-%heading-square {
-	@extend %heading-lg;
-	@include font-noto-sans-jp(medium);
-
-	@include sp {
-		line-height: 1.5;
-		text-indent: -1.4em;
-		padding-left: 1.4em;
-	}
-
-	&::before {
-		content: "";
-		display: inline-block;
-		width: 1em;
-		height: 1em;
-		background-color: $main;
-		border-radius: 4px;
-		margin: 0 0.4em 0 0;
-		position: relative;
-		top: 3px;
-	}
-}
-
-%lead-intro {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 16px;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.04rem;
 	line-height: 2;
 	color: $black;
-
-	@include sp {
-		font-size: 15px;
-	}
-}
-
-%icon-crown {
-	@include font-noto-sans-jp(black);
-
-	font-size: 16px;
-	line-height: 1;
-	color: $black;
-	width: 56px;
-	height: 40px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-%section {
-	margin: 100px auto 0;
-
-	@include sp {
-		margin: 80px auto 0;
-	}
-}
-
-%block {
-	margin: 80px 0 0;
-
-	@include sp {
-		margin: 48px 0 0;
-	}
-
-	&:first-of-type {
-		margin: 0;
-	}
-}
-
-%button-sm {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 14px;
-	letter-spacing: 0.06em;
-	line-height: 1;
-	border: 1px solid $black;
-	color: $black;
-	text-align: center;
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-	background-color: $white;
-	transition: $hover;
-
-	@include sp {
-		font-size: 12px;
-	}
-
-	@include hover {
-		background-color: $main;
-	}
-
-	&.is-current {
-		background-color: $main;
-		pointer-events: none;
-	}
-}
-
-%button-back {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 16px;
-	letter-spacing: 0.06em;
-	line-height: 56px;
-	border: 1px solid $black;
-	color: $black;
-	text-align: center;
-	border-radius: 10px;
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-	background-color: $white;
-	transition: $hover;
-	padding: 0 24px;
-	position: relative;
-
-	@include hover {
-		background-color: $main;
-	}
+	font-size: 1rem;
 }

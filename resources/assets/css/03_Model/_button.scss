@@ -1,14 +1,51 @@
-.m-btn-back {
-	@extend %button-back;
+.m-btn {
+	$mv: rem(40);
 
-	margin: 48px 0 0;
+	margin: $mv auto 0;
+	text-align: center;
+	display: block;
+}
 
-	@include sp {
-		margin: 32px 0 0;
+.m-btn__link {
+	@include font-noto-sans-jp(regular);
+
+	color: $border;
+	font-size: 1rem;
+	line-height: 1;
+
+	$pv: rem(18);
+	$ps: rem(100);
+
+	padding: $pv $ps;
+	position: relative;
+	border: 1px solid $border;
+	border-radius: 2rem;
+	transition: $hover;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		content: "→";
+
+		@include font-noto-sans-jp(regular);
+
+		color: $border;
+		font-size: 1rem;
+		line-height: 1;
+		transition: $hover;
+		display: block;
+		margin-right: 1.3rem;
 	}
 
-	&__icon {
-		margin: 0 16px 0 0;
-		display: inline-block;
+	@include hover {
+		background-color: $green;
+		border-color: $green;
+		color: $white;
+
+		&::before {
+			color: $white;
+		}
 	}
 }

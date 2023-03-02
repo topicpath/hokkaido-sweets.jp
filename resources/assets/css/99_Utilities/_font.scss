@@ -1,36 +1,9 @@
 @use "sass:map";
 
-@each $device, $sizes in $font-map {
-	@each $name, $value in $sizes {
-		$size: map.get($value, size);
-		$weight: map.get($value, weight);
-		$w: noto-sans-jp-weight($weight);
-		$height: map.get($value, height);
-		$spacing: map.get($value, spacing);
-		$margin: map.get($value, margin);
-
-		@if $device == desktop {
-			@include pc {
-				.font-#{$name} {
-					font-size: $size + rem;
-					font-weight: $w;
-					line-height: $height;
-					letter-spacing: $spacing + em;
-				}
-			}
-		} @else {
-			@include sp {
-				.font-#{$name} {
-					font-size: $size + rem;
-					font-weight: font-noto-sans-jp($weight);
-					line-height: $height;
-					letter-spacing: $spacing + em;
-				}
-			}
-		}
-	}
+.u-font-bold {
+	@include font-noto-sans-jp(bold);
 }
 
-.u-font-bold {
+.u-f-b {
 	@include font-noto-sans-jp(bold);
 }

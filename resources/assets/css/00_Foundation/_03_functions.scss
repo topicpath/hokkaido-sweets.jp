@@ -51,6 +51,18 @@
 	@return $w;
 }
 
+@function noto-serif-jp-weight($weight: bold) {
+	$w: map.get($noto-serif-jp-weight, $weight);
+
+	@return $w;
+}
+
+@function zen-kaku-gothic-new-weight($weight: bold) {
+	$w: map.get($zen-kaku-gothic-new-weight, $weight);
+
+	@return $w;
+}
+
 @function neue-hass-grotesk-dp-weight($weight: bold) {
 	$w: map.get($neue-hass-grotesk-dp-weight, $weight);
 

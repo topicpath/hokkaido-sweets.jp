@@ -1,0 +1,40 @@
+.m-head {
+	text-align: center;
+	position: relative;
+
+	$p: rem(25);
+	$m: rem(60);
+
+	padding-bottom: $p;
+	margin-bottom: $m;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+		$w: rem(130);
+		$h: rem(14);
+
+		width: $w;
+		height: $h;
+		background: url("../images/svg/element-grasses.svg") 50% 50% no-repeat;
+		background-size: contain;
+	}
+}
+
+.m-head__sub-text {
+	@extend %head-sub-text;
+}
+
+.m-head__main-text {
+	@extend %head-heading;
+
+	margin-top: calc((1.9 / 4.4) * 1rem);
+
+	&--sm {
+		@extend %head-heading-sm;
+	}
+}

@@ -1,0 +1,38 @@
+.fp-news {
+	background-color: rgba($green-light, 0.08);
+}
+
+.fp-news__item {
+	border-bottom: 1px solid $border;
+
+	&:first-of-type {
+		border-top: 1px solid $border;
+	}
+}
+
+.fp-news__link {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	$r: rem(24.5);
+
+	padding: $r 0;
+}
+
+.fp-news__date {
+	@include font-noto-sans(bold);
+
+	font-size: 1rem;
+	letter-spacing: 0.03em;
+	line-height: 1;
+}
+
+.fp-news__desc {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 1rem;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-left: 2em;
+}

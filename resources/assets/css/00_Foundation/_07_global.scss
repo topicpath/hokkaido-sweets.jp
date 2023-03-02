@@ -1,5 +1,25 @@
 html {
 	height: -webkit-fill-available;
+	font-weight: 400;
+
+	// viewport 375px のとき font-size 16px
+	font-size: calc(100vw * 16 / 375);
+
+	@include mq-min(break) {
+		font-size: calc(100vw * 12 / 768);
+	}
+
+	@include mq-min(tab) {
+		font-size: calc(100vw * 10 / 768);
+	}
+
+	@include mq-min(hd) {
+		font-size: calc(100vw * 16 / 1280);
+	}
+
+	@include mq-min(pc) {
+		font-size: 100%;
+	}
 }
 
 body {
@@ -10,7 +30,9 @@ body {
 	font-family: $font-family;
 	position: relative;
 	background-color: $white;
-	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+
+	// font-feature-settings: "palt";
 }
 
 ul,
@@ -23,12 +45,6 @@ ol {
 a {
 	text-decoration: none;
 	color: $black;
-}
-
-a:not([href]):hover {
-	@include pc {
-		pointer-events: none;
-	}
 }
 
 a[href*="tel:"] {

@@ -1,0 +1,20 @@
+.page-top {
+	$m: rem(20);
+
+	position: sticky;
+	bottom: 20px;
+	left: calc(100vw - 62px);
+	z-index: 3;
+	opacity: 0;
+	transform: translateY(50%);
+	transition: $hover;
+	margin: $m 0 0;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+	&.is-show {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}

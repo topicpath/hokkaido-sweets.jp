@@ -1,265 +1,54 @@
-@use "sass:map";
-
 .o-btn {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 16px;
-	letter-spacing: 0.12em;
-	line-height: 80px;
-	border: 2px solid $black;
-	color: $black;
 	text-align: center;
-	border-radius: 10px;
 	display: block;
-	max-width: 324px;
-	margin: 0 auto;
-	cursor: pointer;
-	background-color: $white;
-	transition: $hover;
-	position: relative;
+}
 
-	@include sp {
-		width: 78.667vw;
+.o-btn__link {
+	@include font-noto-sans-jp(regular);
+
+	color: $border;
+	font-size: 1rem;
+	line-height: 1;
+
+	$pv: rem(18);
+	$ps: rem(100);
+
+	padding: $pv $ps;
+	border: 1px solid $border;
+	border-radius: 2rem;
+	transition: $hover;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		content: "→";
+
+		@include font-noto-sans-jp(regular);
+
+		color: $border;
+		font-size: 1rem;
+		line-height: 1;
+		transition: $hover;
+		display: block;
+		margin-right: 1.3rem;
 	}
 
 	@include hover {
-		background-color: $main;
-		border-color: $main;
-	}
+		background-color: $green;
+		border-color: $green;
+		color: $white;
 
-	&--lg {
-		@include font-noto-sans-jp(medium);
-
-		font-size: 20px;
-		letter-spacing: 0.06em;
-		line-height: 110px;
-		color: $black;
-		text-align: center;
-		border-radius: 55px;
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-		cursor: pointer;
-		transition: $hover;
-		position: relative;
-		background-color: $main;
-
-		@include hover {
-			background-color: $main-light;
+		&::before {
+			color: $white;
 		}
 	}
 
 	&--sm {
-		@extend %button-sm;
+		$pv: rem(18);
+		$ps: rem(28);
 
-		border-radius: 10px;
-		padding: 16px 22px;
-
-		@include sp {
-			padding: 14px;
-			border-radius: 10px;
-		}
-	}
-
-	&--sm-hc {
-		@extend %button-sm;
-
-		border-radius: 2em;
-		padding: 12px;
-
-		@include sp {
-			@include font-noto-sans-jp(regular);
-
-			padding: 10px;
-		}
-	}
-
-	&--sm-r {
-		@extend %button-sm;
-
-		border-radius: 8px;
-		padding: 8px 16px;
-
-		@include sp {
-			padding: 14px;
-			border-radius: 10px;
-		}
-	}
-}
-
-.o-btn__arrow {
-	position: absolute;
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
-}
-
-.o-btn-detail {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 16px;
-	letter-spacing: 0.06em;
-	line-height: 56px;
-	border: 1px solid $black;
-	color: $black;
-	text-align: center;
-	border-radius: 10px;
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-	background-color: $white;
-	transition: $hover;
-	padding: 0 80px 0 24px;
-	position: relative;
-
-	@include sp {
-		padding: 0 24px;
-	}
-
-	@include hover {
-		background-color: $main;
-	}
-
-	&--center {
-		@include font-noto-sans-jp(medium);
-
-		font-size: 16px;
-		letter-spacing: 0.06em;
-		line-height: 56px;
-		border: 1px solid $black;
-		color: $black;
-		text-align: center;
-		border-radius: 10px;
-		display: block;
-		margin: 0 auto;
-		cursor: pointer;
-		background-color: $white;
-		transition: $hover;
-		padding: 0 24px;
-		position: relative;
-
-		@include sp {
-			padding: 0 24px;
-		}
-
-		@include hover {
-			background-color: $main;
-		}
-	}
-
-	&__icon {
-		margin: 0 0 0 0.2em;
-	}
-}
-
-.o-btn-external {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 17px;
-	letter-spacing: 0.04em;
-	line-height: 57px;
-	border: 1px solid $black;
-	color: $black;
-	text-align: center;
-	border-radius: 10px;
-	display: block;
-	max-width: 350px;
-	cursor: pointer;
-	background-color: $white;
-	transition: $hover;
-	position: relative;
-
-	@include sp {
-		width: 100%;
-	}
-
-	&__icon {
-		display: inline-block;
-		margin: 0 0 0 8px;
-	}
-}
-
-.o-btn-copy {
-	@include font-noto-sans-jp(medium);
-
-	font-size: 12px;
-	letter-spacing: 0.06em;
-	line-height: 1;
-	border: 1px solid $black;
-	border-radius: 8px;
-	color: $black;
-	padding: 14px 16px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	transition: $hover;
-
-	@include hover {
-		border-color: $main;
-		background-color: $main;
-	}
-
-	&__icon {
-		margin: 0 0 0 8px;
-	}
-}
-
-.o-btn-back {
-	@extend %button-back;
-
-	&__icon {
-		margin: 0 16px 0 0;
-		display: inline-block;
-	}
-}
-
-.o-btn-arrow {
-	border: 1px solid $black;
-	background-color: $white;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 3;
-	border-radius: 50%;
-	transition: $hover;
-	cursor: pointer;
-
-	&::before {
-		content: "";
-		width: 6px;
-		height: 6px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		translate: -50% -50%;
-		border-top: 2px solid $black;
-		border-right: 2px solid $black;
-	}
-}
-
-.o-btn-arrow__prev {
-	left: 0;
-
-	&::before {
-		rotate: -135deg;
-	}
-
-	@include hover {
-		left: 5px;
-	}
-}
-
-.o-btn-arrow__next {
-	right: 0;
-
-	&::before {
-		rotate: 45deg;
-	}
-
-	@include hover {
-		right: 5px;
+		padding: $pv $ps;
 	}
 }

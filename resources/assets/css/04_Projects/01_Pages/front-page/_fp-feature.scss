@@ -1,0 +1,109 @@
+.fp-feature {
+	background-image: url("../images/front-page/feature-bg.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fp-feature__head {
+	text-align: center;
+}
+
+.fp-feature__body {
+	$m: rem(22);
+
+	margin-top: $m;
+	text-align: center;
+	position: relative;
+}
+
+.fp-feature__sub-text {
+	$lh: rem(46);
+	$w: rem(320);
+	$m: rem(18);
+
+	height: $lh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $w;
+	margin: 0 auto $m;
+	overflow: hidden;
+	border-top: 1px solid $main;
+	border-bottom: 1px solid $main;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		margin-top: -1rem;
+		border-top: 1px solid $main;
+		border-right: 1px solid $main;
+		height: 2rem;
+		width: 2rem;
+	}
+
+	&::before {
+		left: -1rem;
+		rotate: 45deg;
+	}
+
+	&::after {
+		right: -1rem;
+		rotate: -135deg;
+	}
+}
+
+.fp-feature__sub-text-body {
+	@include font-noto-sans-jp(regular);
+
+	$f: rem(24);
+
+	font-size: $f;
+	color: $main;
+}
+
+.fp-feature__main-text {
+	@include font-zen-kaku-gothic-new(medium);
+	@include line-height(80, 60);
+
+	$f: rem(60);
+
+	font-size: $f;
+	color: $main;
+	letter-spacing: 0.14em;
+}
+
+.fp-feature__subject {
+	@include font-zen-kaku-gothic-new(medium);
+
+	$f: rem(30);
+	$m: rem(20);
+
+	font-size: $f;
+	color: $black;
+	letter-spacing: 0.07em;
+	line-height: 1;
+	margin: $m 0;
+}
+
+.fp-feature__desc {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 1rem;
+	color: $black;
+	line-height: 2;
+}
+
+.fp-feature__map {
+	$b: rem(44);
+	$w: rem(269);
+
+	position: absolute;
+	bottom: -$b;
+	left: 50%;
+	transform: translateX(-195%);
+	width: $w;
+}

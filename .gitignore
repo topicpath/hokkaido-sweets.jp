@@ -61,21 +61,21 @@ package.json
 
 
 # Wordpress
-/app/public/cms/*.php
-!/app/public/cms/wp-config.php
-/app/public/cms/.htaccess
-/app/public/cms/license.txt
-/app/public/cms/readme.html
-/app/public/cms/wp-admin
-/app/public/cms/wp-includes
-/app/public/cms/wp-content/ai1wm-backups
-/app/public/cms/wp-content/backup-db
-/app/public/cms/wp-content/cache
-/app/public/cms/wp-content/ewww
-/app/public/cms/wp-content/languages
-/app/public/cms/wp-content/plugins
-/app/public/cms/wp-content/upgrade
-/app/public/cms/wp-content/uploads
-/app/public/cms/wp-content/index.php
-/app/public/cms/wp-content/wp-cache-config.php
-/app/public/cms/wp-content/themes/index.php
+/app/public/cms-admin/*.php
+!/app/public/cms-admin/wp-config.php
+/app/public/cms-admin/.htaccess
+/app/public/cms-admin/license.txt
+/app/public/cms-admin/readme.html
+/app/public/cms-admin/wp-admin
+/app/public/cms-admin/wp-includes
+/app/public/cms-admin/wp-content/ai1wm-backups
+/app/public/cms-admin/wp-content/backup-db
+/app/public/cms-admin/wp-content/cache
+/app/public/cms-admin/wp-content/ewww
+/app/public/cms-admin/wp-content/languages
+/app/public/cms-admin/wp-content/plugins
+/app/public/cms-admin/wp-content/upgrade
+/app/public/cms-admin/wp-content/uploads
+/app/public/cms-admin/wp-content/index.php
+/app/public/cms-admin/wp-content/wp-cache-config.php
+/app/public/cms-admin/wp-content/themes/index.php

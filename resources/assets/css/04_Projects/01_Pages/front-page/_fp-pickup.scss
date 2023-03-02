@@ -1,0 +1,52 @@
+.fp-pickup {
+	$m: rem(44);
+
+	margin-top: $m;
+}
+
+.fp-pickup__item {
+	position: relative;
+}
+
+.fp-pickup__inner {
+	position: absolute;
+	width: calc(100% - 24px);
+	height: calc(100% - 24px);
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	border: 1px solid $white;
+	padding: 12px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.fp-pickup__sub-text {
+	@include font-noto-sans-jp(medium);
+
+	$f: rem(14);
+
+	font-size: $f;
+	line-height: 1;
+	color: $white;
+	margin-bottom: 0.3rem;
+}
+
+.fp-pickup__main-text {
+	@include font-zen-kaku-gothic-new(bold);
+	@include line-height(33, 25);
+
+	$f: rem(25);
+
+	font-size: $f;
+	color: $white;
+}
+
+.fp-pickup__sticker {
+	$w: rem(56);
+
+	width: $w;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
