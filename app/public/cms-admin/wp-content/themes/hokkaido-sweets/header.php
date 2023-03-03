@@ -48,15 +48,6 @@
 						</li>
 					</ol>
 				</nav>
-				<div class="header-nav__group">
-					<a href="<?= URL_CART ?>" class="header-nav__link header-nav__link--cart">
-						<img src="<?= URL_SVG ?>icon-cart.svg" alt="">
-					</a>
-					<a href="<?= URL_ONLINE_SHOP ?>" class="header-nav__link header-nav__link--online">
-						<p class="header-nav__sub c-white">online shop</p>
-						<p class="header-nav__main c-white">オンラインショップ</p>
-					</a>
-				</div>
 			</div>
 			<div class="js-header-nav__btn">
 				<div class="js-header-nav__btn-body"></div>

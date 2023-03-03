@@ -51,15 +51,7 @@
 		</div>
 	</div>
 	<div class="footer-secondary">
-		<div class="footer__contents l-contents">
-			<ol class="footer-secondary-nav">
-				<li class="footer-secondary-nav__item">
-					<a href="<?= URL_PRIVACY ?>" class="footer-secondary-nav__link hv-op">個人情報保護方針</a>
-				</li>
-				<li class="footer-secondary-nav__item">
-					<a href="<?= URL_LAW ?>" class="footer-secondary-nav__link hv-op">特定商取引の表示</a>
-				</li>
-			</ol>
+		<div class="footer__contents l-contents cl-xc">
 			<p class="footer__copyright">© sweets garden Prateria Co., Ltd.</p>
 		</div>
 	</div>
