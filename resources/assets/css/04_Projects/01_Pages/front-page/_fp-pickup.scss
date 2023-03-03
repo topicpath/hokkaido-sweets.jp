@@ -30,6 +30,29 @@
 	line-height: 1;
 	color: $white;
 	margin-bottom: 0.3rem;
+
+	@include sp {
+		$f: rem(12);
+
+		font-size: $f;
+	}
+
+	&--btm {
+		@include font-noto-sans-jp(medium);
+
+		$f: rem(14);
+
+		font-size: $f;
+		line-height: 1;
+		color: $white;
+		margin-top: 0.3rem;
+
+		@include sp {
+			$f: rem(12);
+
+			font-size: $f;
+		}
+	}
 }
 
 .fp-pickup__main-text {
@@ -40,6 +63,12 @@
 
 	font-size: $f;
 	color: $white;
+
+	@include sp {
+		$f: rem(18);
+
+		font-size: $f;
+	}
 }
 
 .fp-pickup__sticker {

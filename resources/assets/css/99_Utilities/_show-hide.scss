@@ -1,0 +1,87 @@
+.u-show {
+	display: inline;
+}
+
+.u-show--pc {
+	@include pc {
+		display: inline;
+	}
+
+	@include sp {
+		display: none;
+	}
+}
+
+.u-show--hd {
+	@include mq-max(hd) {
+		display: inline;
+	}
+
+	@include mq-min(hd) {
+		display: none;
+	}
+}
+
+.u-show--tab {
+	@include mq-max(tab) {
+		display: inline;
+	}
+
+	@include mq-min(tab) {
+		display: none;
+	}
+}
+
+.u-show--sp {
+	@include sp {
+		display: inline;
+	}
+
+	@include pc {
+		display: none;
+	}
+}
+
+.u-hide {
+	display: none;
+}
+
+.u-hide--pc {
+	@include pc {
+		display: none;
+	}
+
+	@include sp {
+		display: inline;
+	}
+}
+
+.u-hide--hd {
+	@include mq-max(hd) {
+		display: none;
+	}
+
+	@include mq-min(hd) {
+		display: inline;
+	}
+}
+
+.u-hide--tab {
+	@include mq-max(tab) {
+		display: none;
+	}
+
+	@include mq-min(tab) {
+		display: inline;
+	}
+}
+
+.u-hide--sp {
+	@include sp {
+		display: none;
+	}
+
+	@include pc {
+		display: inline;
+	}
+}

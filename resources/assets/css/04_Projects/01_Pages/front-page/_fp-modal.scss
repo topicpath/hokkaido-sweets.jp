@@ -1,3 +1,342 @@
 .fp-modal {
-	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba($white, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fp-modal__main {
+	background-color: $white;
+
+	$pv: rem(40);
+	$ps: rem(48);
+
+	padding: $pv $ps;
+	position: relative;
+	max-width: 1000px;
+	max-height: 95vh;
+	margin: 0 auto;
+	overflow-y: scroll;
+	z-index: 1;
+
+	@include sp {
+		height: 100vh;
+		max-height: 100vh;
+		padding: 0;
+	}
+}
+
+.fp-modal__article {
+	position: relative;
+	z-index: 1;
+
+	@include pc {
+		display: grid;
+		grid-template-columns: 44% 50%;
+		gap: 0 6%;
+	}
+}
+
+.fp-modal__detail {
+	$m: rem(50);
+
+	margin-top: $m;
+	padding-left: 6.4vw;
+	padding-right: 6.4vw;
+	padding-bottom: $m;
+}
+
+.fp-modal__categories {
+	display: flex;
+
+	$m: rem(13);
+
+	margin-bottom: $m;
+}
+
+.fp-modal__category {
+	@include font-noto-sans-jp(regular);
+
+	$f: rem(14);
+	$l: rem(30);
+
+	font-size: $f;
+	color: $border;
+	line-height: $l;
+	border: 1px solid $border;
+	border-radius: 2rem;
+	padding: 0 1rem;
+	text-align: center;
+	display: inline-block;
+
+	&:nth-of-type(n+2) {
+		$m: rem(5);
+
+		margin-left: $m;
+	}
+
+	&--online {
+		@include font-noto-sans-jp(bold);
+
+		background-color: $green;
+		border-color: $green;
+		color: $white;
+	}
+}
+
+.fp-modal__name {
+	@include font-noto-sans-jp(bold);
+	@include line-height(34, 25);
+
+	$f: rem(25);
+
+	font-size: $f;
+	color: $black;
+
+	@include sp {
+		$f: rem(23);
+
+		font-size: $f;
+	}
+}
+
+.fp-modal__desc {
+	@include font-noto-sans-jp(regular);
+	@include line-height(26, 16);
+
+	font-size: 1rem;
+	color: $black;
+
+	$m: rem(20);
+
+	margin-top: $m;
+
+	@include sp {
+		$f: rem(13);
+
+		font-size: $f;
+	}
+}
+
+.fp-modal__price {
+	$m: rem(27);
+
+	margin-top: $m;
+
+	&:nth-of-type(n+2) {
+		$s: rem(12);
+
+		padding-top: $s;
+		margin-top: $s;
+		border-top: 1px solid $border;
+	}
+}
+
+.fp-modal__count {
+	@include font-noto-sans-jp(regular);
+
+	$f: rem(14);
+
+	font-size: $f;
+	color: $black;
+	line-height: 1;
+	display: inline-block;
+	width: 8.57em;
+
+	&--sm {
+		$fs: rem(12);
+
+		font-size: $fs;
+	}
+}
+
+.fp-modal__price-body {
+	@include font-noto-sans-jp(regular);
+
+	$f: rem(14);
+
+	font-size: $f;
+	color: $black;
+	line-height: 1;
+	display: inline-block;
+}
+
+.fp-modal__price-num {
+	@include font-noto-sans-jp(medium);
+
+	$f: rem(24);
+
+	font-size: $f;
+	color: $black;
+	line-height: 1;
+}
+
+.fp-modal__table {
+	$m: rem(30);
+
+	margin-top: $m;
+	width: 100%;
+}
+
+.fp-modal__table-caption {
+	@include font-noto-sans-jp(medium);
+
+	font-size: 1rem;
+	color: $black;
+	line-height: 1;
+
+	$m: rem(7);
+
+	margin-bottom: $m;
+}
+
+.fp-modal__table-subject,
+.fp-modal__table-desc {
+	border: 1px solid $border;
+
+	@include font-noto-sans-jp(light);
+	@include line-height(18, 12);
+
+	$f: rem(12);
+
+	font-size: $f;
+	color: $black;
+	padding: 0.5em 1em;
+	vertical-align: middle;
+}
+
+.fp-modal__table-subject {
+	background-color: $bg;
+	width: 35%;
+}
+
+.fp-modal__caption {
+	@include font-noto-sans-jp(light);
+	@include line-height(18, 10);
+
+	$f: rem(10);
+
+	font-size: $f;
+	margin-top: 1em;
+}
+
+.fp-modal__main-slider {
+	position: relative;
+}
+
+.fp-modal__arrow {
+	$s: rem(40);
+
+	width: $s;
+	height: $s;
+	border-radius: 50%;
+	background-color: $main;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+
+	@include sp {
+		display: none;
+	}
+
+	&::after {
+		content: "";
+
+		$ss: rem(12);
+
+		width: $ss;
+		height: $ss;
+		border-top: 4px solid $white;
+		border-right: 4px solid $white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	&--prev {
+		$s: rem(20);
+
+		left: -$s;
+
+		&::after {
+			rotate: -135deg;
+			translate: -40% -50%;
+		}
+	}
+
+	&--next {
+		$s: rem(20);
+
+		right: -$s;
+
+		&::after {
+			rotate: 45deg;
+			translate: -60% -50%;
+		}
+	}
+}
+
+.fp-modal__thumbnails {
+	$m: rem(22);
+
+	margin-top: $m;
+
+	@include sp {
+		$m: rem(20);
+
+		margin-top: $m;
+		padding-left: 6.4vw;
+		padding-right: 6.4vw;
+	}
+}
+
+.fp-modal__close {
+	$s: rem(30);
+
+	width: $s;
+	height: $s;
+	cursor: pointer;
+	background-color: $green-light;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: $hover;
+
+	@include hover {
+		opacity: 0.7;
+	}
+
+	@include sp {
+		z-index: 1;
+	}
+}
+
+.fp-modal__close-text {
+	@include font-noto-sans-jp(bold);
+
+	$f: rem(17);
+
+	font-size: $f;
+	color: $white;
+	line-height: 1;
+}
+
+.fp-modal__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
 }

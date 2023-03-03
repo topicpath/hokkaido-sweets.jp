@@ -9,14 +9,23 @@
 }
 
 .footer__contents {
-	display: flex;
-	justify-content: space-between;
+	@include pc {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .footer__logo {
 	$w: rem(242);
 
 	width: $w;
+
+	@include sp {
+		$w: rem(230);
+
+		width: $w;
+		margin: 0 auto;
+	}
 }
 
 .footer-info__list {
@@ -34,21 +43,46 @@
 	font-size: $f;
 	color: $black;
 	letter-spacing: 0.1em;
+
+	@include sp {
+		$f: rem(14);
+
+		font-size: $f;
+		text-align: center;
+	}
 }
 
 .footer-map {
-	display: flex;
+	@include pc {
+		display: flex;
 
-	$m: rem(32);
+		$m: rem(32);
 
-	margin-top: $m;
-	margin-left: $m;
+		margin-top: $m;
+		margin-left: $m;
+	}
+
+	@include sp {
+		$m: rem(38);
+
+		margin-top: $m;
+	}
 }
 
 .footer-nav {
-	$m: rem(32);
+	@include pc {
+		$m: rem(32);
 
-	margin-right: $m;
+		margin-right: $m;
+	}
+
+	@include sp {
+		text-align: center;
+
+		$m: rem(35);
+
+		margin-bottom: $m;
+	}
 }
 
 .footer-nav__item {
@@ -58,6 +92,12 @@
 		$m: rem(24);
 
 		margin-top: $m;
+
+		@include sp {
+			$m: rem(19);
+
+			margin-top: $m;
+		}
 	}
 }
 
@@ -76,12 +116,36 @@
 	$m: rem(27);
 
 	margin-top: $m;
+	display: flex;
+
+	@include sp {
+		$m: rem(35);
+
+		margin-top: $m;
+		justify-content: center;
+	}
 }
 
-.footer-sns__link {
+.footer-sns__item {
 	&:nth-of-type(n+2) {
 		margin-left: 1rem;
 	}
+}
+
+.footer-sns__link {
+	display: block;
+	transition: $hover;
+
+	@include hover {
+		.footer-sns__fill {
+			fill: $black;
+		}
+	}
+}
+
+.footer-sns__fill {
+	fill: $border;
+	transition: $hover;
 }
 
 .footer-secondary {
@@ -95,6 +159,14 @@
 .footer-secondary-nav {
 	display: flex;
 	align-items: center;
+
+	@include sp {
+		justify-content: center;
+
+		$m: rem(9);
+
+		margin-bottom: $m;
+	}
 }
 
 .footer-secondary-nav__item {
@@ -125,4 +197,8 @@
 	font-size: $f;
 	color: $white;
 	line-height: 1;
+
+	@include sp {
+		text-align: center;
+	}
 }

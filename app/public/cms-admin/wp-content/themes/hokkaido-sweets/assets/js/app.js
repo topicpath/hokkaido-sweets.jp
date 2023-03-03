@@ -6,7 +6,8 @@ const $pc = "(min-width:768px)";
 
 $(function () {
 	pageTop();
-	// headerNav();
+	headerNav();
+	modal();
 
 	$(window).scroll(function () {
 		inView();
@@ -40,19 +41,13 @@ function pageTop() {
 }
 
 function headerNav() {
-	const $h = $(".js-header");
 	const $b = $(".js-header-nav__btn");
-	const $c = $(".js-header-nav__body");
-	const $g = $(".js-header-nav__group");
-	const $e = $(".js-header-nav__logo-element");
+	const $c = $(".js-header-nav");
 
 	$b.on($clickEventType, function () {
-		$h.toggleClass("is-active");
 		$b.toggleClass("is-active");
 		$c.toggleClass("is-show");
 		$body.toggleClass("js-header-nav-show");
-		$g.toggleClass("is-show");
-		$e.toggleClass("is-active");
 	});
 }
 
@@ -67,11 +62,15 @@ function inView() {
 		var $windowTop = $(window).scrollTop();
 		var $windowHeight = $(window).height();
 
-		console.log($windowTop, $targetPos);
-
-		if ($windowTop >= $targetPos - $windowHeight / 2) {
+		if ($windowTop >= $targetPos - $windowHeight / 2 - 100) {
 			$(this).addClass("is-show");
 		}
+	});
+
+	$(".header-nav__link").on($clickEventType, function () {
+		$target.each(function () {
+			$(this).addClass("is-show");
+		});
 	});
 
 	/*
@@ -80,3 +79,39 @@ function inView() {
 	});
 	*/
 }
+
+function modal() {
+	const $query = document.querySelector(".js-modal-btn");
+	if (!$query) return;
+
+	var $btn = $(".js-modal-btn");
+	var $btnClose = $(".js-modal-close");
+	const $modal = $(".js-modal");
+	const $modalBg = $(".js-modal-bg");
+
+	$btn.on($clickEventType, function () {
+		var $modalId = $(this).attr("data-modal-id");
+		// console.log($modalId);
+
+		$("#" + $modalId).addClass("is-show");
+		$("body").css("overflow-y", "hidden");
+		return false;
+	});
+
+	$btnClose.on($clickEventType, function () {
+		$modal.removeClass("is-show");
+		$("body").css("overflow-y", "auto");
+		return false;
+	});
+
+	$modalBg.on($clickEventType, function () {
+		$modal.removeClass("is-show");
+		$("body").css("overflow-y", "auto");
+		return false;
+	});
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 300,
+	header: ".header",
+});

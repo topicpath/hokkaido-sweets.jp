@@ -6,11 +6,11 @@ html {
 	font-size: calc(100vw * 16 / 375);
 
 	@include mq-min(break) {
-		font-size: calc(100vw * 12 / 768);
+		font-size: calc(100vw * 10 / 768);
 	}
 
 	@include mq-min(tab) {
-		font-size: calc(100vw * 10 / 768);
+		font-size: calc(100vw * 13 / 1024);
 	}
 
 	@include mq-min(hd) {
@@ -31,8 +31,7 @@ body {
 	position: relative;
 	background-color: $white;
 	text-size-adjust: 100%;
-
-	// font-feature-settings: "palt";
+	font-feature-settings: "palt" 1;
 }
 
 ul,

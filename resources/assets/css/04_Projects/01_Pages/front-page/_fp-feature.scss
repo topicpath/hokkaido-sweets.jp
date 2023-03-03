@@ -3,6 +3,10 @@
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@include sp {
+		background-image: url("../images/front-page/feature-bg-sp.jpg");
+	}
 }
 
 .fp-feature__head {
@@ -33,6 +37,16 @@
 	border-bottom: 1px solid $main;
 	position: relative;
 
+	@include sp {
+		$lh: rem(32);
+		$w: rem(210);
+		$m: rem(12);
+
+		height: $lh;
+		width: $w;
+		margin: 0 auto $m;
+	}
+
 	&::before,
 	&::after {
 		content: "";
@@ -48,11 +62,19 @@
 	&::before {
 		left: -1rem;
 		rotate: 45deg;
+
+		@include sp {
+			left: -1.4em;
+		}
 	}
 
 	&::after {
 		right: -1rem;
 		rotate: -135deg;
+
+		@include sp {
+			right: -1.4em;
+		}
 	}
 }
 
@@ -63,6 +85,12 @@
 
 	font-size: $f;
 	color: $main;
+
+	@include sp {
+		$f: rem(16);
+
+		font-size: $f;
+	}
 }
 
 .fp-feature__main-text {
@@ -74,6 +102,12 @@
 	font-size: $f;
 	color: $main;
 	letter-spacing: 0.14em;
+
+	@include sp {
+		$f: rem(40);
+
+		font-size: $f;
+	}
 }
 
 .fp-feature__subject {
@@ -87,6 +121,17 @@
 	letter-spacing: 0.07em;
 	line-height: 1;
 	margin: $m 0;
+
+	@include sp {
+		$f: rem(28);
+
+		font-size: $f;
+		margin: 1rem 0;
+
+		@include line-height(40, 28);
+
+		opacity: 0.64;
+	}
 }
 
 .fp-feature__desc {
@@ -98,12 +143,21 @@
 }
 
 .fp-feature__map {
-	$b: rem(44);
-	$w: rem(269);
+	@include pc {
+		$b: rem(44);
+		$w: rem(269);
 
-	position: absolute;
-	bottom: -$b;
-	left: 50%;
-	transform: translateX(-195%);
-	width: $w;
+		position: absolute;
+		bottom: -$b;
+		left: 50%;
+		transform: translateX(-195%);
+		width: $w;
+	}
+
+	@include sp {
+		$w: rem(223);
+
+		width: $w;
+		margin: 1rem auto 0;
+	}
 }

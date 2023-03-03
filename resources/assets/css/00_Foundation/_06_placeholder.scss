@@ -7,12 +7,24 @@
 	color: $black;
 	letter-spacing: 0.1em;
 	line-height: 1;
+
+	@include sp {
+		$r: rem(30);
+
+		font-size: $r;
+	}
 }
 
 %head-heading-sm {
 	$r: rem(35);
 
 	font-size: $r;
+
+	@include sp {
+		$r: rem(24);
+
+		font-size: $r;
+	}
 }
 
 %head-sub-text {
@@ -22,6 +34,12 @@
 	line-height: 1;
 	color: $border;
 	font-size: 1rem;
+
+	@include sp {
+		$r: rem(12);
+
+		font-size: $r;
+	}
 }
 
 %desc {
@@ -31,4 +49,93 @@
 	line-height: 2;
 	color: $black;
 	font-size: 1rem;
+}
+
+%btn {
+	text-align: center;
+	display: block;
+}
+
+%btn-link {
+	@include font-noto-sans-jp(regular);
+
+	color: $border;
+	font-size: 1rem;
+	line-height: 1;
+
+	$pv: rem(18);
+	$ps: rem(100);
+
+	padding: $pv $ps;
+	border: 1px solid $border;
+	border-radius: 2rem;
+	transition: $hover;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $white;
+	position: relative;
+
+	@include mq-max(tab) {
+		$pv: rem(18);
+		$ps: rem(50);
+
+		padding: $pv $ps;
+	}
+
+	@include sp {
+		$pv: rem(14);
+		$ps: rem(28);
+
+		width: 100%;
+		padding: $pv $ps;
+	}
+
+	&::before {
+		content: "→";
+
+		@include font-noto-sans-jp(regular);
+
+		color: $border;
+		font-size: 1rem;
+		line-height: 1;
+		transition: $hover;
+		display: block;
+		margin-right: 1.3rem;
+
+		@include sp {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			$ps: rem(28);
+
+			left: $ps;
+		}
+	}
+
+	@include hover {
+		background-color: $green;
+		border-color: $green;
+		color: $white;
+
+		&::before {
+			color: $white;
+		}
+	}
+}
+
+%btn-link-sm {
+	$pv: rem(18);
+	$ps: rem(28);
+
+	padding: $pv $ps;
+}
+
+%btn-link-sp-sm {
+	@include sp {
+		width: 70%;
+		background-color: transparent;
+	}
 }

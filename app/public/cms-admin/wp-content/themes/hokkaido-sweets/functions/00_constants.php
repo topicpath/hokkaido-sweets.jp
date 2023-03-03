@@ -44,19 +44,22 @@ add_action('init', function () {
 	/**
 	 * CONTENTS
 	 */
+	define("URL_SHOP", "#shop");
+	define("URL_NEWS", "#news");
+	define("URL_CONTACT", "mailto:prateria@hokkaido-sweets.co.jp");
+	define("URL_CART", "");
+	define("URL_ONLINE_SHOP", "");
+	define("URL_PRIVACY", "");
+	define("URL_LAW", "");
 
 	/**
 	 * SNS
 	 */
 
-	define('URL_NOTE', "");
-	define('URL_NOTE_ICON', URL_SVG . "icon-note.svg");
 	define('URL_FACEBOOK', "");
 	define('URL_FACEBOOK_ICON', URL_SVG . "icon-facebook.svg");
 	define('URL_INSTAGRAM', "");
 	define('URL_INSTAGRAM_ICON', URL_SVG . "icon-instagram.svg");
-	define('URL_TWITTER', "");
-	define('URL_TWITTER_ICON', URL_SVG . "icon-twitter.svg");
 
 	// share
 	define('URL_TWITTER_SHARE', "https://twitter.com/intent/tweet");

@@ -4,6 +4,16 @@
 	}
 }
 
+.is-tab {
+	@include mq-max(tab) {
+		display: inline;
+	}
+
+	@include mq-min(tab) {
+		display: none;
+	}
+}
+
 .is-sp {
 	@include pc {
 		display: none;

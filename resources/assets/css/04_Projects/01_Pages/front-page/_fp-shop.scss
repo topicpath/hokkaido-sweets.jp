@@ -1,14 +1,31 @@
 .fp-shop-detail {
-	display: grid;
-	grid-template-columns: 60% 32%;
-	justify-content: space-between;
-	align-items: flex-start;
+	@include pc {
+		display: grid;
+		grid-template-columns: 60% 32%;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+.fp-shop-detail__picture {
+	@include sp {
+		$m: rem(50);
+
+		margin-bottom: $m;
+	}
 }
 
 .fp-shop-detail__logo {
 	$w: rem(220);
 
 	width: $w;
+
+	@include sp {
+		$w: rem(182);
+
+		width: $w;
+		margin: 0 auto;
+	}
 }
 
 .fp-shop-detail__desc {
@@ -17,6 +34,14 @@
 	$m: rem(40);
 
 	margin-top: $m;
+
+	@include sp {
+		text-align: center;
+
+		$m: rem(28);
+
+		margin-top: $m;
+	}
 }
 
 .fp-shop-access {
@@ -24,6 +49,13 @@
 
 	margin: $mt 0 0;
 	text-align: center;
+
+	@include sp {
+		$mt: rem(34);
+
+		margin: $mt 0 0;
+		text-align: left;
+	}
 }
 
 .fp-shop-access__desc {
@@ -35,6 +67,12 @@
 	$m: rem(40);
 
 	margin-top: $m;
+
+	@include sp {
+		$m: rem(30);
+
+		margin-top: $m;
+	}
 }
 
 .fp-shop-access__subject {
@@ -55,6 +93,13 @@
 	color: $black;
 	line-height: 1;
 	margin-top: 1.4rem;
+
+	@include sp {
+		$mt: rem(10);
+
+		margin-top: $mt;
+		line-height: 1.8;
+	}
 }
 
 .fp-shop-map {
@@ -63,4 +108,12 @@
 	$mt: rem(70);
 
 	margin: $mt 0 0;
+
+	@include sp {
+		aspect-ratio: 327 / 285;
+
+		$mt: rem(32);
+
+		margin: $mt 0 0;
+	}
 }

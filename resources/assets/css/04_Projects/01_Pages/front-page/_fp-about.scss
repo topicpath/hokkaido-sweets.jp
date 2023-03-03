@@ -9,11 +9,23 @@
 	$m: rem(70);
 
 	&--l {
-		padding-left: $p;
+		@include pc {
+			padding-left: $p;
+		}
+
+		@include sp {
+			padding-left: 6.4vw;
+		}
 	}
 
 	&--r {
-		padding-right: $p;
+		@include pc {
+			padding-right: $p;
+		}
+
+		@include sp {
+			padding-right: 6.4vw;
+		}
 	}
 
 	&:nth-of-type(n+2) {
@@ -25,16 +37,31 @@
 	$m: rem(70);
 
 	padding-top: $m;
-	display: grid;
-	gap: 5%;
 	position: relative;
 
+	@include pc {
+		display: grid;
+		gap: 5%;
+	}
+
+	@include sp {
+		$m: rem(50);
+
+		padding-top: $m;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	&--l {
-		grid-template-columns: 24.167% 70.833%;
+		@include pc {
+			grid-template-columns: 24.167% 70.833%;
+		}
 	}
 
 	&--r {
-		grid-template-columns: 70.833% 24.167%;
+		@include pc {
+			grid-template-columns: 70.833% 24.167%;
+		}
 	}
 }
 
@@ -54,12 +81,29 @@
 	top: 0;
 	z-index: 1;
 
+	@include sp {
+		@include line-height(34, 22);
+
+		$f: rem(22);
+
+		font-size: $f;
+		padding: 1rem 6.4vw;
+	}
+
 	&--l {
 		left: 0;
+
+		@include sp {
+			left: -6.4vw;
+		}
 	}
 
 	&--r {
 		right: 0;
+
+		@include sp {
+			right: -6.4vw;
+		}
 	}
 }
 
@@ -67,6 +111,20 @@
 	$m: rem(130);
 
 	margin-top: $m;
+
+	@include sp {
+		order: 2;
+
+		$m: rem(40);
+
+		margin-top: $m;
+	}
+
+	&--r {
+		@include sp {
+			padding-left: 6.4vw;
+		}
+	}
 }
 
 .fp-about__desc {
@@ -78,4 +136,22 @@
 
 .fp-about__picture {
 	aspect-ratio: 850 / 500;
+	line-height: 1;
+
+	@include sp {
+		aspect-ratio: 1 / 1;
+		order: 1;
+	}
+
+	&--l {
+		$r: rem(30);
+
+		clip-path: inset(0 round $r 0 0 $r);
+	}
+
+	&--r {
+		$r: rem(30);
+
+		clip-path: inset(0 round 0 $r $r 0);
+	}
 }

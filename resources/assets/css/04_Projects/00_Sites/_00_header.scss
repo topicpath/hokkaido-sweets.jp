@@ -13,32 +13,71 @@
 	height: 70px;
 	z-index: 3;
 	background-color: $white;
+
+	@include sp {
+		height: 50px;
+		padding-left: 6.4vw;
+	}
 }
 
 .header__logo {
 	$w: rem(172);
 
 	width: 172px;
+	line-height: 1;
+
+	@include sp {
+		width: 140px;
+		margin-top: 0.1em;
+	}
 }
 
 .header__contents {
-	display: flex;
-	align-items: center;
-	height: 100%;
+	@include pc {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	@include sp {
+		background-color: $white;
+	}
+}
+
+.header-nav {
+	@include pc {
+		height: 100%;
+	}
 }
 
 .header-nav__list {
+	@include pc {
+		height: 100%;
+		display: flex;
+	}
+}
+
+.header-nav__group {
 	display: flex;
+
+	@include pc {
+		height: 100%;
+	}
+
+	@include sp {
+		justify-content: space-between;
+		margin-top: 1rem;
+	}
 }
 
 .header-nav__link {
-	height: 100%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	background-color: $white;
+	transition: $hover;
 
 	$pt: rem(13);
 	$ps: rem(23);
@@ -46,14 +85,37 @@
 
 	padding: $pt $ps $pb;
 
+	@include pc {
+		height: 100%;
+	}
+
+	@include hover {
+		background-color: $green;
+
+		.header-nav__sub,
+		.header-nav__main {
+			color: $white;
+		}
+	}
+
 	&--cart {
 		background-color: $black-light;
 		padding: 0;
 		width: 70px;
+
+		@include sp {
+			width: 48%;
+		}
 	}
 
 	&--online {
 		background-color: $green-light;
+
+		@include sp {
+			width: 48%;
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }
 
@@ -66,6 +128,7 @@
 	line-height: 1;
 	color: $green;
 	display: block;
+	transition: $hover;
 }
 
 .header-nav__main {
@@ -78,4 +141,5 @@
 	color: $border;
 	display: block;
 	margin-top: 0.5em;
+	transition: $hover;
 }

@@ -1,54 +1,15 @@
 .o-btn {
-	text-align: center;
-	display: block;
+	@extend %btn;
 }
 
 .o-btn__link {
-	@include font-noto-sans-jp(regular);
-
-	color: $border;
-	font-size: 1rem;
-	line-height: 1;
-
-	$pv: rem(18);
-	$ps: rem(100);
-
-	padding: $pv $ps;
-	border: 1px solid $border;
-	border-radius: 2rem;
-	transition: $hover;
-	cursor: pointer;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-
-	&::before {
-		content: "→";
-
-		@include font-noto-sans-jp(regular);
-
-		color: $border;
-		font-size: 1rem;
-		line-height: 1;
-		transition: $hover;
-		display: block;
-		margin-right: 1.3rem;
-	}
-
-	@include hover {
-		background-color: $green;
-		border-color: $green;
-		color: $white;
-
-		&::before {
-			color: $white;
-		}
-	}
+	@extend %btn-link;
 
 	&--sm {
-		$pv: rem(18);
-		$ps: rem(28);
+		@extend %btn-link-sm;
+	}
 
-		padding: $pv $ps;
+	&--sp-sm {
+		@extend %btn-link-sp-sm;
 	}
 }

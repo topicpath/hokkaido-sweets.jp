@@ -3,6 +3,11 @@
 	margin-left: auto;
 	margin-right: auto;
 
+	@include sp {
+		padding-left: 6.4vw;
+		padding-right: 6.4vw;
+	}
+
 	&--sm {
 		$v: rem(100);
 
@@ -11,18 +16,54 @@
 		margin-right: auto;
 		padding-left: $v;
 		padding-right: $v;
+
+		@include sp {
+			padding-left: 6.4vw;
+			padding-right: 6.4vw;
+		}
 	}
 
 	&--c {
-		padding-left: 13.4%;
-		padding-right: 13.4%;
+		padding-left: 13.4vw;
+		padding-right: 13.4vw;
+
+		@include sp {
+			padding-left: 6.4vw;
+			padding-right: 6.4vw;
+		}
 	}
 
 	&--r {
-		padding-right: 13.4%;
+		padding-right: 13.4vw;
+
+		@include sp {
+			padding-left: 6.4vw;
+			padding-right: 6.4vw;
+		}
 	}
 
 	&--l {
-		padding-left: 13.4%;
+		padding-left: 13.4vw;
+
+		@include sp {
+			padding-left: 6.4vw;
+			padding-right: 6.4vw;
+		}
+	}
+
+	&--r-sp-full {
+		padding-right: 13.4vw;
+
+		@include sp {
+			padding-right: 6.4vw;
+		}
+	}
+
+	&--l-sp-full {
+		padding-left: 13.4vw;
+
+		@include sp {
+			padding-left: 6.4vw;
+		}
 	}
 }

@@ -3,4 +3,11 @@
 
 	padding-top: $s;
 	padding-bottom: $s;
+
+	@include sp {
+		$s: rem(50);
+
+		padding-top: $s;
+		padding-bottom: $s;
+	}
 }

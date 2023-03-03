@@ -1,0 +1,10 @@
+.js-modal {
+	opacity: 0;
+	z-index: -100;
+	transition: 0.2s $color-and-opacity-easing;
+
+	&.is-show {
+		opacity: 1;
+		z-index: 100;
+	}
+}

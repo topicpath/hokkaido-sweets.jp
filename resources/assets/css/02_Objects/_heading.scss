@@ -8,4 +8,13 @@
 	color: #5b5b5b;
 	letter-spacing: 0.03em;
 	text-align: center;
+
+	@include sp {
+		@include line-height(50, 32);
+
+		$f: rem(32);
+
+		font-size: $f;
+		letter-spacing: 0;
+	}
 }

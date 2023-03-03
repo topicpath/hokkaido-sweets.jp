@@ -1,0 +1,16 @@
+.js-modal-slider,
+.js-modal-slider-thumb {
+	.swiper-slide {
+		line-height: 1;
+	}
+}
+
+.js-modal-slider-thumb {
+	.swiper-slide img {
+		border: 2px solid #e4e4e4;
+	}
+
+	.swiper-slide-thumb-active img {
+		border: 2px solid $green;
+	}
+}

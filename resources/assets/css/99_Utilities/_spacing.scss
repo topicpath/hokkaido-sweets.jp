@@ -168,6 +168,12 @@
 	@include spacing-gap(y);
 }
 
+.usp-mt-0 {
+	@include sp {
+		margin-top: 0;
+	}
+}
+
 .usp-pb-30 {
 	@include sp {
 		padding-bottom: 30px;

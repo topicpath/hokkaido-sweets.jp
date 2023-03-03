@@ -8,6 +8,12 @@
 	padding-bottom: $p;
 	margin-bottom: $m;
 
+	@include sp {
+		$m: rem(35);
+
+		margin-bottom: $m;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;

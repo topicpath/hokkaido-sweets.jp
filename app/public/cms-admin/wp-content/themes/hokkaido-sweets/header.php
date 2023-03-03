@@ -12,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/swiper-bundle.min.js" defer></script>
 	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/swiper-bundle.min.css">
-	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/jquery.inview.min.js" defer></script>
+	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/smooth-scroll.polyfills.min.js" defer></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/app.js" defer></script>
 	<?php if(is_home() || is_front_page()): ?>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/front-page.js" defer></script>
@@ -25,36 +25,41 @@
 			<a href="<?= URL_HOME ?>" class="header__logo">
 				<img src="<?= URL_SVG ?>logo.svg" alt="sweets garden Prateria" loading="lazy">
 			</a>
-			<div class="header__contents">
+			<div class="header__contents js-header-nav">
 				<nav class="header-nav">
 					<ol class="header-nav__list">
 						<li class="header-nav__item">
-							<a href="#shop" class="header-nav__link">
+							<a href="<?= URL_SHOP ?>" class="header-nav__link">
 								<p class="header-nav__sub">Store & access</p>
 								<p class="header-nav__main">店舗情報／アクセス</p>
 							</a>
 						</li>
 						<li class="header-nav__item">
-							<a href="#news" class="header-nav__link">
+							<a href="<?= URL_NEWS ?>" class="header-nav__link">
 								<p class="header-nav__sub">NEWS</p>
 								<p class="header-nav__main">お知らせ</p>
 							</a>
 						</li>
 						<li class="header-nav__item">
-							<a href="#contact" class="header-nav__link">
+							<a href="<?= URL_CONTACT ?>" class="header-nav__link">
 								<p class="header-nav__sub">contact</p>
 								<p class="header-nav__main">お問い合わせ</p>
 							</a>
 						</li>
 					</ol>
 				</nav>
-				<a href="" class="header-nav__link header-nav__link--cart">
-					<img src="<?= URL_SVG ?>icon-cart.svg" alt="">
-				</a>
-				<a href="" class="header-nav__link header-nav__link--online">
-					<p class="header-nav__sub c-white">online shop</p>
-					<p class="header-nav__main c-white">オンラインショップ</p>
-				</a>
+				<div class="header-nav__group">
+					<a href="<?= URL_CART ?>" class="header-nav__link header-nav__link--cart">
+						<img src="<?= URL_SVG ?>icon-cart.svg" alt="">
+					</a>
+					<a href="<?= URL_ONLINE_SHOP ?>" class="header-nav__link header-nav__link--online">
+						<p class="header-nav__sub c-white">online shop</p>
+						<p class="header-nav__main c-white">オンラインショップ</p>
+					</a>
+				</div>
+			</div>
+			<div class="js-header-nav__btn">
+				<div class="js-header-nav__btn-body"></div>
 			</div>
 		</header>
 		<main class="container">
