@@ -253,6 +253,7 @@
 	padding: 0 1rem;
 	text-align: center;
 	display: inline-block;
+	background-color: $white;
 
 	&:nth-of-type(n+2) {
 		$m: rem(5);
@@ -603,6 +604,7 @@
 	@include sp {
 		order: 1;
 		width: 100%;
+		margin-top: 0;
 	}
 }
 

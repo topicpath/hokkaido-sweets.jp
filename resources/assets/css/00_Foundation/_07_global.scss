@@ -16,10 +16,6 @@ html {
 	@include mq-min(hd) {
 		font-size: calc(100vw * 16 / 1280);
 	}
-
-	@include mq-min(pc) {
-		font-size: 100%;
-	}
 }
 
 body {

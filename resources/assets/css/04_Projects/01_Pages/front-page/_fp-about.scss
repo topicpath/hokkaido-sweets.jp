@@ -76,7 +76,7 @@
 	background-color: $main;
 	display: inline-block;
 	letter-spacing: 0.07em;
-	padding: 1rem calc((5 / 4) * 1rem);
+	padding: 1em calc((5 / 4) * 1em) 0.9em;
 	position: absolute;
 	top: 0;
 	z-index: 1;
@@ -108,7 +108,7 @@
 }
 
 .fp-about__body {
-	$m: rem(130);
+	$m: rem(200);
 
 	margin-top: $m;
 

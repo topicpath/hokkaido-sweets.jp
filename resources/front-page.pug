@@ -12,7 +12,7 @@ article.fp-mv
 
 article.fp-pickup.js-fp-pickup-slider.swiper
 	.__wrapper.swiper-wrapper
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product1")
 			.__inner
 				.__text
 					p.__sub-text 浜中町指定牧場
@@ -21,25 +21,7 @@ article.fp-pickup.js-fp-pickup-slider.swiper
 					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-01.jpg", alt="")
-		.__item.swiper-slide
-			.__inner
-				.__text
-					p.__sub-text 浜中町指定牧場
-					p.__main-text 北海道牛乳<br>シュークリーム
-				.__sticker
-					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
-			picture.__picture
-				img(src!="<?= $images ?>pickup-item-02.jpg", alt="")
-		.__item.swiper-slide
-			.__inner
-				.__text
-					p.__sub-text 浜中町指定牧場
-					p.__main-text 北海道牛乳<br>プリン
-				.__sticker
-					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
-			picture.__picture
-				img(src!="<?= $images ?>pickup-item-03.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product2")
 			.__inner
 				.__text
 					p.__sub-text 浜中町指定牧場
@@ -48,32 +30,50 @@ article.fp-pickup.js-fp-pickup-slider.swiper
 					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-04.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product3")
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>シュークリーム
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-02.jpg", alt="")
+		a.__item.swiper-slide(href="#product4")
+			.__inner
+				.__text
+					p.__sub-text 浜中町指定牧場
+					p.__main-text 北海道牛乳<br>プリン
+				.__sticker
+					img(src!="<?= URL_SVG ?>icon-sticker.svg", alt="" loading="lazy")
+			picture.__picture
+				img(src!="<?= $images ?>pickup-item-03.jpg", alt="")
+		a.__item.swiper-slide(href="#product5")
 			.__inner
 				.__text
 					p.__main-text 摩訶不思議スイーツ<br>パリネル
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-05.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product6")
 			.__inner
 				.__text
 					p.__main-text 北海道<br>シューラスク
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-06.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product7")
 			.__inner
 				.__text
 					p.__main-text 北海道<br>バターガレット
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-07.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product8")
 			.__inner
 				.__text
 					p.__main-text 北海道<br>スノーボールクッキー
 					p.__sub-text--btm ~魅惑のホロホロ食感~
 			picture.__picture
 				img(src!="<?= $images ?>pickup-item-08.jpg", alt="")
-		.__item.swiper-slide
+		a.__item.swiper-slide(href="#product8")
 			.__inner
 				.__text
 					p.__main-text かすてらロール
@@ -113,11 +113,11 @@ article.fp-about
 				picture.__picture.--r.o-fit
 					img.o-fit__body(src!="<?= $images ?>about-img-02.jpg", alt="" loading="lazy")
 				.__body.--r
-					p.__desc 北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な肥料で育った<br>牛から生まれた特撰規格の牛乳です。
+					p.__desc 北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な飼料で育った<br>牛から生まれた特撰規格の牛乳です。
 
 article.fp-product
 	section.__section.l-section.fp-product-soft
-		.__contents.l-contents--c
+		.__contents.l-contents--c#product1
 			.__head.js-inview
 				h1.o-heading 牛乳本来の<br class="u-hide--pc">おいしさを<br class="u-hide--sp">そのまま<br class="u-hide--pc">閉じ込めました。
 			.__body.js-inview
@@ -138,7 +138,7 @@ article.fp-product
 						img.fp-product-item-image-01(src!="<?= $images ?>product-item-01.png", alt="" loading="lazy" width="347")
 
 	section.__section.l-section.fp-product-middle
-		.__contents.l-contents--r
+		.__contents.l-contents--r#product2
 			.__body.js-inview
 				.fp-product-item
 					picture.__picture--half-v
@@ -160,7 +160,7 @@ article.fp-product
 							a.__link.js-modal-btn(data-modal-id="modal-2")
 								span 商品情報を見る
 
-		.__contents.l-contents--l
+		.__contents.l-contents--l#product3
 			.__body.js-inview
 				.fp-product-item
 					.__text
@@ -181,7 +181,7 @@ article.fp-product
 					picture.__picture
 						img(src!="<?= $images ?>product-item-03.png", alt="" loading="lazy")
 
-		.__contents.l-contents--r
+		.__contents.l-contents--r#product4
 			.__body.js-inview
 				.fp-product-item
 					picture.__picture
@@ -214,7 +214,7 @@ article.fp-product
 					p.__visual-desc.usp-mt-0.c-white 究極のパリパリ食感と<br>世にも不思議な<br class="u-hide--pc">トンカ豆クリームの<br class="u-hide--sp">マリアージュ
 
 	section.__section.l-section.fp-product-parineru-detail-section
-		.__contents.l-contents--c
+		.__contents.l-contents--c#product5
 			.__body.js-inview
 				.fp-product-item.--pb
 					.__text.fp-product-parineru-detail-text
@@ -251,7 +251,7 @@ article.fp-product
 				picture.__picture.fp-product-item-picture-rusk
 					img(src!="<?= $images ?>product-item-rusk.png", alt="" loading="lazy")
 
-		.__contents--rusk.l-contents--c
+		.__contents--rusk.l-contents--c#product6
 			.__body.js-inview
 				.fp-product-item.--pb
 					.__text--sm
@@ -263,7 +263,7 @@ article.fp-product
 								ol.__tags
 									li.__tag.--online オンラインOK
 									li.__tag 常温
-						p.__desc シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br>発売開始から10年以上が経過した当店の看板商品です。
+						p.__desc シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br class="u-hide--sp">発売開始から10年以上が経過した当店の看板商品です。
 						p.m-btn.fp-product-item__btn--abs
 							a.__link.js-modal-btn(data-modal-id="modal-6")
 								span 商品情報を見る
@@ -271,7 +271,7 @@ article.fp-product
 						img(src!="<?= $images ?>product-item-06.png", alt="" loading="lazy")
 
 	section.__section.fp-product-lower
-		.__contents.l-contents--r-sp-full
+		.__contents.l-contents--r-sp-full#product7
 			.__body.js-inview
 				.fp-product-item
 					picture.__picture
@@ -289,7 +289,7 @@ article.fp-product
 							a.__link.js-modal-btn(data-modal-id="modal-7")
 								span 商品情報を見る
 
-		.__contents.l-contents--l-sp-full
+		.__contents.l-contents--l-sp-full#product8
 			.__body.js-inview
 				.fp-product-item
 					.__text--sp-r
@@ -309,7 +309,7 @@ article.fp-product
 					picture.__picture
 						img.__image-body--l(src!="<?= $images ?>product-item-08.png", alt="" loading="lazy")
 
-		.__contents.l-contents--r-sp-full
+		.__contents.l-contents--r-sp-full#product9
 			.__body.js-inview
 				.fp-product-item
 					picture.__picture
@@ -367,6 +367,10 @@ article.fp-news#news
 						a.__link
 							p.__date 2023.03.00
 							p.__desc sweets garden Prateriaとしてサイトをリニューアルしました。
+					li.__item
+						a.__link
+							p.__date 2023.01.18
+							p.__desc sweets garden Prateriaオープンしました。
 
 .fp-modal.js-modal#modal-1
 	.__main
@@ -457,11 +461,12 @@ article.fp-news#news
 							th.__table-subject アレルギー
 							td.__table-desc 小麦・乳成分
 						tr
-							th.__table-subject 消費期限
+							th.__table-subject 賞味期限
 							td.__table-desc 製造日より90日間<br>※到着予定日より起算して60日以上の商品にて発送致します。
 						tr
 							th.__table-subject 取り扱い店舗
-							td.__table-desc sweets garden Prateria
+							td.__table-desc sweets garden Prateria（おみやげの店こぶしや  小樽店）<br>おみやげの店こぶしや  札幌店
+				p.__caption ※店頭では1枚からお買い求め頂けます。
 		button.__close.js-modal-close
 			span.__close-text ×
 	.__bg.js-modal-bg
@@ -508,7 +513,6 @@ article.fp-news#news
 						tr
 							th.__table-subject 取り扱い店舗
 							td.__table-desc sweets garden Prateria
-				p.__caption ※店頭では1枚からお買い求め頂けます。
 		button.__close.js-modal-close
 			span.__close-text ×
 	.__bg.js-modal-bg
@@ -578,7 +582,7 @@ article.fp-news#news
 				ol.__categories
 					li.__category お持ち帰り限定
 					li.__category 冷蔵／冷凍
-				h1.__name 摩訶不思議<br>スイーツパリネル
+				h1.__name 摩訶不思議スイーツ<br>パリネル
 				p.__desc 究極のパリパリ食感と<br>世にも不思議なトンカ豆クリームのマリアージュ
 				dl.__price
 					dt.__count 1個
@@ -593,7 +597,7 @@ article.fp-news#news
 							td.__table-desc 卵・小麦・乳成分
 						tr
 							th.__table-subject 消費期限
-							td.__table-desc 冷蔵品（当日仕上げ）は製造日より2日間（小樽店限定）冷凍品は製造日より45日間
+							td.__table-desc 冷蔵品（当日仕上げ）は製造日より2日間（小樽店限定）<br>冷凍品は製造日より45日間
 						tr
 							th.__table-subject 取り扱い店舗
 							td.__table-desc sweets garden Prateria（おみやげの店こぶしや  小樽店）<br>おみやげの店こぶしや  札幌店
@@ -641,12 +645,12 @@ article.fp-news#news
 				dl.__price
 					dt.__count プレーン
 					dd.__price-body
-						span.__price-num 385
+						span.__price-num 550
 						span 円（税込）
 				dl.__price
 					dt.__count ショコラ
 					dd.__price-body
-						span.__price-num 385
+						span.__price-num 550
 						span 円（税込）
 				dl.__price
 					dt.__count ギフトセット<br>
@@ -661,7 +665,7 @@ article.fp-news#news
 							th.__table-subject アレルギー
 							td.__table-desc 卵・小麦・乳成分
 						tr
-							th.__table-subject 消費期限
+							th.__table-subject 賞味期限
 							td.__table-desc 製造日より45日間<br>※到着予定日より起算して30日以上の商品にて発送致します。
 						tr
 							th.__table-subject 取り扱い店舗
@@ -715,7 +719,7 @@ article.fp-news#news
 							th.__table-subject アレルギー
 							td.__table-desc 卵・小麦・乳成分
 						tr
-							th.__table-subject 消費期限
+							th.__table-subject 賞味期限
 							td.__table-desc 製造日より45日間<br>※到着予定日より起算して30日以上の商品にて発送致します。
 						tr
 							th.__table-subject 取り扱い店舗
@@ -770,7 +774,7 @@ article.fp-news#news
 							th.__table-subject アレルギー
 							td.__table-desc 卵・小麦・乳成分
 						tr
-							th.__table-subject 消費期限
+							th.__table-subject 賞味期限
 							td.__table-desc 製造日より60日間<br>※到着予定日より起算して30日以上の商品にて発送致します。
 						tr
 							th.__table-subject 取り扱い店舗

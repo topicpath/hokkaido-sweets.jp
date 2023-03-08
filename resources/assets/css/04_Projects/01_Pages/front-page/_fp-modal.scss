@@ -44,12 +44,14 @@
 }
 
 .fp-modal__detail {
-	$m: rem(50);
+	@include sp {
+		$m: rem(50);
 
-	margin-top: $m;
-	padding-left: 6.4vw;
-	padding-right: 6.4vw;
-	padding-bottom: $m;
+		margin-top: $m;
+		padding-left: 6.4vw;
+		padding-right: 6.4vw;
+		padding-bottom: $m;
+	}
 }
 
 .fp-modal__categories {
@@ -185,7 +187,7 @@
 }
 
 .fp-modal__table-caption {
-	@include font-noto-sans-jp(medium);
+	@include font-noto-sans-jp(regular);
 
 	font-size: 1rem;
 	color: $black;

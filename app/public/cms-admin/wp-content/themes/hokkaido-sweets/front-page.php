@@ -11,8 +11,7 @@ $images = URL_FRONT_PAGE_IMAGES;
   </video>
 </article>
 <article class="fp-pickup js-fp-pickup-slider swiper">
-  <div class="fp-pickup__wrapper swiper-wrapper">
-    <div class="fp-pickup__item swiper-slide">
+  <div class="fp-pickup__wrapper swiper-wrapper"><a class="fp-pickup__item swiper-slide" href="#product1">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__sub-text">浜中町指定牧場</p>
@@ -20,29 +19,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-01.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
-      <div class="fp-pickup__inner">
-        <div class="fp-pickup__text">
-          <p class="fp-pickup__sub-text">浜中町指定牧場</p>
-          <p class="fp-pickup__main-text">北海道牛乳<br>シュークリーム</p>
-        </div>
-        <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
-      </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-02.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
-      <div class="fp-pickup__inner">
-        <div class="fp-pickup__text">
-          <p class="fp-pickup__sub-text">浜中町指定牧場</p>
-          <p class="fp-pickup__main-text">北海道牛乳<br>プリン</p>
-        </div>
-        <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
-      </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-03.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-01.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product2">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__sub-text">浜中町指定牧場</p>
@@ -50,50 +27,54 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-04.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-04.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product3">
+      <div class="fp-pickup__inner">
+        <div class="fp-pickup__text">
+          <p class="fp-pickup__sub-text">浜中町指定牧場</p>
+          <p class="fp-pickup__main-text">北海道牛乳<br>シュークリーム</p>
+        </div>
+        <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
+      </div>
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-02.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product4">
+      <div class="fp-pickup__inner">
+        <div class="fp-pickup__text">
+          <p class="fp-pickup__sub-text">浜中町指定牧場</p>
+          <p class="fp-pickup__main-text">北海道牛乳<br>プリン</p>
+        </div>
+        <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" loading="lazy"/></div>
+      </div>
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-03.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product5">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">摩訶不思議スイーツ<br>パリネル</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-05.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-05.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product6">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>シューラスク</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-06.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-06.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product7">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>バターガレット</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-07.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-07.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>スノーボールクッキー</p>
           <p class="fp-pickup__sub-text--btm">~魅惑のホロホロ食感~</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-08.jpg" alt=""/></picture>
-    </div>
-    <div class="fp-pickup__item swiper-slide">
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-08.jpg" alt=""/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">かすてらロール</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-09.jpg" alt=""/></picture>
-    </div>
-  </div>
+      <picture class="fp-pickup__picture"><img src="<?= $images ?>pickup-item-09.jpg" alt=""/></picture></a></div>
 </article>
 <article class="fp-feature">
   <section class="fp-feature__section l-section">
@@ -130,7 +111,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         <h2 class="fp-about__subject fp-about__subject--r">浜中町ならではの<br>飼料が美味しさの秘訣。</h2>
         <picture class="fp-about__picture fp-about__picture--r o-fit"><img class="o-fit__body" src="<?= $images ?>about-img-02.jpg" alt="" loading="lazy"/></picture>
         <div class="fp-about__body fp-about__body--r">
-          <p class="fp-about__desc">北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な肥料で育った<br>牛から生まれた特撰規格の牛乳です。</p>
+          <p class="fp-about__desc">北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な飼料で育った<br>牛から生まれた特撰規格の牛乳です。</p>
         </div>
       </div>
     </div>
@@ -138,7 +119,7 @@ $images = URL_FRONT_PAGE_IMAGES;
 </article>
 <article class="fp-product">
   <section class="fp-product__section l-section fp-product-soft">
-    <div class="fp-product__contents l-contents--c">
+    <div class="fp-product__contents l-contents--c" id="product1">
       <div class="fp-product__head js-inview">
         <h1 class="o-heading">牛乳本来の<br class="u-hide--pc">おいしさを<br class="u-hide--sp">そのまま<br class="u-hide--pc">閉じ込めました。</h1>
       </div>
@@ -162,7 +143,7 @@ $images = URL_FRONT_PAGE_IMAGES;
     </div>
   </section>
   <section class="fp-product__section l-section fp-product-middle">
-    <div class="fp-product__contents l-contents--r">
+    <div class="fp-product__contents l-contents--r" id="product2">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <picture class="fp-product-item__picture--half-v"><img src="<?= $images ?>product-item-02.png" alt="" loading="lazy"/></picture>
@@ -186,7 +167,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
       </div>
     </div>
-    <div class="fp-product__contents l-contents--l">
+    <div class="fp-product__contents l-contents--l" id="product3">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <div class="fp-product-item__text">
@@ -209,7 +190,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
       </div>
     </div>
-    <div class="fp-product__contents l-contents--r">
+    <div class="fp-product__contents l-contents--r" id="product4">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <picture class="fp-product-item__picture"><img src="<?= $images ?>product-item-04.png" alt="" loading="lazy"/></picture>
@@ -247,7 +228,7 @@ $images = URL_FRONT_PAGE_IMAGES;
     </div>
   </section>
   <section class="fp-product__section l-section fp-product-parineru-detail-section">
-    <div class="fp-product__contents l-contents--c">
+    <div class="fp-product__contents l-contents--c" id="product5">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item fp-product-item--pb">
           <div class="fp-product-item__text fp-product-parineru-detail-text">
@@ -292,7 +273,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         <picture class="fp-product-item__picture fp-product-item-picture-rusk"><img src="<?= $images ?>product-item-rusk.png" alt="" loading="lazy"/></picture>
       </div>
     </div>
-    <div class="fp-product__contents--rusk l-contents--c">
+    <div class="fp-product__contents--rusk l-contents--c" id="product6">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item fp-product-item--pb">
           <div class="fp-product-item__text--sm">
@@ -305,7 +286,7 @@ $images = URL_FRONT_PAGE_IMAGES;
                 </ol>
               </div>
             </div>
-            <p class="fp-product-item__desc">シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br>発売開始から10年以上が経過した当店の看板商品です。</p>
+            <p class="fp-product-item__desc">シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br class="u-hide--sp">発売開始から10年以上が経過した当店の看板商品です。</p>
             <p class="m-btn fp-product-item__btn--abs"><a class="m-btn__link js-modal-btn" data-modal-id="modal-6"><span>商品情報を見る</span></a></p>
           </div>
           <picture class="fp-product-item__picture--sm fp-product-rusk-detail-picture"><img src="<?= $images ?>product-item-06.png" alt="" loading="lazy"/></picture>
@@ -314,7 +295,7 @@ $images = URL_FRONT_PAGE_IMAGES;
     </div>
   </section>
   <section class="fp-product__section fp-product-lower">
-    <div class="fp-product__contents l-contents--r-sp-full">
+    <div class="fp-product__contents l-contents--r-sp-full" id="product7">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r" src="<?= $images ?>product-item-07.png" alt="" loading="lazy"/></picture>
@@ -335,7 +316,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
       </div>
     </div>
-    <div class="fp-product__contents l-contents--l-sp-full">
+    <div class="fp-product__contents l-contents--l-sp-full" id="product8">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <div class="fp-product-item__text--sp-r">
@@ -356,7 +337,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
       </div>
     </div>
-    <div class="fp-product__contents l-contents--r-sp-full">
+    <div class="fp-product__contents l-contents--r-sp-full" id="product9">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
           <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r" src="<?= $images ?>product-item-09.png" alt="" loading="lazy"/></picture>
@@ -421,6 +402,9 @@ $images = URL_FRONT_PAGE_IMAGES;
           <li class="fp-news__item"><a class="fp-news__link">
               <p class="fp-news__date">2023.03.00</p>
               <p class="fp-news__desc">sweets garden Prateriaとしてサイトをリニューアルしました。</p></a></li>
+          <li class="fp-news__item"><a class="fp-news__link">
+              <p class="fp-news__date">2023.01.18</p>
+              <p class="fp-news__desc">sweets garden Prateriaオープンしました。</p></a></li>
         </ul>
       </div>
     </div>
@@ -521,15 +505,16 @@ $images = URL_FRONT_PAGE_IMAGES;
               <td class="fp-modal__table-desc">小麦・乳成分</td>
             </tr>
             <tr>
-              <th class="fp-modal__table-subject">消費期限</th>
+              <th class="fp-modal__table-subject">賞味期限</th>
               <td class="fp-modal__table-desc">製造日より90日間<br>※到着予定日より起算して60日以上の商品にて発送致します。</td>
             </tr>
             <tr>
               <th class="fp-modal__table-subject">取り扱い店舗</th>
-              <td class="fp-modal__table-desc">sweets garden Prateria</td>
+              <td class="fp-modal__table-desc">sweets garden Prateria（おみやげの店こぶしや  小樽店）<br>おみやげの店こぶしや  札幌店</td>
             </tr>
           </tbody>
         </table>
+        <p class="fp-modal__caption">※店頭では1枚からお買い求め頂けます。</p>
       </div>
     </article>
     <button class="fp-modal__close js-modal-close"><span class="fp-modal__close-text">×</span></button>
@@ -585,7 +570,6 @@ $images = URL_FRONT_PAGE_IMAGES;
             </tr>
           </tbody>
         </table>
-        <p class="fp-modal__caption">※店頭では1枚からお買い求め頂けます。</p>
       </div>
     </article>
     <button class="fp-modal__close js-modal-close"><span class="fp-modal__close-text">×</span></button>
@@ -671,7 +655,7 @@ $images = URL_FRONT_PAGE_IMAGES;
           <li class="fp-modal__category">お持ち帰り限定</li>
           <li class="fp-modal__category">冷蔵／冷凍</li>
         </ol>
-        <h1 class="fp-modal__name">摩訶不思議<br>スイーツパリネル</h1>
+        <h1 class="fp-modal__name">摩訶不思議スイーツ<br>パリネル</h1>
         <p class="fp-modal__desc">究極のパリパリ食感と<br>世にも不思議なトンカ豆クリームのマリアージュ</p>
         <dl class="fp-modal__price">
           <dt class="fp-modal__count">1個</dt>
@@ -686,7 +670,7 @@ $images = URL_FRONT_PAGE_IMAGES;
             </tr>
             <tr>
               <th class="fp-modal__table-subject">消費期限</th>
-              <td class="fp-modal__table-desc">冷蔵品（当日仕上げ）は製造日より2日間（小樽店限定）冷凍品は製造日より45日間</td>
+              <td class="fp-modal__table-desc">冷蔵品（当日仕上げ）は製造日より2日間（小樽店限定）<br>冷凍品は製造日より45日間</td>
             </tr>
             <tr>
               <th class="fp-modal__table-subject">取り扱い店舗</th>
@@ -736,11 +720,11 @@ $images = URL_FRONT_PAGE_IMAGES;
         <p class="fp-modal__desc">カリッサクッ!の軽い口当たりと<br>北海道産小麦とバターのクセになる美味しさ<br>おみやげ人気No.1商品</p>
         <dl class="fp-modal__price">
           <dt class="fp-modal__count">プレーン</dt>
-          <dd class="fp-modal__price-body"><span class="fp-modal__price-num">385</span><span>円（税込）</span></dd>
+          <dd class="fp-modal__price-body"><span class="fp-modal__price-num">550</span><span>円（税込）</span></dd>
         </dl>
         <dl class="fp-modal__price">
           <dt class="fp-modal__count">ショコラ</dt>
-          <dd class="fp-modal__price-body"><span class="fp-modal__price-num">385</span><span>円（税込）</span></dd>
+          <dd class="fp-modal__price-body"><span class="fp-modal__price-num">550</span><span>円（税込）</span></dd>
         </dl>
         <dl class="fp-modal__price">
           <dt class="fp-modal__count">ギフトセット<br><small class="fp-modal__count--sm">（プレーン＆ショコラ）</small></dt>
@@ -754,7 +738,7 @@ $images = URL_FRONT_PAGE_IMAGES;
               <td class="fp-modal__table-desc">卵・小麦・乳成分</td>
             </tr>
             <tr>
-              <th class="fp-modal__table-subject">消費期限</th>
+              <th class="fp-modal__table-subject">賞味期限</th>
               <td class="fp-modal__table-desc">製造日より45日間<br>※到着予定日より起算して30日以上の商品にて発送致します。</td>
             </tr>
             <tr>
@@ -813,7 +797,7 @@ $images = URL_FRONT_PAGE_IMAGES;
               <td class="fp-modal__table-desc">卵・小麦・乳成分</td>
             </tr>
             <tr>
-              <th class="fp-modal__table-subject">消費期限</th>
+              <th class="fp-modal__table-subject">賞味期限</th>
               <td class="fp-modal__table-desc">製造日より45日間<br>※到着予定日より起算して30日以上の商品にて発送致します。</td>
             </tr>
             <tr>
@@ -873,7 +857,7 @@ $images = URL_FRONT_PAGE_IMAGES;
               <td class="fp-modal__table-desc">卵・小麦・乳成分</td>
             </tr>
             <tr>
-              <th class="fp-modal__table-subject">消費期限</th>
+              <th class="fp-modal__table-subject">賞味期限</th>
               <td class="fp-modal__table-desc">製造日より60日間<br>※到着予定日より起算して30日以上の商品にて発送致します。</td>
             </tr>
             <tr>
