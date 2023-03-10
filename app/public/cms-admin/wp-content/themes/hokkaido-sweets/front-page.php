@@ -6,9 +6,7 @@ $share_text = urlencode($text);
 $images = URL_FRONT_PAGE_IMAGES;
  ?>
 <article class="fp-mv">
-  <video class="fp-mv__video" muted="muted" playsinline="playsinline" preload="preload" loop="loop" autoplay="autoplay">
-    <source src="<?= URL_ASSETS ?>movie/mv.mp4" type="video/mp4"/>
-  </video>
+  <div class="fp-mv__video"><iframe class="js-mv" src="https://player.vimeo.com/video/806687423?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 </article>
 <article class="fp-pickup js-fp-pickup-slider swiper">
   <div class="fp-pickup__wrapper swiper-wrapper"><a class="fp-pickup__item swiper-slide" href="#product1">
@@ -87,7 +85,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-feature__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" width="139" height="139"/></div>
         <h2 class="fp-feature__subject">北海道、浜中町で<br class="u-hide--pc">生まれました。</h2>
         <p class="fp-feature__desc">北海道浜中町農協と<br class="u-hide--pc">指定牧場の生産者の協力を得て、<br>特選規格・乳脂肪分4.0%以上の生乳だけを<br class="u-hide--pc">選んでつくった<br class="u-hide--sp">成分無調整牛乳を使用した<br class="u-hide--pc">浜中プレミアムシリーズ。</p>
-        <div class="fp-feature__map"><img src="<?= $images ?>feature-map.webp" alt="" width="261" height="245"/></div>
+        <div class="fp-feature__map"><img src="<?= $images ?>feature-map.webp" alt="" width="261" height="245" loading="lazy"/></div>
       </div>
     </div>
   </section>
@@ -252,7 +250,7 @@ $images = URL_FRONT_PAGE_IMAGES;
                 <dt class="fp-product-item__detail-subject">トンカ豆</dt>
                 <dd class="fp-product-item__detail-desc">中南米原産のマメ科植物の種子で、芳香性の高い香り成分のクマリンを含み、桜の葉や桃の花のような上品な香りを持っています。</dd>
               </dl>
-              <div class="fp-product-item__detail-image"><img src="<?= $images ?>product-item-05-b.webp" alt="" width="303" height="169"/></div>
+              <div class="fp-product-item__detail-image"><img src="<?= $images ?>product-item-05-b.webp" alt="" width="303" height="169" loading="lazy"/></div>
             </div>
           </div>
         </div>
@@ -415,8 +413,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-a-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-a-02.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-a-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-a-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -424,8 +422,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-a-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-a-02.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-a-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-a-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -466,10 +464,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-02.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-03.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-04.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-03.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-b-04.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -477,10 +475,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-02.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-03.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-04.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-03.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-b-04.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -525,8 +523,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-c-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-c-02.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-c-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-c-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -534,8 +532,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-c-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-c-02.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-c-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-c-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -580,8 +578,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-d-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-d-02.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-d-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-d-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -589,8 +587,8 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-d-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-d-02.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-d-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-d-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -635,7 +633,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-e-01.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-e-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -643,7 +641,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-e-01.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-e-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -688,11 +686,11 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-02.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-03.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-04.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-05.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-03.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-04.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-f-05.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -700,11 +698,11 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-02.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-03.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-04.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-05.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-03.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-04.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-f-05.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -756,10 +754,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-02.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-03.webp" alt=""/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-04.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-03.webp" alt="" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-g-04.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -767,10 +765,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-02.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-03.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-04.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-03.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-g-04.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -815,10 +813,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-01.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-02.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-03.webp" alt="" width="400" height="400"/></div>
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-04.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-02.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-03.webp" alt="" width="400" height="400" loading="lazy"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-h-04.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -826,10 +824,10 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-01.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-02.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-03.webp" alt="" width="87" height="87"/></div>
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-04.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-02.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-03.webp" alt="" width="87" height="87" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-h-04.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>
@@ -874,7 +872,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-modal__main-slider">
           <div class="fp-modal__slider swiper js-modal-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?= $images ?>product-large-i-01.webp" alt="" width="400" height="400"/></div>
+              <div class="swiper-slide"><img src="<?= $images ?>product-large-i-01.webp" alt="" width="400" height="400" loading="lazy"/></div>
             </div>
           </div>
           <div class="fp-modal__arrow fp-modal__arrow--prev js-modal-slider__prev"></div>
@@ -882,7 +880,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-modal__thumbnails swiper js-modal-slider-thumb">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?= $images ?>product-large-i-01.webp" alt="" width="87" height="87"/></div>
+            <div class="swiper-slide"><img src="<?= $images ?>product-large-i-01.webp" alt="" width="87" height="87" loading="lazy"/></div>
           </div>
         </div>
       </div>

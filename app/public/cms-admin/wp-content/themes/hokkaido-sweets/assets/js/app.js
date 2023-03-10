@@ -1,15 +1,15 @@
 var $windowTop = $(window).scrollTop();
 var $clickEventType = window.ontouchstart !== null ? "click" : "touchstart";
-const $body = $("body");
-const $break = "(max-width:767px)";
-const $pc = "(min-width:768px)";
+var $body = $("body");
+var $break = "(max-width:767px)";
+var $pc = "(min-width:768px)";
 
 $(function () {
 	pageTop();
 	headerNav();
 	modal();
 
-	$(window).scroll(function () {
+	$(window).on("load scroll", function () {
 		inView();
 	});
 });
