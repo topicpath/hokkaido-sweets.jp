@@ -1,0 +1,12 @@
+.page-single-head__date {
+	@include font-noto-sans-jp(medium);
+
+	$f: rem(14);
+	$m: rem(17);
+
+	font-size: $f;
+	color: $border;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	margin-top: $m;
+}

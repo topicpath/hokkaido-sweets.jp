@@ -471,6 +471,10 @@
 	width: 284px;
 	z-index: 1;
 
+	@include mq-max-min(tab, break) {
+		width: 70%;
+	}
+
 	@include sp {
 		$w: rem(173);
 		$v: rem(48);

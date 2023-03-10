@@ -1,0 +1,8 @@
+@mixin icon-svg($p, $w, $h) {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$w} #{$h}">#{$p}</svg>');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: $w + px;
+	height: $h + px;
+}

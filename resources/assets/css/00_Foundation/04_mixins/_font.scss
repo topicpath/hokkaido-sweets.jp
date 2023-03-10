@@ -1,0 +1,115 @@
+@use "sass:map";
+
+@mixin font-noto-sans($w: bold) {
+	$w: noto-sans-weight($w);
+
+	font-family: $noto-sans, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-noto-sans-jp($w: bold) {
+	$w: noto-sans-jp-weight($w);
+
+	font-family: $noto-sans-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-noto-serif-jp($w: bold) {
+	$w: noto-serif-jp-weight($w);
+
+	font-family: $noto-serif-jp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-zen-kaku-gothic-new($w: bold) {
+	$w: zen-kaku-gothic-new-weight($w);
+
+	font-family: $zen-kaku-gothic-new, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-neue-hass-grotesk($w: bold) {
+	$w: neue-hass-grotesk-dp-weight($w);
+
+	font-family: $neue-hass-grotesk-dp, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-neue-haas-unica($w: bold) {
+	$w: neue-haas-unica-weight($w);
+
+	font-family: $neue-haas-unica, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font-ryo-gothic($w: m) {
+	$w: ryo-gothic-plusn-weight($w);
+
+	font-family: $ryo-gothic-plusn, sans-serif;
+	font-weight: $w;
+}
+
+@mixin font($device) {
+	$size: map.get($device, size);
+	$w: map.get($device, weight);
+	$weight: noto-sans-jp-weight($w);
+	$weight: map.get($device, weight);
+	$height: map.get($device, height);
+	$spacing: map.get($device, spacing);
+
+	font-size: $size + rem;
+	font-weight: $weight;
+	line-height: $height;
+	letter-spacing: $spacing + em;
+}
+
+@mixin font-weight($font: $noto-sans-jp, $weight: bold) {
+	@if $font == $noto-sans-jp {
+		font-family: $font, sans-serif;
+
+		$w: noto-sans-jp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $neue-hass-grotesk-dp {
+		font-family: $font, sans-serif;
+
+		$w: neue-hass-grotesk-dp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $neue-haas-unica {
+		$w: neue-haas-unica-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == $ryo-gothic-plusn {
+		font-family: $font, sans-serif;
+
+		$w: ryo-gothic-plusn-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "n" {
+		font-family: $font, sans-serif;
+
+		$w: noto-sans-jp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "g" {
+		font-family: $font, sans-serif;
+
+		$w: neue-hass-grotesk-dp-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "u" {
+		$w: neue-haas-unica-weight($weight);
+
+		font-weight: $w;
+	} @else if $font == "r" {
+		font-family: $font, sans-serif;
+
+		$w: ryo-gothic-plusn-weight($weight);
+
+		font-weight: $w;
+	} @else {
+		font-family: $font, sans-serif;
+		font-weight: $weight;
+	}
+}

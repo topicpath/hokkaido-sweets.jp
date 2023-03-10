@@ -1,0 +1,43 @@
+%head-heading {
+	@include font-noto-serif-jp(medium);
+
+	$r: rem(44);
+
+	font-size: $r;
+	color: $black;
+	letter-spacing: 0.1em;
+	line-height: 1;
+
+	@include sp {
+		$r: rem(30);
+
+		font-size: $r;
+	}
+}
+
+%head-heading-sm {
+	$r: rem(35);
+
+	font-size: $r;
+
+	@include sp {
+		$r: rem(24);
+
+		font-size: $r;
+	}
+}
+
+%head-sub-text {
+	@include font-noto-sans-jp(regular);
+
+	letter-spacing: 0.05rem;
+	line-height: 1;
+	color: $border;
+	font-size: 1rem;
+
+	@include sp {
+		$r: rem(12);
+
+		font-size: $r;
+	}
+}

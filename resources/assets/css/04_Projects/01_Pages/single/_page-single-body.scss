@@ -1,0 +1,10 @@
+.page-single-body {
+	@include font-noto-sans-jp(regular);
+	@include line-height(36, 16);
+
+	$m: rem(53);
+
+	color: $border;
+	margin-top: $m;
+	letter-spacing: 0.05em;
+}

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="   https://www.googletagmanager.com/gtag/js?id=G-1C9YJPD709  "></script>
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'G-1C9YJPD709');
+	</script>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Style-Type" content="text/css">
@@ -21,7 +30,16 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header js-header js-front-page-header">
+		<?php
+			if(is_home() || is_front_page()) {
+				$header_add_class = " js-front-page-header";
+				$container = "";
+			}else {
+				$header_add_class = "";
+				$container = " secondary";
+			}
+		?>
+		<header class="header js-header<?= $header_add_class ?>">
 			<a href="<?= URL_HOME ?>" class="header__logo">
 				<img src="<?= URL_SVG ?>logo.svg" alt="sweets garden Prateria" loading="lazy">
 			</a>
@@ -53,4 +71,4 @@
 				<div class="js-header-nav__btn-body"></div>
 			</div>
 		</header>
-		<main class="container">
+		<main class="container<?= $container ?>">

@@ -17,6 +17,11 @@
 		padding-left: $v;
 		padding-right: $v;
 
+		@include mq-min(pc) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
 		@include sp {
 			padding-left: 6.4vw;
 			padding-right: 6.4vw;

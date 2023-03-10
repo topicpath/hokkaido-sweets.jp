@@ -1,0 +1,11 @@
+.page-archive-pagination {
+	$m: rem(80);
+
+	margin: $m auto 0;
+
+	@include sp {
+		$m: rem(60);
+
+		margin: $m auto 0;
+	}
+}

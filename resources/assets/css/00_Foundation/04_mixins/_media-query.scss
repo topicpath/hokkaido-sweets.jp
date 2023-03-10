@@ -1,0 +1,46 @@
+// media query
+@mixin mq($mode: break, $type: max) {
+	$width: bp($mode);
+
+	@if $type == max {
+		$width: $width - 1;
+	}
+
+	@media (#{$type}-width: #{$width}px) {
+		@content;
+	}
+}
+
+@mixin mq-min($mode: break) {
+	@include mq($mode, min) {
+		@content;
+	}
+}
+
+@mixin mq-max($mode: break) {
+	@include mq($mode, max) {
+		@content;
+	}
+}
+
+@mixin mq-max-min($max: pc, $min: break) {
+	$max-width: bp($max);
+	$max-width: $max-width - 1;
+	$min-width: bp($min);
+
+	@media (max-width: #{$max-width}px) and (min-width: #{$min-width}px) {
+		@content;
+	}
+}
+
+@mixin pc($mode: break) {
+	@include mq_min($mode) {
+		@content;
+	}
+}
+
+@mixin sp($mode: break) {
+	@include mq_max($mode) {
+		@content;
+	}
+}

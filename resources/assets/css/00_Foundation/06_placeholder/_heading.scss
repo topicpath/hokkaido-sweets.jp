@@ -1,0 +1,18 @@
+%page-heading {
+	@include font-noto-sans-jp(medium);
+
+	$f: rem(32);
+
+	font-size: $f;
+	color: $black;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-align: center;
+
+	@include sp {
+		$f: rem(26);
+
+		font-size: $f;
+		text-align: left;
+	}
+}

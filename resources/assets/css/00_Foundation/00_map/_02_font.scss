@@ -1,43 +1,3 @@
-@use "sass:math";
-
-// break points
-$break-point: (
-	break: 768,
-	max: 3840,
-	fhd: 1920,
-	large: 1536,
-	pc: 1440,
-	hd: 1280,
-	tab: 1024,
-	tab-min: 768,
-	sp-large: 414,
-	sp: 375,
-	sp-min: 320
-);
-
-// PCディスプレイサイズ
-// 1920 * 1080
-// 1536 * 864
-// 1440 * 900
-// 1366 * 768
-// 1280 * 720
-$pc-best-view-height: 900;
-
-// SPディスプレイサイズ
-// 414 * 896
-// 374 * 667
-$sp-best-view-height: 667;
-
-// アスペクト比
-$aspect-ratio: (
-	square: math.div(1, 1),
-	golden: math.div(1, 1.618),
-	movie: math.div(1, 2),
-	picture: math.div(2, 3),
-	display: math.div(3, 4),
-	video: math.div(9, 16)
-);
-
 // 主要なフォントウェイト
 // Noto Sans(google font)
 $noto-sans-weight: (
@@ -113,15 +73,4 @@ $ryo-gothic-plusn-weight: (
 	b: 700,
 	h: 800,
 	uh: 900
-);
-
-// スペーシング
-$spacing-unit: (
-	space-sm: 4,
-	space: 8,
-	space-lg: 16,
-	space-xl: 24,
-	space-2xl: 40,
-	space-3xl: 64,
-	space-4xl: 104
 );

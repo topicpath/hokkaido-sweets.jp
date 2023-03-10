@@ -56,9 +56,9 @@ add_action('init', function () {
 	 * SNS
 	 */
 
-	define('URL_FACEBOOK', "");
+	define('URL_FACEBOOK', "https://www.facebook.com/sweetsgardenPrateria");
 	define('URL_FACEBOOK_ICON', URL_SVG . "icon-facebook.svg");
-	define('URL_INSTAGRAM', "");
+	define('URL_INSTAGRAM', "https://www.instagram.com/sweets_garden_prateria/");
 	define('URL_INSTAGRAM_ICON', URL_SVG . "icon-instagram.svg");
 
 	// share

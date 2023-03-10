@@ -1,0 +1,91 @@
+.wp-pagenavi {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -6px;
+
+	.page,
+	.current {
+		@include font-noto-sans-jp(regular);
+
+		font-size: 1rem;
+		line-height: 1;
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 6px;
+		transition: $hover;
+		border-radius: 50%;
+	}
+
+	.current {
+		color: $green-light;
+		pointer-events: none;
+	}
+
+	.page {
+		color: $border;
+		background-color: $white;
+
+		@include hover {
+			background-color: $green;
+			color: $white;
+		}
+	}
+
+	.previouspostslink,
+	.nextpostslink {
+		width: 2rem;
+		height: 2rem;
+		background-color: $white;
+		border: 1px solid $border;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 0 8px;
+		position: relative;
+		transition: $hover;
+		border-radius: 50%;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 0.5em;
+			height: 0.5em;
+			border-top: 1px solid $border;
+			border-right: 1px solid $border;
+			rotate: 45deg;
+			margin-right: 0.35em;
+			transition: $hover;
+		}
+
+		@include hover {
+			background-color: $green;
+
+			&::after {
+				border-top-color: $white;
+				border-right-color: $white;
+			}
+		}
+	}
+
+	.previouspostslink {
+		margin: 0 8px 0 0;
+
+		&::after {
+			rotate: -135deg;
+			margin-left: 0.6em;
+		}
+	}
+
+	.nextpostslink {
+		margin: 0 0 0 8px;
+
+		&::after {
+			rotate: 45deg;
+			margin-right: 0.35em;
+		}
+	}
+}

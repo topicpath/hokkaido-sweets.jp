@@ -18,3 +18,7 @@
 		letter-spacing: 0;
 	}
 }
+
+.o-page-heading {
+	@extend %page-heading;
+}

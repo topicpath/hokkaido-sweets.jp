@@ -7,3 +7,13 @@
 
 	font-size: $s;
 }
+
+.secondary {
+	@include pc {
+		padding-top: 70px;
+	}
+
+	@include sp {
+		padding-top: 50px;
+	}
+}

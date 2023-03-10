@@ -9,6 +9,12 @@
 }
 
 .footer__contents {
+	@include mq-min(large) {
+		max-width: none;
+		padding-left: 13.4vw;
+		padding-right: 13.4vw;
+	}
+
 	@include pc {
 		display: flex;
 		justify-content: space-between;

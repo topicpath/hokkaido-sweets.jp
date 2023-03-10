@@ -1,0 +1,17 @@
+:php
+	get_header();
+
+.page-single.l-section
+	.page-single-head
+		.__contents.l-contents--sm
+			h1.m-page-heading
+				:php echo the_title();
+			p.__date
+				:php the_time('Y.n.j');
+
+	.page-single-body
+		.__contents.l-contents--sm
+			:php echo the_content();
+
+:php
+	get_footer();

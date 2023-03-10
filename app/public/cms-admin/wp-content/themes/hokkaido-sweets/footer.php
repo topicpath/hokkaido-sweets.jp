@@ -1,3 +1,6 @@
+</main>
+</div><!-- /.wrapper -->
+
 <div class="page-top">
 	<div class="page-top__body">
 		<img src="<?= URL_SVG ?>page-top.svg" alt="">
@@ -56,9 +59,6 @@
 		</div>
 	</div>
 </footer>
-
-</main>
-</div><!-- /.wrapper -->
 <?php wp_footer(); ?>
 </body>
 </html>

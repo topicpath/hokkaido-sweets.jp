@@ -1,0 +1,56 @@
+.page-archive-list__item {
+	border-top: 1px solid $border;
+
+	&:last-of-type {
+		border-bottom: 1px solid $border;
+	}
+}
+
+.page-archive-list__link {
+	$p: rem(24);
+
+	padding: $p 0;
+
+	@include pc {
+		display: flex;
+		align-items: center;
+		transition: $hover;
+	}
+
+	@include sp {
+		display: block;
+
+		$p: rem(30);
+
+		padding: $p 0;
+	}
+
+	@include hover {
+		opacity: 0.7;
+	}
+}
+
+.page-archive-list__date {
+	@include font-noto-sans(bold);
+
+	font-size: 1rem;
+	line-height: 1.5;
+	color: $border;
+	width: 5em;
+}
+
+.page-archive-list__desc {
+	@include font-noto-sans-jp(regular);
+
+	font-size: 1rem;
+	color: $black;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	margin-left: 2em;
+
+	@include sp {
+		@include line-height(30, 16);
+
+		margin-left: 0;
+	}
+}
