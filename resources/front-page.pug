@@ -7,8 +7,8 @@
 	$images = URL_FRONT_PAGE_IMAGES;
 
 article.fp-mv
-	video.__video(muted playsinline preload loop autoplay)
-		source(src!="<?= URL_ASSETS ?>movie/mv.mp4" type="video/mp4")
+	.__video
+		<iframe class="js-mv" src="https://player.vimeo.com/video/806687423?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 article.fp-pickup.js-fp-pickup-slider.swiper
 	.__wrapper.swiper-wrapper
@@ -93,7 +93,7 @@ article.fp-feature
 				h2.__subject 北海道、浜中町で<br class="u-hide--pc">生まれました。
 				p.__desc 北海道浜中町農協と<br class="u-hide--pc">指定牧場の生産者の協力を得て、<br>特選規格・乳脂肪分4.0%以上の生乳だけを<br class="u-hide--pc">選んでつくった<br class="u-hide--sp">成分無調整牛乳を使用した<br class="u-hide--pc">浜中プレミアムシリーズ。
 				.__map
-					img(src!="<?= $images ?>feature-map.webp", alt="" width="261" height="245")
+					img(src!="<?= $images ?>feature-map.webp", alt="" width="261" height="245" loading="lazy")
 
 article.fp-about
 	section.__section.l-section
@@ -237,7 +237,7 @@ article.fp-product
 								dt.__detail-subject トンカ豆
 								dd.__detail-desc 中南米原産のマメ科植物の種子で、芳香性の高い香り成分のクマリンを含み、桜の葉や桃の花のような上品な香りを持っています。
 							.__detail-image
-								img(src!="<?= $images ?>product-item-05-b.webp", alt="" width="303" height="169")
+								img(src!="<?= $images ?>product-item-05-b.webp", alt="" width="303" height="169" loading="lazy")
 
 	section.__section.l-section.fp-product-rusk#product6
 		.__contents.l-contents--l
@@ -381,17 +381,17 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-a-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-a-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-a-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-a-02.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-a-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-a-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-a-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-a-02.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				h1.__name 浜中町指定牧場<br>北海道牛乳ソフトクリーム
 				p.__desc さわやかな香りとコク深い牛乳の味わい<br>本物の牛乳ソフトクリーム
@@ -425,25 +425,25 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-b-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-b-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-b-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-b-02.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-b-03.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-b-03.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-b-04.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-b-04.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-b-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-b-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-b-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-b-02.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-b-03.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-b-03.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-b-04.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-b-04.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					//- li.__category.--online オンラインOK
@@ -480,17 +480,17 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-c-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-c-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-c-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-c-02.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-c-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-c-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-c-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-c-02.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					li.__category お持ち帰り限定
@@ -526,17 +526,17 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-d-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-d-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-d-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-d-02.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-d-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-d-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-d-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-d-02.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					li.__category お持ち帰り限定
@@ -572,13 +572,13 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-e-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-e-01.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-e-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-e-01.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					li.__category お持ち帰り限定
@@ -614,29 +614,29 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-f-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-f-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-f-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-f-02.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-f-03.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-f-03.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-f-04.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-f-04.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-f-05.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-f-05.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-f-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-f-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-f-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-f-02.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-f-03.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-f-03.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-f-04.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-f-04.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-f-05.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-f-05.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					//- li.__category.--online オンラインOK
@@ -683,25 +683,25 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-g-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-g-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-g-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-g-02.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-g-03.webp", alt="")
+								img(src!="<?= $images ?>product-large-g-03.webp", alt="" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-g-04.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-g-04.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-g-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-g-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-g-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-g-02.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-g-03.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-g-03.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-g-04.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-g-04.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					//- li.__category.--online オンラインOK
@@ -738,25 +738,25 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-h-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-h-01.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-h-02.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-h-02.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-h-03.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-h-03.webp", alt="" width="400" height="400" loading="lazy")
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-h-04.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-h-04.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-h-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-h-01.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-h-02.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-h-02.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-h-03.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-h-03.webp", alt="" width="87" height="87" loading="lazy")
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-h-04.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-h-04.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					//- li.__category.--online オンラインOK
@@ -793,13 +793,13 @@ article.fp-news#news
 					.__slider.swiper.js-modal-slider
 						.swiper-wrapper
 							.swiper-slide
-								img(src!="<?= $images ?>product-large-i-01.webp", alt="" width="400" height="400")
+								img(src!="<?= $images ?>product-large-i-01.webp", alt="" width="400" height="400" loading="lazy")
 					.__arrow.--prev.js-modal-slider__prev
 					.__arrow.--next.js-modal-slider__next
 				.__thumbnails.swiper.js-modal-slider-thumb
 					.swiper-wrapper
 						.swiper-slide
-							img(src!="<?= $images ?>product-large-i-01.webp", alt="" width="87" height="87")
+							img(src!="<?= $images ?>product-large-i-01.webp", alt="" width="87" height="87" loading="lazy")
 			.__detail
 				ol.__categories
 					li.__category お持ち帰り限定

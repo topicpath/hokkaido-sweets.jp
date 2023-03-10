@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/smooth-scroll.polyfills.min.js" defer></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/app.js" defer></script>
 	<?php if(is_home() || is_front_page()): ?>
+	<script type="text/javascript" src="https://player.vimeo.com/api/player.js" defer></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/front-page.js" defer></script>
 	<?php endif; ?>
 	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/app.css">
