@@ -2999,12 +2999,12 @@ meter {
   opacity: 0;
   z-index: -100;
   transition: 0.2s cubic-bezier(0.26, 0.16, 0.1, 1);
-  content-visibility: hidden;
+  display: none;
 }
 .js-modal.is-show {
   opacity: 1;
   z-index: 100;
-  content-visibility: visible;
+  display: flex;
 }
 
 .wp-pagenavi {

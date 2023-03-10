@@ -85,8 +85,6 @@ function modalSlider() {
 
 		var option = {
 			slidesPerView: 1,
-			loop: true,
-			loopAdditionalSlides: 0,
 			preventInteractionOnTransition: true,
 			spaceBetween: 20,
 
