@@ -17,7 +17,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" width="56" height="56"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-01.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product2">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-01.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product2">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__sub-text">浜中町指定牧場</p>
@@ -25,7 +25,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" width="56" height="56"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-04.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product3">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-04.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product3">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__sub-text">浜中町指定牧場</p>
@@ -33,7 +33,7 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" width="56" height="56"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-02.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product4">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-02.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product4">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__sub-text">浜中町指定牧場</p>
@@ -41,38 +41,38 @@ $images = URL_FRONT_PAGE_IMAGES;
         </div>
         <div class="fp-pickup__sticker"><img src="<?= URL_SVG ?>icon-sticker.svg" alt="" width="56" height="56"/></div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-03.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product5">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-03.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product5">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">摩訶不思議スイーツ<br>パリネル</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-05.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product6">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-05.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product6">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>シューラスク</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-06.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product7">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-06.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product7">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>バターガレット</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-07.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-07.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">北海道<br>スノーボールクッキー</p>
           <p class="fp-pickup__sub-text--btm">~魅惑のホロホロ食感~</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-08.webp" alt="" width="320" height="320"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-08.webp" alt="" width="320" height="320" loading="lazy"/></picture></a><a class="fp-pickup__item swiper-slide" href="#product8">
       <div class="fp-pickup__inner">
         <div class="fp-pickup__text">
           <p class="fp-pickup__main-text">かすてらロール</p>
         </div>
       </div>
-      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-09.webp" alt="" width="320" height="320"/></picture></a></div>
+      <picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-09.webp" alt="" width="320" height="320" loading="lazy"/></picture></a></div>
 </article>
 <article class="fp-feature">
   <section class="fp-feature__section l-section">
@@ -101,13 +101,13 @@ $images = URL_FRONT_PAGE_IMAGES;
         <div class="fp-about__body">
           <p class="fp-about__desc">根釧エリアの夏の平均気温は約18℃。<br>暑さが苦手な牛たちにとって、<br>海辺の牧場はまさに楽園。<br>さらに一部の牛舎では、<br>牛にストレスをかけないよう<br class="u-hide--sp">繋がない<br class="u-hide--pc">「フリーストール」で<br class="u-hide--sp">飼育されています。</p>
         </div>
-        <picture class="fp-about__picture fp-about__picture--l o-fit"><img class="o-fit__body" src="<?= $images ?>about-img-01.webp" alt="" width="850" height="500"/></picture>
+        <picture class="fp-about__picture fp-about__picture--l o-fit"><img class="o-fit__body" src="<?= $images ?>about-img-01.webp" alt="" width="850" height="500" loading="lazy"/></picture>
       </div>
     </div>
     <div class="fp-about__contents fp-about__contents--r js-inview">
       <div class="fp-about__inner fp-about__inner--r">
         <h2 class="fp-about__subject fp-about__subject--r">浜中町ならではの<br>飼料が美味しさの秘訣。</h2>
-        <picture class="fp-about__picture fp-about__picture--r o-fit"><img class="o-fit__body" src="<?= $images ?>about-img-02.webp" alt="" width="850" height="500"/></picture>
+        <picture class="fp-about__picture fp-about__picture--r o-fit"><img class="o-fit__body" src="<?= $images ?>about-img-02.webp" alt="" width="850" height="500" loading="lazy"/></picture>
         <div class="fp-about__body fp-about__body--r">
           <p class="fp-about__desc">北海道・浜中町には、<br>保湿性、通気性、通水性にすぐれた、<br>栄養たっぷりの土と、<br>海のミネラル豊富な潮風を受けた<br>飼料があります。<br>高品質な飼料で育った<br>牛から生まれた特撰規格の牛乳です。</p>
         </div>
@@ -135,7 +135,7 @@ $images = URL_FRONT_PAGE_IMAGES;
             <p class="fp-product-item__desc">牛乳の美味しさをそのまま感じられる味わいを目指して、試行錯誤を積み重ねた当店のオリジナルブレンド。4.0%の乳脂肪分のコク深い味わいと、さっぱりとした口溶けが特徴のソフトクリームです。</p>
             <p class="m-btn fp-product-item__btn"><a class="m-btn__link js-modal-btn" data-modal-id="modal-1"><span>商品情報を見る</span></a></p>
           </div>
-          <picture class="fp-product-item__picture--half"><img class="fp-product-item-image-01" src="<?= $images ?>product-item-01.webp" alt="" width="347" height="697"/></picture>
+          <picture class="fp-product-item__picture--half"><img class="fp-product-item-image-01" src="<?= $images ?>product-item-01.webp" alt="" width="347" height="697" loading="lazy"/></picture>
         </div>
       </div>
     </div>
@@ -144,7 +144,7 @@ $images = URL_FRONT_PAGE_IMAGES;
     <div class="fp-product__contents l-contents--r" id="product2">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
-          <picture class="fp-product-item__picture--half-v"><img class="upc-size-full" src="<?= $images ?>product-item-02.webp" alt="" width="637" height="650"/></picture>
+          <picture class="fp-product-item__picture--half-v"><img class="upc-size-full" src="<?= $images ?>product-item-02.webp" alt="" width="637" height="650" loading="lazy"/></picture>
           <div class="fp-product-item__text">
             <div class="fp-product-item__group">
               <div class="fp-product-item__name">
@@ -183,14 +183,14 @@ $images = URL_FRONT_PAGE_IMAGES;
             <p class="fp-product-item__desc">牛乳をたっぷりと使用したカスタードに北海道産生クリームを合わせた風味豊かなクリームを北海道産小麦を100%使用したシュー生地にたっぷり詰め込みました。</p>
             <p class="m-btn fp-product-item__btn"><a class="m-btn__link js-modal-btn" data-modal-id="modal-3"><span>商品情報を見る</span></a></p>
           </div>
-          <picture class="fp-product-item__picture"><img class="upc-size-full" src="<?= $images ?>product-item-03.webp" alt="" width="680" height="771"/></picture>
+          <picture class="fp-product-item__picture"><img class="upc-size-full" src="<?= $images ?>product-item-03.webp" alt="" width="680" height="771" loading="lazy"/></picture>
         </div>
       </div>
     </div>
     <div class="fp-product__contents l-contents--r" id="product4">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
-          <picture class="fp-product-item__picture"><img class="upc-size-full" src="<?= $images ?>product-item-04.webp" alt="" width="614" height="684"/></picture>
+          <picture class="fp-product-item__picture"><img class="upc-size-full" src="<?= $images ?>product-item-04.webp" alt="" width="614" height="684" loading="lazy"/></picture>
           <div class="fp-product-item__text">
             <div class="fp-product-item__group">
               <div class="fp-product-item__name">
@@ -243,7 +243,7 @@ $images = URL_FRONT_PAGE_IMAGES;
           </div>
           <div class="fp-product-item__images fp-product-parineru-detail-images">
             <picture class="fp-product-item__picture--full">
-              <source media="(max-width: 767px)" srcset="<?= $images ?>product-item-05-sp.webp"/><img class="upc-size-full" src="<?= $images ?>product-item-05.webp" alt="エキゾチックな風味の最高級トンカ豆クリーム" width="456" height="271"/>
+              <source media="(max-width: 767px)" srcset="<?= $images ?>product-item-05-sp.webp"/><img class="upc-size-full" src="<?= $images ?>product-item-05.webp" alt="エキゾチックな風味の最高級トンカ豆クリーム" width="456" height="271" loading="lazy"/>
             </picture>
             <div class="fp-product-item__detail-wrapper">
               <dl class="fp-product-item__detail">
@@ -268,7 +268,7 @@ $images = URL_FRONT_PAGE_IMAGES;
           <p class="fp-product-item__visual-desc fp-product-rusk-visual-text">カリッサクッ!の軽い口当たりと<br>北海道産小麦とバターの<br>クセになる美味しさ<br>おみやげ人気No.1商品</p>
         </div>
         <picture class="fp-product-item__picture fp-product-item-picture-rusk">
-          <source media="(max-width: 767px)" srcset="<?= $images ?>product-item-rusk-sp.webp"/><img class="upc-size-full" src="<?= $images ?>product-item-rusk.webp" alt="" width="762" height="888"/>
+          <source media="(max-width: 767px)" srcset="<?= $images ?>product-item-rusk-sp.webp"/><img class="upc-size-full" src="<?= $images ?>product-item-rusk.webp" alt="" width="762" height="888" loading="lazy"/>
         </picture>
       </div>
     </div>
@@ -287,7 +287,7 @@ $images = URL_FRONT_PAGE_IMAGES;
             <p class="fp-product-item__desc">シュー生地を二度焼きする事で「カリッ サクッ」の軽い口当たりに。北海道産バターと小麦の風味がクセになる洋菓子店ならではの美味しさ。<br>常温保管で日持ちも長いのでおみやげにもピッタリ。<br class="u-hide--sp">発売開始から10年以上が経過した当店の看板商品です。</p>
             <p class="m-btn fp-product-item__btn--abs"><a class="m-btn__link js-modal-btn" data-modal-id="modal-6"><span>商品情報を見る</span></a></p>
           </div>
-          <picture class="fp-product-item__picture--sm fp-product-rusk-detail-picture"><img class="upc-size-full" src="<?= $images ?>product-item-06.webp" alt="" width="471" height="383"/></picture>
+          <picture class="fp-product-item__picture--sm fp-product-rusk-detail-picture"><img class="upc-size-full" src="<?= $images ?>product-item-06.webp" alt="" width="471" height="383" loading="lazy"/></picture>
         </div>
       </div>
     </div>
@@ -296,7 +296,7 @@ $images = URL_FRONT_PAGE_IMAGES;
     <div class="fp-product__contents l-contents--r-sp-full" id="product7">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
-          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r upc-size-full" src="<?= $images ?>product-item-07.webp" alt="" width="643" height="550"/></picture>
+          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r upc-size-full" src="<?= $images ?>product-item-07.webp" alt="" width="643" height="550" loading="lazy"/></picture>
           <div class="fp-product-item__text--sp-l">
             <div class="fp-product-item__group">
               <div class="fp-product-item__name">
@@ -329,14 +329,14 @@ $images = URL_FRONT_PAGE_IMAGES;
             <p class="fp-product-item__desc">長い年月をかけてたどり着いた独自の配合で生み出される魅惑のホロホロ食感。芳醇なバターの風味とナッツの香ばしさが織りなすクセになる味わい。純白の雪が舞い散る北海道ならではのクッキーです。</p>
             <p class="m-btn fp-product-item__btn"><a class="m-btn__link js-modal-btn" data-modal-id="modal-8"><span>商品情報を見る</span></a></p>
           </div>
-          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--l upc-size-full" src="<?= $images ?>product-item-08.webp" alt="" width="643" height="550"/></picture>
+          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--l upc-size-full" src="<?= $images ?>product-item-08.webp" alt="" width="643" height="550" loading="lazy"/></picture>
         </div>
       </div>
     </div>
     <div class="fp-product__contents l-contents--r-sp-full" id="product9">
       <div class="fp-product__body js-inview">
         <div class="fp-product-item">
-          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r upc-size-full" src="<?= $images ?>product-item-09.webp" alt="" width="643" height="550"/></picture>
+          <picture class="fp-product-item__picture"><img class="fp-product-item__image-body--r upc-size-full" src="<?= $images ?>product-item-09.webp" alt="" width="643" height="550" loading="lazy"/></picture>
           <div class="fp-product-item__text--sp-l">
             <div class="fp-product-item__group">
               <div class="fp-product-item__name">
@@ -365,7 +365,7 @@ $images = URL_FRONT_PAGE_IMAGES;
       </div>
       <div class="fp-shop__body">
         <div class="fp-shop-detail js-inview">
-          <picture class="fp-shop-detail__picture o-fit"><img class="o-fit__body" src="<?= $images ?>shop-img.webp" width="600" height="320"/></picture>
+          <picture class="fp-shop-detail__picture o-fit"><img class="o-fit__body" src="<?= $images ?>shop-img.webp" width="600" height="320" loading="lazy"/></picture>
           <div class="fp-shop-detail__text">
             <h2 class="fp-shop-detail__logo"><img class="fp-shop-detail__logo-body" src="<?= URL_SVG ?>logo.svg" alt="sweets garden Prateria" width="220" height="48"/></h2>
             <p class="fp-shop-detail__desc">小樽市堺町5番29号<br>（おみやげの店 こぶしや 小樽店内併設）<br>TEL.0134-64-6122<br>営業時間　10時〜18時<br>定休日　　不定休<br>（※現在は月曜日が定休日です）</p>
