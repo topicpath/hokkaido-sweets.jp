@@ -49,6 +49,22 @@ function headerNav() {
 		$b.toggleClass("is-active");
 		$c.toggleClass("is-show");
 		$body.toggleClass("js-header-nav-show");
+		return false;
+	});
+
+	$(".header-nav__link").on($clickEventType, function () {
+		if ($c.hasClass("is-show")) {
+			$b.removeClass("is-active");
+			$c.removeClass("is-show");
+			$body.removeClass("js-header-nav-show");
+			var speed = 300;
+			var href = $(this).attr("href");
+			var target = $(href == "#" || href == "" ? "html" : href);
+			var header = $(".header").outerHeight();
+			var position = target.offset().top - header;
+			$("html, body").animate({ scrollTop: position }, speed, "swing");
+			return false;
+		}
 	});
 }
 
