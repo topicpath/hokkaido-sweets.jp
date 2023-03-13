@@ -1,15 +1,17 @@
 .js-inview {
-	position: relative;
+	@include pc {
+		position: relative;
 
-	// transform: translateY(20px);
-	opacity: 0;
-	animation-timing-function: $transform-easing;
-	animation-duration: 1.2s;
-	animation-fill-mode: forwards;
+		// transform: translateY(20px);
+		opacity: 0;
+		animation-timing-function: $transform-easing;
+		animation-duration: 1.2s;
+		animation-fill-mode: forwards;
 
-	&.is-show {
-		// transform: translateY(0);
-		animation-name: in-view-fade-in;
+		&.is-show {
+			// transform: translateY(0);
+			animation-name: in-view-fade-in;
+		}
 	}
 }
 

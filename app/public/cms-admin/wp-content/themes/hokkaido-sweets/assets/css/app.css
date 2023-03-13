@@ -1617,6 +1617,7 @@ meter {
   .fp-modal__main {
     height: 100vh;
     max-height: 100vh;
+    max-height: 100dvh;
     padding: 0;
   }
 }
@@ -2820,8 +2821,10 @@ meter {
   opacity: 0;
   visibility: hidden;
   z-index: -10;
-  transition: 0.5s cubic-bezier(0.43, 0.05, 0.17, 1);
   transform: translateY(-70px);
+}
+.js-front-page-header.is-wait {
+  transition: 0.5s cubic-bezier(0.43, 0.05, 0.17, 1);
 }
 .js-front-page-header.is-show {
   opacity: 1;
@@ -2962,15 +2965,17 @@ meter {
   overflow: hidden;
 }
 
-.js-inview {
-  position: relative;
-  opacity: 0;
-  animation-timing-function: cubic-bezier(0.43, 0.05, 0.17, 1);
-  animation-duration: 1.2s;
-  animation-fill-mode: forwards;
-}
-.js-inview.is-show {
-  animation-name: in-view-fade-in;
+@media (min-width: 768px) {
+  .js-inview {
+    position: relative;
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.43, 0.05, 0.17, 1);
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+  }
+  .js-inview.is-show {
+    animation-name: in-view-fade-in;
+  }
 }
 
 @keyframes in-view-fade-in {

@@ -44,15 +44,16 @@ function frontPageHeader() {
 	if (!$query) return;
 
 	const $header = $(".js-front-page-header");
+	$header.addClass("is-wait");
 	const $mv = $(".fp-mv");
 	const $pickup = $(".fp-pickup");
 	var $headerHeight = $header.outerHeight();
 	var $mvHeight = $mv.outerHeight();
-	var $pickupHeight = $pickup.outerHeight();
 
 	$(window).scroll(function () {
+		var $pickupHeight = $pickup.outerHeight();
 		var $widowTop = $(window).scrollTop();
-		// console.log($widowTop, $mvHeight + $pickupHeight, $pickupHeight);
+		// console.log($widowTop, $mvHeight + $pickupHeight, $mvHeight, $pickupHeight);
 		if ($widowTop > $mvHeight + $pickupHeight + $headerHeight) {
 			$header.addClass("is-show");
 		} else {

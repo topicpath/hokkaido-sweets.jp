@@ -8,6 +8,7 @@ $(function () {
 	pageTop();
 	headerNav();
 	modal();
+	smoothScroll();
 
 	$(window).on("load scroll", function () {
 		inView();
@@ -111,7 +112,9 @@ function modal() {
 	});
 }
 
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 300,
-	header: ".header",
-});
+function smoothScroll() {
+	var scroll = new SmoothScroll('a[href*="#"]', {
+		speed: 300,
+		header: ".header",
+	});
+}
