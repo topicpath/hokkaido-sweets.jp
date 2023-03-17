@@ -2,6 +2,11 @@
 .js-modal-slider-thumb {
 	.swiper-slide {
 		line-height: 1;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
 	}
 }
 

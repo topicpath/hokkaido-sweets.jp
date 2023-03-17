@@ -1615,9 +1615,9 @@ meter {
 }
 @media (max-width: 767px) {
   .fp-modal__main {
-    height: 100vh;
-    max-height: 100vh;
-    max-height: 100dvh;
+    width: 100vw;
+    height: 100%;
+    max-height: none;
     padding: 0;
   }
 }
@@ -2991,6 +2991,11 @@ meter {
 .js-modal-slider .swiper-slide,
 .js-modal-slider-thumb .swiper-slide {
   line-height: 1;
+}
+.js-modal-slider .swiper-slide img,
+.js-modal-slider-thumb .swiper-slide img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .js-modal-slider-thumb .swiper-slide img {

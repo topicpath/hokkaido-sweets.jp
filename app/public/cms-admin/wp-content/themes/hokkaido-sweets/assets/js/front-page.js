@@ -12,6 +12,8 @@ $(function () {
 		loopAdditionalSlides: 0,
 		preventInteractionOnTransition: true,
 		spaceBetween: 15,
+		observer: true,
+		observeParents: true,
 		autoplay: {
 			delay: 2000,
 			disableOnInteraction: false,
@@ -75,6 +77,8 @@ function modalSlider() {
 		const $sliderThumbnail = new Swiper($sliderThumb, {
 			slidesPerView: 4.5,
 			spaceBetween: 10,
+			observer: true,
+			observeParents: true,
 
 			breakpoints: {
 				768: {
@@ -88,6 +92,8 @@ function modalSlider() {
 			slidesPerView: 1,
 			preventInteractionOnTransition: true,
 			spaceBetween: 20,
+			observer: true,
+			observeParents: true,
 
 			navigation: {
 				prevEl: ".js-modal-slider__prev",
