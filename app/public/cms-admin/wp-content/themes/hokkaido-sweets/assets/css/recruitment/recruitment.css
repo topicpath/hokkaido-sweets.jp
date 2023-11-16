@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+h2{
+margin:0 auto 30px;
+}
+
+.col{
+padding:20px 5px;
+border:1px solid black;
+}
+
+.nb{
+border-bottom:0;
+}
+
+dl{
+display:flex;
+width:100%;
+}
+
+dt{
+width:20%;
+}
+
+dd{
+width:80%;
+}

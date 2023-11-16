@@ -405,7 +405,7 @@ $images = URL_FRONT_PAGE_IMAGES;
             <div class="fp-news__body js-inview">
                 <ul class="fp-news__list">
                     <li class="fp-news__item"><a class="fp-news__link">
-                            <p class="fp-news__date">2023.03.00</p>
+                            <p class="fp-news__date">2023.03.10</p>
                             <p class="fp-news__desc">sweets garden Prateriaとしてサイトをリニューアルしました。</p>
                         </a></li>
                     <li class="fp-news__item"><a class="fp-news__link">
