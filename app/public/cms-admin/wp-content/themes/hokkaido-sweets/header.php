@@ -28,6 +28,17 @@
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/front-page.js" defer></script>
 	<?php endif; ?>
 	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/app.css">
+	<?php global $local_css, $local_js; ?>
+	<?php if (isset($local_css)): ?>
+	<?php foreach($local_css as $css): ?>
+	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/pages/<?= $css ?>">
+	<?php endforeach; ?>
+	<?php endif; ?>
+	<?php if (isset($local_js)): ?>
+	<?php foreach($local_js as $js): ?>
+	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/pages/<?= $js ?>" defer></script>
+	<?php endforeach; ?>
+	<?php endif; ?>
 </head>
 <body>
 	<div class="wrapper">

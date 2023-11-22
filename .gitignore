@@ -79,3 +79,5 @@ package.json
 /app/public/cms-admin/wp-content/index.php
 /app/public/cms-admin/wp-content/wp-cache-config.php
 /app/public/cms-admin/wp-content/themes/index.php
+app/public/wp-content
+app/public/wp-content
