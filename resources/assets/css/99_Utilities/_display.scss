@@ -3,3 +3,35 @@
 		display: block;
 	}
 }
+
+.pc {
+	display: block;
+
+	@include sp {
+		display: none;
+	}
+}
+
+.sp {
+	display: block;
+
+	@include pc {
+		display: none;
+	}
+}
+
+br.pc {
+	display: inline;
+
+	@include sp {
+		display: none;
+	}
+}
+
+br.sp {
+	display: inline;
+
+	@include pc {
+		display: none;
+	}
+}

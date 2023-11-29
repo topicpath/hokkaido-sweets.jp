@@ -10,6 +10,14 @@
 
 		margin: $mv auto 0;
 	}
+
+	&--lg {
+		margin-top: 90px;
+
+		@include sp {
+			margin-top: 60px;
+		}
+	}
 }
 
 .m-btn__link {
@@ -21,5 +29,13 @@
 
 	&--sp-sm {
 		@extend %btn-link-sp-sm;
+	}
+
+	&--green {
+		@extend %btn-link-green;
+	}
+
+	&--back {
+		@extend %btn-link-back;
 	}
 }

@@ -3,10 +3,10 @@
 }
 
 .fp-news__item {
-	border-bottom: 1px solid $border;
+	border-bottom: 1px solid $gray;
 
 	&:first-of-type {
-		border-top: 1px solid $border;
+		border-top: 1px solid $gray;
 	}
 }
 
@@ -35,7 +35,7 @@
 	line-height: 1;
 
 	@include sp {
-		$r: rem(13);
+		$r: rem(14);
 
 		font-size: $r;
 	}
@@ -50,7 +50,7 @@
 	margin-left: 2em;
 
 	@include sp {
-		$r: rem(13);
+		$r: rem(14);
 
 		font-size: $r;
 		margin-left: 0;

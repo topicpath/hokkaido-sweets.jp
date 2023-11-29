@@ -18,13 +18,13 @@
 						'post_type' => 'post',
 						'orderby' => 'date',
 						'order' => 'DESC',
-						'posts_per_page' => 2,
+						'posts_per_page' => 15,
 					);
 					$the_query = new WP_Query($args);
 					while ($the_query->have_posts()):
 					$the_query->the_post();
 				li.__item
-					a.__link(href="<?= get_the_permalink() ?>")
+					a.__link(href!="<?= get_the_permalink() ?>")
 						p.__date
 							:php the_time('Y.n.j');
 						p.__desc

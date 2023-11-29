@@ -14,7 +14,8 @@ html {
 	}
 
 	@include mq-min(hd) {
-		font-size: calc(100vw * 16 / 1280);
+		// font-size: calc(100vw * 16 / 1280);
+		font-size: 1rem;
 	}
 }
 

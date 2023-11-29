@@ -44,11 +44,12 @@ add_action('init', function () {
 	/**
 	 * CONTENTS
 	 */
-	define("URL_SHOP", "#shop");
-	define("URL_NEWS", "#news");
-	define("URL_CONTACT", "mailto:prateria@hokkaido-sweets.co.jp");
+	define("URL_SHOP", URL_HOME . "#shop");
+	define("URL_NEWS", URL_HOME . "news/");
+	define("URL_CONTACT", URL_HOME . "contact/");
+	define("URL_RECRUIT", URL_HOME . "recruitment/");
 	define("URL_CART", "");
-	define("URL_ONLINE_SHOP", "");
+	define("URL_ONLINE_SHOP", "https://shop.hokkaido-miyage.jp/");
 	define("URL_PRIVACY", "");
 	define("URL_LAW", "");
 

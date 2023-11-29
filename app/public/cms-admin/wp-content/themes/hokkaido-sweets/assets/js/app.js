@@ -52,7 +52,7 @@ function headerNav() {
 		return false;
 	});
 
-	$(".header-nav__link").on($clickEventType, function () {
+	$(".js-smooth-link").on($clickEventType, function () {
 		if ($c.hasClass("is-show")) {
 			$b.removeClass("is-active");
 			$c.removeClass("is-show");

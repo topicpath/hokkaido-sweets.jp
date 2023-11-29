@@ -59,7 +59,7 @@
 				<nav class="header-nav">
 					<ol class="header-nav__list">
 						<li class="header-nav__item">
-							<a href="<?= URL_SHOP ?>" class="header-nav__link">
+							<a href="<?= URL_SHOP ?>" class="header-nav__link js-smooth-link">
 								<p class="header-nav__sub">Store & access</p>
 								<p class="header-nav__main">店舗情報／アクセス</p>
 							</a>
@@ -71,13 +71,42 @@
 							</a>
 						</li>
 						<li class="header-nav__item">
+							<a href="<?= URL_RECRUIT ?>" class="header-nav__link">
+								<p class="header-nav__sub">Recruitment</p>
+								<p class="header-nav__main">採用情報</p>
+							</a>
+						</li>
+						<li class="header-nav__item">
 							<a href="<?= URL_CONTACT ?>" class="header-nav__link">
-								<p class="header-nav__sub">contact</p>
+								<p class="header-nav__sub">Contact</p>
 								<p class="header-nav__main">お問い合わせ</p>
+							</a>
+						</li>
+						<li class="header-nav__item pc">
+							<a href="https://shop.hokkaido-miyage.jp/" target="_blank" class="header-nav__btn">
+								<p class="header-nav__btn__main">
+									<span class="header-nav__btn__main--icon"><img src="<?= URL_SVG ?>icon-cart.svg" alt=""></span>
+									<span class="header-nav__btn__main--text">オンラインショップ</span>
+								</p>
+								<p class="header-nav__btn__sub">北海道特産品カタログWEB</p>
+							</a>
+						</li>
+						<li class="header-nav__item header-nav__item__btn sp">
+							<a href="https://shop.hokkaido-miyage.jp/collections/prateria" target="_blank" class="fp-modal__link fp-modal__link--w">
+								<span class="fp-modal__link--main-sm">sweets garden Prateriaの通販商品一覧を<br>オンラインショップで見る</span>
+								<span class="fp-modal__link--sub">北海道特産品カタログWEB</span>
 							</a>
 						</li>
 					</ol>
 				</nav>
+			</div>
+			<div class="sp">
+				<a href="https://shop.hokkaido-miyage.jp/" target="_blank" class="header-nav__btn">
+					<p class="header-nav__btn__main">
+						<span class="header-nav__btn__main--icon"><img src="<?= URL_SVG ?>icon-cart.svg" alt=""></span>
+						<span>オンライン<br>ショップ</span>
+					</p>
+				</a>
 			</div>
 			<div class="js-header-nav__btn">
 				<div class="js-header-nav__btn-body"></div>

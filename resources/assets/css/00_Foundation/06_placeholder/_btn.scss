@@ -11,7 +11,7 @@
 	line-height: 1;
 
 	$pv: rem(18);
-	$ps: rem(100);
+	$ps: rem(80);
 
 	padding: $pv $ps;
 	border: 1px solid $border;
@@ -65,6 +65,35 @@
 		&::before {
 			color: $white;
 		}
+	}
+}
+
+%btn-link-green {
+	@extend %btn-link;
+
+	color: $white;
+	border: 1px solid $green-light;
+	background-color: $green-light;
+
+	&::before {
+		color: $white;
+	}
+
+	@include hover {
+		background-color: $white;
+		color: $green;
+
+		&::before {
+			color: $green-light;
+		}
+	}
+}
+
+%btn-link-back {
+	@extend %btn-link;
+
+	&::before {
+		content: "←";
 	}
 }
 
