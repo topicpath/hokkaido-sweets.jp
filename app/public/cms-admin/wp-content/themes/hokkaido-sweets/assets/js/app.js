@@ -9,6 +9,7 @@ $(function () {
 	headerNav();
 	modal();
 	smoothScroll();
+	checkbox();
 
 	$(window).on("load scroll", function () {
 		inView();
@@ -52,7 +53,7 @@ function headerNav() {
 		return false;
 	});
 
-	$(".header-nav__link").on($clickEventType, function () {
+	$(".js-smooth-link").on($clickEventType, function () {
 		if ($c.hasClass("is-show")) {
 			$b.removeClass("is-active");
 			$c.removeClass("is-show");
@@ -132,5 +133,22 @@ function smoothScroll() {
 	var scroll = new SmoothScroll('a[href*="#"]', {
 		speed: 300,
 		header: ".header",
+	});
+}
+
+function checkbox() {
+	const $fieldset = $(".page-contact__radio");
+	if ($fieldset.length === 0) return;
+
+	const $input = $(".page-contact__radio input");
+	const $label = $fieldset.find("label");
+
+	$input.change(function () {
+		var $result = $(this).prop("checked");
+		if ($result) {
+			$label.addClass("is-check");
+		} else {
+			$label.removeClass("is-check");
+		}
 	});
 }

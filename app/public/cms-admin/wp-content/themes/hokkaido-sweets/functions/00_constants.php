@@ -28,11 +28,11 @@ add_action('init', function () {
 	define('URL_TEMP_IMAGES', URL_IMAGES . 'temp/');
 	define('URL_SVG', URL_IMAGES . 'svg/');
 
-	define('URL_OGIMAGE', URL_IMAGES . 'ogp.jpg');
+	define('URL_OGIMAGE', URL_HOME . 'ogp.jpg');
 	define('URL_OGIMAGE_WIDTH', 1200);
 	define('URL_OGIMAGE_HEIGHT', 630);
 
-	define('URL_FAVICON', URL_IMAGES . 'favicon.ico');
+	define('URL_FAVICON', URL_HOME . 'favicon.ico');
 	define('URL_TOUCH_ICON', URL_IMAGES . 'apptouch.png');
 	define('URL_NO_IMAGE', URL_IMAGES . 'noimage.png');
 	define('URL_APP_JS', URL_JS . 'app.js');
@@ -44,11 +44,12 @@ add_action('init', function () {
 	/**
 	 * CONTENTS
 	 */
-	define("URL_SHOP", "#shop");
-	define("URL_NEWS", "#news");
-	define("URL_CONTACT", "mailto:prateria@hokkaido-sweets.co.jp");
+	define("URL_SHOP", URL_HOME . "#shop");
+	define("URL_NEWS", URL_HOME . "news/");
+	define("URL_CONTACT", URL_HOME . "contact/");
+	define("URL_RECRUIT", URL_HOME . "recruitment/");
 	define("URL_CART", "");
-	define("URL_ONLINE_SHOP", "");
+	define("URL_ONLINE_SHOP", "https://shop.hokkaido-miyage.jp/");
 	define("URL_PRIVACY", "");
 	define("URL_LAW", "");
 

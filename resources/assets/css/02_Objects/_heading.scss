@@ -12,7 +12,7 @@
 	@include sp {
 		@include line-height(50, 32);
 
-		$f: rem(32);
+		$f: rem(28);
 
 		font-size: $f;
 		letter-spacing: 0;

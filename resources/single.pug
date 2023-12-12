@@ -4,7 +4,7 @@
 .page-single.l-section
 	.page-single-head
 		.__contents.l-contents--sm
-			h1.m-page-heading
+			h1.m-page-heading.text-left
 				:php echo the_title();
 			p.__date
 				:php the_time('Y.n.j');
@@ -12,6 +12,8 @@
 	.page-single-body
 		.__contents.l-contents--sm
 			:php echo the_content();
+			p.m-btn.--lg
+				a.__link(href="/news/") お知らせ一覧へ戻る
 
 :php
 	get_footer();

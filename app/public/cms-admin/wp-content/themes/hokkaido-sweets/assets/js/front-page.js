@@ -8,7 +8,7 @@ $(function () {
 	var pickupSlider = new Swiper(".js-fp-pickup-slider", {
 		centeredSlides: true,
 		loop: true,
-		slidesPerView: 1.3,
+		slidesPerView: 1.8,
 		loopAdditionalSlides: 0,
 		preventInteractionOnTransition: true,
 		spaceBetween: 15,

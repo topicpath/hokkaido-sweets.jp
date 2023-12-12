@@ -17,12 +17,12 @@ $args = array(
 	'post_type' => 'post',
 	'orderby' => 'date',
 	'order' => 'DESC',
-	'posts_per_page' => 2,
+	'posts_per_page' => 15,
 );
 $the_query = new WP_Query($args);
 while ($the_query->have_posts()):
 $the_query->the_post(); ?>
-        <li class="page-archive-list__item"><a class="page-archive-list__link" href="&lt;?= get_the_permalink() ?&gt;">
+        <li class="page-archive-list__item"><a class="page-archive-list__link" href="<?= get_the_permalink() ?>">
             <p class="page-archive-list__date"><?php the_time('Y.n.j'); ?></p>
             <p class="page-archive-list__desc"><?php the_title(); ?></p></a></li><?php endwhile;
  ?>

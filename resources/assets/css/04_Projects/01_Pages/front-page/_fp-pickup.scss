@@ -71,7 +71,7 @@
 	color: $white;
 
 	@include sp {
-		$f: rem(18);
+		$f: rem(15);
 
 		font-size: $f;
 	}

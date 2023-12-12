@@ -20,7 +20,7 @@
 
 	&--rusk {
 		@include pc {
-			$t: rem(150);
+			$t: rem(250);
 
 			margin-top: -$t;
 			z-index: 2;
@@ -28,11 +28,11 @@
 		}
 
 		@include mq-max-min(hd, sp) {
-			margin-top: 0;
+			margin-top: rem(-150);
 		}
 
 		@include sp {
-			$m: rem(70);
+			$m: rem(50);
 
 			margin-top: $m;
 		}
@@ -65,6 +65,12 @@
 			$pb: rem(70);
 
 			padding-bottom: $pb;
+		}
+	}
+
+	&--gap {
+		@include mq-max-min(hd, sp) {
+			gap: 5.857vw;
 		}
 	}
 }
@@ -174,6 +180,15 @@
 			font-size: $f;
 		}
 	}
+
+	&--xs {
+		font-size: rem(13);
+		font-weight: 400;
+		color: $black;
+		line-height: 1;
+		display: block;
+		margin-top: rem(5);
+	}
 }
 
 .fp-product-item__sticker {
@@ -196,7 +211,7 @@
 	@include line-height(40, 24);
 
 	$f: rem(22);
-	$m: rem(60);
+	$m: rem(50);
 
 	font-size: $f;
 	color: $black;
@@ -217,7 +232,7 @@
 	@include font-noto-sans-jp(regular);
 	@include line-height(36, 16);
 
-	$m: rem(40);
+	$m: rem(30);
 
 	font-size: 1rem;
 	color: $black;
@@ -541,7 +556,7 @@
 	@include sp {
 		$s: rem(70);
 
-		padding: $s 0;
+		padding: $s 0 rem(50);
 		background-image: url("../images/front-page/product-item-parineru-bg-sp.jpg");
 		aspect-ratio: 375 / 703;
 	}
@@ -600,6 +615,10 @@
 	$p: rem(70);
 
 	padding-top: $p;
+
+	@include sp {
+		padding-top: rem(50);
+	}
 }
 
 .fp-product-parineru-detail-text {
@@ -660,8 +679,16 @@
 	}
 }
 
+.fp-product-melon {
+	@include pc {
+		padding-top: 0;
+	}
+
+	// padding-bottom: 0;
+}
+
 .fp-product-middle {
-	background-image: url("../images/front-page/product-middle-bg.png");
+	background-image: url("../images/front-page/product-middle-bg.jpg");
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -680,7 +707,7 @@
 
 .fp-product-rusk-visual-text {
 	@include sp {
-		$pt: rem(373);
+		$pt: rem(333);
 
 		padding-top: $pt;
 	}
@@ -775,4 +802,23 @@
 
 		width: $w;
 	}
+}
+
+.fp-product-item__link {
+	background-color: $green;
+	color: $white;
+	border-color: $green;
+
+	&::before {
+		color: $white;
+	}
+
+	@include hover {
+		background-color: $green-light;
+		border-color: $green-light;
+	}
+}
+
+.fp-product-item__visual-logo {
+	text-align: center;
 }
