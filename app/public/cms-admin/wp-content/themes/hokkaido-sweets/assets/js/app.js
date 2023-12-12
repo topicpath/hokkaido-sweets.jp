@@ -9,6 +9,7 @@ $(function () {
 	headerNav();
 	modal();
 	smoothScroll();
+	checkbox();
 
 	$(window).on("load scroll", function () {
 		inView();
@@ -132,5 +133,22 @@ function smoothScroll() {
 	var scroll = new SmoothScroll('a[href*="#"]', {
 		speed: 300,
 		header: ".header",
+	});
+}
+
+function checkbox() {
+	const $fieldset = $(".page-contact__radio");
+	if ($fieldset.length === 0) return;
+
+	const $input = $(".page-contact__radio input");
+	const $label = $fieldset.find("label");
+
+	$input.change(function () {
+		var $result = $(this).prop("checked");
+		if ($result) {
+			$label.addClass("is-check");
+		} else {
+			$label.removeClass("is-check");
+		}
 	});
 }

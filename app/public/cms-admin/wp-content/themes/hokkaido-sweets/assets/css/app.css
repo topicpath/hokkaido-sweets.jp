@@ -1612,6 +1612,25 @@ meter {
     top: 4px;
   }
 }
+.page-contact__radio label.is-check::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 16px;
+  border: solid #73bb92;
+  border-width: 0 3px 3px 0;
+}
+@media (max-width: 767px) {
+  .page-contact__radio label.is-check::after {
+    top: 4px;
+  }
+}
+.page-contact__radio .error {
+  display: none;
+}
 
 .page-contact__btns {
   display: grid;

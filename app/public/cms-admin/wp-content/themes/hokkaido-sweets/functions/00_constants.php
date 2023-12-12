@@ -28,11 +28,11 @@ add_action('init', function () {
 	define('URL_TEMP_IMAGES', URL_IMAGES . 'temp/');
 	define('URL_SVG', URL_IMAGES . 'svg/');
 
-	define('URL_OGIMAGE', URL_IMAGES . 'ogp.jpg');
+	define('URL_OGIMAGE', URL_HOME . 'ogp.jpg');
 	define('URL_OGIMAGE_WIDTH', 1200);
 	define('URL_OGIMAGE_HEIGHT', 630);
 
-	define('URL_FAVICON', URL_IMAGES . 'favicon.ico');
+	define('URL_FAVICON', URL_HOME . 'favicon.ico');
 	define('URL_TOUCH_ICON', URL_IMAGES . 'apptouch.png');
 	define('URL_NO_IMAGE', URL_IMAGES . 'noimage.png');
 	define('URL_APP_JS', URL_JS . 'app.js');

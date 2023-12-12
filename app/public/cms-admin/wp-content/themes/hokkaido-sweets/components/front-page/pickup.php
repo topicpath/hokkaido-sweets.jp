@@ -77,13 +77,14 @@
 			</div>
 			<picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-08.webp" alt="" width="320" height="320" /></picture>
 		</a>
-		<a class="fp-pickup__item swiper-slide" href="#product8">
+		<a class="fp-pickup__item swiper-slide" href="#product10">
 			<div class="fp-pickup__inner">
 				<div class="fp-pickup__text">
-					<p class="fp-pickup__main-text">かすてらロール</p>
+					<p class="fp-pickup__sub-text">夕張メロン果汁使用</p>
+					<p class="fp-pickup__main-text">北海道プレミアム<br>夕張メロンソフト</p>
 				</div>
 			</div>
-			<picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-09.webp" alt="" width="320" height="320" /></picture>
+			<picture class="fp-pickup__picture"><img class="fp-pickup__picture-body" src="<?= $images ?>pickup-item-10.webp" alt="" width="320" height="320" /></picture>
 		</a>
 	</div>
 </article>

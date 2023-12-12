@@ -193,6 +193,26 @@
 				top: 4px;
 			}
 		}
+
+		&.is-check::after {
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: 9px;
+			transform: rotate(45deg);
+			width: 8px;
+			height: 16px;
+			border: solid $green-light;
+			border-width: 0 3px 3px 0;
+
+			@include sp {
+				top: 4px;
+			}
+		}
+	}
+
+	.error {
+		display: none;
 	}
 }
 

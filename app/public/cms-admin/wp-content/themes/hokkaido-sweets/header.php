@@ -16,7 +16,7 @@
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="<?= URL_FAVICON ?>">
-    <link rel="apple-touch-icon-precomposed" href="<?= URL_TOUCH_ICON ?>">
+    <!-- <link rel="apple-touch-icon-precomposed" href="<?= URL_TOUCH_ICON ?>"> -->
 	<?php wp_head(); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/swiper-bundle.min.js" defer></script>
