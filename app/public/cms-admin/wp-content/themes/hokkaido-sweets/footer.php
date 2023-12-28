@@ -18,7 +18,7 @@
                     <li class="footer-info__item">小樽市堺町5番29号</li>
                     <li class="footer-info__item"><a class="tel:0134-64-6122">TEL.0134-64-6122</a></li>
                     <li class="footer-info__item">営業時間　10時〜18時</li>
-                    <li class="footer-info__item">定休日　　不定休<br class="u-hide--pc">（※現在は月曜日が定休日です）</li>
+                    <li class="footer-info__item">定休日　　不定休<br class="u-hide--pc">（※毎月の定休日につきましてはお知らせをご確認ください）</li>
                 </ol>
             </div>
             <div class="footer-map">
