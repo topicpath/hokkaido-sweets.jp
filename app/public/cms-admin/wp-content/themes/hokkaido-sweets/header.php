@@ -73,7 +73,7 @@
 							</a>
 						</li>
 						<li class="header-nav__item">
-							<a href="<?= URL_RECRUIT ?>" class="header-nav__link">
+							<a href="<?= URL_RECRUIT ?>" class="header-nav__link" target="_blank">
 								<p class="header-nav__sub">Recruitment</p>
 								<p class="header-nav__main">採用情報</p>
 							</a>
