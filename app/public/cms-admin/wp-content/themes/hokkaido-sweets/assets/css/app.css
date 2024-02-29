@@ -1863,6 +1863,17 @@ meter {
   clip-path: inset(0 round 0 1.875rem 1.875rem 0);
 }
 
+.fp-bnr__col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3.125rem;
+}
+@media (max-width: 767px) {
+  .fp-bnr__col {
+    gap: 1.875rem;
+  }
+}
+
 .fp-feature {
   background-image: url("../images/front-page/feature-bg.png");
   background-position: 50% 50%;

@@ -1,0 +1,9 @@
+.fp-bnr__col {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: rem(50);
+
+	@include sp {
+		gap: rem(30);
+	}
+}

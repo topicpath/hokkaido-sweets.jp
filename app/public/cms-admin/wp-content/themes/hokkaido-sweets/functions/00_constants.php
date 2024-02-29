@@ -47,7 +47,7 @@ add_action('init', function () {
 	define("URL_SHOP", URL_HOME . "#shop");
 	define("URL_NEWS", URL_HOME . "news/");
 	define("URL_CONTACT", URL_HOME . "contact/");
-	define("URL_RECRUIT", URL_HOME . "recruitment/");
+	define("URL_RECRUIT", "https://www.hokkaido-miyage.jp/recruit/works-sweets/");
 	define("URL_CART", "");
 	define("URL_ONLINE_SHOP", "https://shop.hokkaido-miyage.jp/");
 	define("URL_PRIVACY", "");
