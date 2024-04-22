@@ -68,7 +68,7 @@
 	"price" => "385",
 	"allergy" => "卵・小麦・乳成分",
 	"consume" => "冷蔵品(当日仕上げ)は製造日より2日間(小樽店限定)。冷凍品は製造日より45日間",
-	"shop" => "sweets garden Prateria(おみやげの店こぶしや 小樽店)、おみやげの店こぶしや 札幌店",
+	"shop" => "sweets garden Prateria(おみやげの店こぶしや 小樽店)",
 ]); ?>
 
 <?php get_template_part('components/parts/modal', null, [
