@@ -32,9 +32,9 @@
                     <li class="footer-nav__item">
                         <a href="<?= URL_NEWS ?>" class="footer-nav__link hv-op">お知らせ</a>
                     </li>
-                    <li class="footer-nav__item">
+                    <!--<li class="footer-nav__item">
                         <a href="<?= URL_HOME ?>recruitment/" class="footer-nav__link hv-op">採用情報</a>
-                    </li>
+                    </li>-->
                 </ol>
                 <div class="footer-nav-sub">
                     <p class="o-btn">
