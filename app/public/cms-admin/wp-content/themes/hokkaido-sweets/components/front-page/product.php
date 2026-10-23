@@ -144,7 +144,7 @@
 								<h2 class="fp-product-item__name-text">摩訶不思議スイーツ<br>パリネル</h2>
 								<ol class="fp-product-item__tags">
 									<li class="fp-product-item__tag">お持ち帰り限定</li>
-									<li class="fp-product-item__tag">冷蔵／冷凍</li>
+									<li class="fp-product-item__tag">冷蔵</li>
 								</ol>
 							</div>
 						</div>
@@ -246,6 +246,7 @@
 				</div>
 			</div>
 		</div>
+		<?php /*
 		<div class="fp-product__contents l-contents--r-sp-full" id="product9">
 			<div class="fp-product__body js-inview">
 				<div class="fp-product-item">
@@ -267,5 +268,6 @@
 				</div>
 			</div>
 		</div>
+		*/ ?>
 	</section>
 </article>

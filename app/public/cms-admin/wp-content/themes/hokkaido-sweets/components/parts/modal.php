@@ -74,7 +74,7 @@
 				<?php if(count($items) === 0): ?>
 				<dl class="fp-modal__price">
 					<dt class="fp-modal__count"><?= $count ?></dt>
-					<dd class="fp-modal__price-body"><span class="fp-modal__price-num"><?= $price ?></span><span>円（税込）</span></dd>
+					<?php /*<dd class="fp-modal__price-body"><span class="fp-modal__price-num"><?= $price ?></span><span>円（税込）</span></dd> */ ?>
 				</dl>
 				<?php if(!empty($url)): ?>
 				<p class="fp-modal__btn">
@@ -90,7 +90,7 @@
 					<div class="fp-modal__item">
 						<dl class="fp-modal__price">
 							<dt class="fp-modal__count"><?= $item["count"] ?></dt>
-							<dd class="fp-modal__price-body"><span class="fp-modal__price-num"><?= $item["price"] ?></span><span>円（税込）</span></dd>
+							<?php /* <dd class="fp-modal__price-body"><span class="fp-modal__price-num"><?= $item["price"] ?></span><span>円（税込）</span></dd> */ ?>
 						</dl>
 						<p class="fp-modal__item-btn">
 							<a href="<?= $item["url"] ?>" target="_blank" class="fp-modal__link">
