@@ -13,7 +13,7 @@
 					<picture class="fp-shop-detail__picture o-fit"><img class="o-fit__body" src="<?= $images ?>shop-img.webp" width="600" height="320" loading="lazy" /></picture>
 					<div class="fp-shop-detail__text">
 						<h2 class="fp-shop-detail__logo"><img class="fp-shop-detail__logo-body" src="<?= URL_SVG ?>logo.svg" alt="sweets garden Prateria" width="220" height="48" /></h2>
-						<p class="fp-shop-detail__desc">小樽市堺町5番29号<br>（おみやげの店 こぶしや 小樽店内併設）<br>TEL.0134-64-6122<br>営業時間　10時〜18時<br>定休日　　不定休<br>（※毎月の定休日につきましてはお知らせをご確認ください）</p>
+						<p class="fp-shop-detail__desc">小樽市堺町5番29号<br>（おみやげの店 こぶしや 小樽店内併設）<br>TEL.0134-64-6122<br>営業時間　10時〜18時<br>定休日　　年中無休<br>（※臨時休業の場合は各種SNSにて告知します）</p>
 					</div>
 				</div>
 				<div class="fp-shop-access js-inview">
